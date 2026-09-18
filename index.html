@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Predictions - توقعات حمزة الرياضية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0B0F19;
+            --card-bg: rgba(22, 28, 45, 0.7);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --accent-green: #10B981;
+            --accent-glow: rgba(16, 185, 129, 0.25);
+            --text-main: #F3F4F6;
+            --text-muted: #9CA3AF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding-bottom: 50px;
+        }
+
+        .header {
+            background: linear-gradient(180deg, rgba(16, 185, 129, 0.1) 0%, rgba(11, 15, 25, 0) 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .brand h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand span {
+            color: var(--accent-green);
+        }
+
+        .status-badge {
+            background: var(--accent-glow);
+            color: var(--accent-green);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--accent-green);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .matches-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .match-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            align-items: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .match-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+
+        .team {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .team.away {
+            justify-content: flex-end;
+        }
+
+        .team-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-green);
+        }
+
+        .match-info {
+            text-align: center;
+        }
+
+        .league-name {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .match-time {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        .prob-section {
+            margin-top: 12px;
+            grid-column: 1 / -1;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        .prob-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+        }
+
+        .prob-bar-bg {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .prob-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10B981, #34D399);
+            border-radius: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .match-card {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                text-align: center;
+            }
+            .team, .team.away {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="brand">
+                <h1><i class="fa-solid fa-chart-line"></i> Hamza <span>Predictions</span></h1>
+            </div>
+            <div class="status-badge">
+                <div class="pulse-dot"></div>
+                أبرز 25 مباراة للأسبوع (+80%)
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="matches-grid">
+
+            <!-- 1 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-venus"></i></div> تشيلسي (سيدات)</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي للسيدات</div><div class="match-time">السبت | 12:45</div></div>
+                <div class="team away">بيرمنغهام <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: تشيلسي (سيدات)</span><span style="color: var(--accent-green); font-weight: bold;">92%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 92%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> بايرن ميونخ</div>
+                <div class="match-info"><div class="league-name">الدوري الألماني</div><div class="match-time">الأحد | 19:30</div></div>
+                <div class="team away">بوخوم <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: بايرن ميونخ</span><span style="color: var(--accent-green); font-weight: bold;">91%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 91%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-venus"></i></div> برشلونة (سيدات)</div>
+                <div class="match-info"><div class="league-name">الدوري الإسباني للسيدات</div><div class="match-time">السبت | 18:00</div></div>
+                <div class="team away">ليجانيس <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: برشلونة (سيدات)</span><span style="color: var(--accent-green); font-weight: bold;">90%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 90%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> مانشستر سيتي</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي</div><div class="match-time">الأحد | 16:00</div></div>
+                <div class="team away">سندرلاند <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: مانشستر سيتي</span><span style="color: var(--accent-green); font-weight: bold;">89%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 89%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-venus"></i></div> بايرن ميونخ (سيدات)</div>
+                <div class="match-info"><div class="league-name">دوري أبطال أوروبا للسيدات</div><div class="match-time">السبت | 15:45</div></div>
+                <div class="team away">مان سيتي (سيدات) <div class="team-icon"><i class="fa-solid fa-venus"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: بايرن ميونخ (سيدات)</span><span style="color: var(--accent-green); font-weight: bold;">88%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 88%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> النصر</div>
+                <div class="match-info"><div class="league-name">دوري روشن السعودي</div><div class="match-time">السبت | 21:00</div></div>
+                <div class="team away">الأخدود <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: النصر</span><span style="color: var(--accent-green); font-weight: bold;">87%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 87%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> سلتيك</div>
+                <div class="match-info"><div class="league-name">الدوري الاسكتلندي</div><div class="match-time">الجمعة | 21:45</div></div>
+                <div class="team away">رد ستار <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: سلتيك</span><span style="color: var(--accent-green); font-weight: bold;">86%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 86%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> ليفربول</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي</div><div class="match-time">الأحد | 16:00</div></div>
+                <div class="team away">بورنموث <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: ليفربول</span><span style="color: var(--accent-green); font-weight: bold;">85%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 85%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-venus"></i></div> أرسنال (سيدات)</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي للسيدات</div><div class="match-time">السبت | 17:30</div></div>
+                <div class="team away">مان يونايتد (سيدات) <div class="team-icon"><i class="fa-solid fa-venus"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: أرسنال (سيدات)</span><span style="color: var(--accent-green); font-weight: bold;">85%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 85%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> ريال مدريد</div>
+                <div class="match-info"><div class="league-name">الدوري الإسباني</div><div class="match-time">السبت | 22:00</div></div>
+                <div class="team away">إسبانيول <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: ريال مدريد</span><span style="color: var(--accent-green); font-weight: bold;">84%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 84%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> باريس سان جيرمان</div>
+                <div class="match-info"><div class="league-name">الدوري الفرنسي</div><div class="match-time">السبت | 22:00</div></div>
+                <div class="team away">أنجيه <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: باريس سان جيرمان</span><span style="color: var(--accent-green); font-weight: bold;">84%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 84%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> برشلونة</div>
+                <div class="match-info"><div class="league-name">الدوري الإسباني</div><div class="match-time">الأحد | 22:00</div></div>
+                <div class="team away">إشبيلية <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: برشلونة</span><span style="color: var(--accent-green); font-weight: bold;">83%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 83%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> الهلال</div>
+                <div class="match-info"><div class="league-name">دوري روشن السعودي</div><div class="match-time">الجمعة | 21:00</div></div>
+                <div class="team away">الفيحاء <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: الهلال</span><span style="color: var(--accent-green); font-weight: bold;">83%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 83%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> أرسنال</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي</div><div class="match-time">السبت | 17:00</div></div>
+                <div class="team away">برايتون <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: أرسنال</span><span style="color: var(--accent-green); font-weight: bold;">82%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 82%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> أياكس</div>
+                <div class="match-info"><div class="league-name">الدوري الهولندي</div><div class="match-time">السبت | 21:00</div></div>
+                <div class="team away">زفوله <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: أياكس</span><span style="color: var(--accent-green); font-weight: bold;">82%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 82%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> نيوكاسل يونايتد</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي</div><div class="match-time">السبت | 17:00</div></div>
+                <div class="team away">إيفرتون <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: نيوكاسل يونايتد</span><span style="color: var(--accent-green); font-weight: bold;">81%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 81%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 17 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> سبورتينغ لشبونة</div>
+                <div class="match-info"><div class="league-name">الدوري البرتغالي</div><div class="match-time">الأحد | 20:30</div></div>
+                <div class="team away">أروكا <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: سبورتينغ لشبونة</span><span style="color: var(--accent-green); font-weight: bold;">81%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 81%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 18 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> فنربخشة</div>
+                <div class="match-info"><div class="league-name">الدوري التركي</div><div class="match-time">السبت | 19:00</div></div>
+                <div class="team away">قاسم باشا <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: فنربخشة</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 19 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> رد بول سالزبورغ</div>
+                <div class="match-info"><div class="league-name">الدوري النمساوي</div><div class="match-time">الأحد | 18:00</div></div>
+                <div class="team away">ألتاتش <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: رد بول سالزبورغ</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 20 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-venus"></i></div> كريستال بالاس (سيدات)</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي للسيدات</div><div class="match-time">الأحد | 14:00</div></div>
+                <div class="team away">توتنهام (سيدات) <div class="team-icon"><i class="fa-solid fa-venus"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: كريستال بالاس (سيدات)</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 21 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> ليون</div>
+                <div class="match-info"><div class="league-name">الدوري الفرنسي</div><div class="match-time">السبت | 21:00</div></div>
+                <div class="team away">رين <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: ليون</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 22 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> بورتو</div>
+                <div class="match-info"><div class="league-name">الدوري البرتغالي</div><div class="match-time">الأحد | 21:30</div></div>
+                <div class="team away">بوارفيستا <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: بورتو</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 23 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> أولمبياكوس</div>
+                <div class="match-info"><div class="league-name">الدوري اليوناني</div><div class="match-time">الأحد | 19:00</div></div>
+                <div class="team away">أتروميتوس <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: أولمبياكوس</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 24 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-venus"></i></div> برايتون (سيدات)</div>
+                <div class="match-info"><div class="league-name">الدوري الإنجليزي للسيدات</div><div class="match-time">الأحد | 14:00</div></div>
+                <div class="team away">أستون فيلا (سيدات) <div class="team-icon"><i class="fa-solid fa-venus"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: برايتون (سيدات)</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 25 -->
+            <div class="match-card">
+                <div class="team home"><div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div> دينامو زغرب</div>
+                <div class="match-info"><div class="league-name">الدوري الكرواتي</div><div class="match-time">السبت | 18:00</div></div>
+                <div class="team away">سلافن بيلوبو <div class="team-icon"><i class="fa-solid fa-shield-halved"></i></div></div>
+                <div class="prob-section">
+                    <div class="prob-header"><span>نسبة الفوز: دينامو زغرب</span><span style="color: var(--accent-green); font-weight: bold;">80%</span></div>
+                    <div class="prob-bar-bg"><div class="prob-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
