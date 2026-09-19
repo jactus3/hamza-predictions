@@ -22,13 +22,13 @@ jobs:
 
       - name: Run collection + analysis agent
         env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: node agent/collect.mjs
 
       - name: Commit updated data (if changed)
         run: |
           git config user.name "hamza-predictions-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/matches.json agent/cache.json
+          git add data/matches.json
           git diff --cached --quiet || git commit -m "chore: تحديث تلقائي للتوقعات"
           git push
