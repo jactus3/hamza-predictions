@@ -21,7 +21,7 @@ const TOKEN = process.env.FOOTBALL_DATA_TOKEN;
 const BASE_URL = "https://api.football-data.org/v4";
 const TIMEZONE = "Asia/Riyadh";
 const DAYS_AHEAD = 7;
-const DELAY_BETWEEN_CALLS_MS = 6500;
+const DELAY_BETWEEN_CALLS_MS = 6800;
 
 if (!TOKEN) {
   console.error("❌ لم يتم ضبط متغيّر البيئة FOOTBALL_DATA_TOKEN. أوقفت العملية.");
