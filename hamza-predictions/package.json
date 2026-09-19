@@ -1,0 +1,10 @@
+{
+  "name": "hamza-predictions-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "وكيل جمع وتحليل ذاتي لتطبيق Hamza Predictions",
+  "scripts": {
+    "collect": "node agent/collect.mjs"
+  }
+}
