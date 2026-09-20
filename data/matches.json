@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T08:17:06.111Z",
+  "generatedAt": "2026-09-20T12:06:54.838Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -9,13 +9,13 @@
     },
     "الدوري الإسباني": {
       "ok": true,
-      "fixtures": 5,
+      "fixtures": 4,
       "teams": 20,
       "partial": false
     },
     "الدوري الإيطالي": {
       "ok": true,
-      "fixtures": 5,
+      "fixtures": 4,
       "teams": 20,
       "partial": false
     },
@@ -33,7 +33,7 @@
     },
     "الدوري الهولندي": {
       "ok": true,
-      "fixtures": 4,
+      "fixtures": 3,
       "teams": 18,
       "partial": false
     },
@@ -45,7 +45,7 @@
     },
     "الدرجة الأولى الإنجليزية (Championship)": {
       "ok": true,
-      "fixtures": 2,
+      "fixtures": 1,
       "teams": 24,
       "partial": false
     },
@@ -88,126 +88,6 @@
   },
   "matches": [
     {
-      "id": 558885,
-      "teamA": "Feyenoord Rotterdam",
-      "teamB": "FC Utrecht",
-      "venue": "home",
-      "league": "الدوري الهولندي",
-      "country": "هولندا",
-      "day": "الأحد",
-      "time": "13:15",
-      "kickoffISO": "2026-09-20T10:15:00Z",
-      "prob": 74,
-      "probs": {
-        "home": 74,
-        "draw": 14,
-        "away": 12
-      },
-      "homeTeam": "Feyenoord Rotterdam",
-      "awayTeam": "FC Utrecht",
-      "xg": {
-        "home": 3.18,
-        "away": 1.3
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Feyenoord Rotterdam: المركز 3 من 18، 14 نقطة في 6 مباريات، آخر 5 مباريات: فوز · فوز · تعادل · فوز · تعادل. FC Utrecht: المركز 14 من 18، 5 نقاط في 6 مباريات، آخر 5 مباريات: فوز · تعادل · خسارة · تعادل · خسارة.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Feyenoord Rotterdam 3.2 – 1.3 FC Utrecht. احتمال فوز Feyenoord Rotterdam 74% · تعادل 14% · فوز FC Utrecht 12%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": 558591,
-      "teamA": "SSC Napoli",
-      "teamB": "ACF Fiorentina",
-      "venue": "away",
-      "league": "الدوري الإيطالي",
-      "country": "إيطاليا",
-      "day": "الأحد",
-      "time": "13:30",
-      "kickoffISO": "2026-09-20T10:30:00Z",
-      "prob": 47,
-      "probs": {
-        "home": 29,
-        "draw": 24,
-        "away": 47
-      },
-      "homeTeam": "ACF Fiorentina",
-      "awayTeam": "SSC Napoli",
-      "xg": {
-        "home": 1.3,
-        "away": 1.72
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "ACF Fiorentina: المركز 16 من 20، 3 نقاط في 4 مباريات، آخر 4 مباريات: فوز · خسارة · خسارة · خسارة. SSC Napoli: المركز 10 من 20، 6 نقاط في 4 مباريات، آخر 4 مباريات: فوز · خسارة · خسارة · فوز.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: ACF Fiorentina 1.3 – 1.7 SSC Napoli. احتمال فوز ACF Fiorentina 29% · تعادل 24% · فوز SSC Napoli 47%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "SSC Napoli: ⚠️ Spinazzola adds to Napoli injury crisis ahead of Fiorentina clash | ⚠️ Napoli Injury Update: Anguissa, Spinazzola, De Bruyne and McTominay Latest Ahead of Fiorentina | ⚠️ Napoli miss Spinazzola due to injury"
-      }
-    },
-    {
-      "id": 561851,
-      "teamA": "Wolverhampton Wanderers FC",
-      "teamB": "West Bromwich Albion FC",
-      "venue": "home",
-      "league": "الدرجة الأولى الإنجليزية (Championship)",
-      "country": "إنجلترا",
-      "day": "الأحد",
-      "time": "14:00",
-      "kickoffISO": "2026-09-20T11:00:00Z",
-      "prob": 53,
-      "probs": {
-        "home": 53,
-        "draw": 22,
-        "away": 25
-      },
-      "homeTeam": "Wolverhampton Wanderers FC",
-      "awayTeam": "West Bromwich Albion FC",
-      "xg": {
-        "home": 1.9,
-        "away": 1.25
-      },
-      "confidence": "medium",
-      "analysis": {
-        "form": "Wolverhampton Wanderers FC: المركز 9 من 24، 11 نقطة في 6 مباريات، آخر 5 مباريات: فوز · تعادل · خسارة · فوز · فوز. West Bromwich Albion FC: المركز 4 من 24، 14 نقطة في 7 مباريات، آخر 5 مباريات: تعادل · فوز · فوز · تعادل · خسارة.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Wolverhampton Wanderers FC 1.9 – 1.3 West Bromwich Albion FC. احتمال فوز Wolverhampton Wanderers FC 53% · تعادل 22% · فوز West Bromwich Albion FC 25%.",
-        "news": "West Bromwich Albion FC: ⚠️ Nolan Galves contract examined after West Brom injury latest | ⚠️ West Brom's James Morrison wary of possible Wolves 'mind games' when it comes to Raul Jimenez injury | ⚠️ Wolves vs. West Brom: Raul Jimenez ruled out of Black Country derby, Cesar Peixoto justifies EFL Cup risk"
-      }
-    },
-    {
-      "id": 564697,
-      "teamA": "Getafe CF",
-      "teamB": "Málaga CF",
-      "venue": "home",
-      "league": "الدوري الإسباني",
-      "country": "إسبانيا",
-      "day": "الأحد",
-      "time": "15:00",
-      "kickoffISO": "2026-09-20T12:00:00Z",
-      "prob": 47,
-      "probs": {
-        "home": 47,
-        "draw": 30,
-        "away": 23
-      },
-      "homeTeam": "Getafe CF",
-      "awayTeam": "Málaga CF",
-      "xg": {
-        "home": 1.19,
-        "away": 0.73
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Getafe CF: المركز 17 من 20، 5 نقاط في 6 مباريات، آخر 5 مباريات: خسارة · تعادل · تعادل · خسارة · فوز. Málaga CF: المركز 20 من 20، 3 نقاط في 6 مباريات، آخر 5 مباريات: خسارة · تعادل · تعادل · خسارة · تعادل.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Getafe CF 1.2 – 0.7 Málaga CF. احتمال فوز Getafe CF 47% · تعادل 30% · فوز Málaga CF 23%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
       "id": 558882,
       "teamA": "PSV",
       "teamB": "FC Twente '65",
@@ -231,9 +111,9 @@
       },
       "confidence": "high",
       "analysis": {
-        "form": "FC Twente '65: المركز 5 من 18، 13 نقطة في 6 مباريات، آخر 5 مباريات: فوز · فوز · تعادل · فوز · فوز. PSV: المركز 1 من 18، 16 نقطة في 6 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز.",
+        "form": "FC Twente '65: المركز 5 من 18، 13 نقطة في 6 مباريات، آخر 5 مباريات: فوز · فوز · تعادل · فوز · فوز. PSV: المركز 2 من 18، 16 نقطة في 6 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: FC Twente '65 1.9 – 2.0 PSV. احتمال فوز FC Twente '65 36% · تعادل 21% · فوز PSV 43%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "goals": "الأهداف المتوقعة: FC Twente '65 1.9 – 2.1 PSV. احتمال فوز FC Twente '65 36% · تعادل 21% · فوز PSV 43%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
       }
     },
@@ -261,7 +141,7 @@
       },
       "confidence": "high",
       "analysis": {
-        "form": "AZ: المركز 2 من 18، 16 نقطة في 6 مباريات، آخر 5 مباريات: تعادل · فوز · فوز · فوز · فوز. Telstar 1963: المركز 12 من 18، 5 نقاط في 6 مباريات، آخر 5 مباريات: تعادل · خسارة · تعادل · خسارة · خسارة.",
+        "form": "AZ: المركز 3 من 18، 16 نقطة في 6 مباريات، آخر 5 مباريات: تعادل · فوز · فوز · فوز · فوز. Telstar 1963: المركز 12 من 18، 5 نقاط في 6 مباريات، آخر 5 مباريات: تعادل · خسارة · تعادل · خسارة · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: AZ 2.6 – 1.1 Telstar 1963. احتمال فوز AZ 69% · تعادل 17% · فوز Telstar 1963 14%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
@@ -277,24 +157,24 @@
       "day": "الأحد",
       "time": "15:30",
       "kickoffISO": "2026-09-20T12:30:00Z",
-      "prob": 59,
+      "prob": 58,
       "probs": {
-        "home": 59,
+        "home": 58,
         "draw": 21,
-        "away": 20
+        "away": 21
       },
       "homeTeam": "Norwich City FC",
       "awayTeam": "Bolton Wanderers FC",
       "xg": {
-        "home": 2.14,
-        "away": 1.17
+        "home": 2.09,
+        "away": 1.19
       },
       "confidence": "medium",
       "analysis": {
         "form": "Norwich City FC: المركز 14 من 24، 9 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · فوز · خسارة · فوز. Bolton Wanderers FC: المركز 21 من 24، 7 نقاط في 7 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · خسارة · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Norwich City FC 2.1 – 1.2 Bolton Wanderers FC. احتمال فوز Norwich City FC 59% · تعادل 21% · فوز Bolton Wanderers FC 20%.",
-        "news": "Norwich City FC: ⚠️ Manchester City vs Norwich City Injury Update: Two Attacking Absences Leave Maresca Facing a Fresh Carabao Cup Test\nBolton Wanderers FC: ⚠️ TEAM NEWS: Bolton Wanderers will miss key defender for trip to Norwich City"
+        "goals": "الأهداف المتوقعة: Norwich City FC 2.1 – 1.2 Bolton Wanderers FC. احتمال فوز Norwich City FC 58% · تعادل 21% · فوز Bolton Wanderers FC 21%.",
+        "news": "Norwich City FC: ⚠️ Manchester City vs Norwich City Injury Update: Two Attacking Absences Leave Maresca Facing a Fresh Carabao Cup Test | ⚠️ Man City XI vs Norwich: Starting lineup, confirmed team news, injury latest for Carabao Cup today\nBolton Wanderers FC: ⚠️ TEAM NEWS: Bolton Wanderers will miss key defender for trip to Norwich City"
       }
     },
     {
@@ -324,7 +204,7 @@
         "form": "AFC Bournemouth: المركز 16 من 20، 3 نقاط في 4 مباريات، آخر 4 مباريات: تعادل · تعادل · تعادل · خسارة. Liverpool FC: المركز 10 من 20، 6 نقاط في 4 مباريات، آخر 4 مباريات: تعادل · فوز · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: AFC Bournemouth 1.6 – 1.4 Liverpool FC. احتمال فوز AFC Bournemouth 41% · تعادل 24% · فوز Liverpool FC 35%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "AFC Bournemouth: ⚠️ Bournemouth vs Liverpool injury news as eight players missing with Andoni Iraola without key stars | ⚠️ AFC Bournemouth vs Liverpool early injury news as 8 players ruled out | ⚠️ Team News: Bournemouth vs. Liverpool injury, suspension list, predicted XIs\nLiverpool FC: ⚠️ Giovanni Leoni Edges Closer to Liverpool Return After Year Long Injury Nightmare | ⚠️ Bournemouth vs Liverpool injury news as eight players missing with Andoni Iraola without key stars | ⚠️ Liverpool injury update: Ekitike, Chiesa and Leoni latest return dates"
+        "news": "AFC Bournemouth: ⚠️ Bournemouth vs Liverpool injury news as eight players missing with Andoni Iraola without key stars | ⚠️ AFC Bournemouth vs Liverpool early injury news as 8 players ruled out | ⚠️ AFC Bournemouth vs Liverpool: Injury concerns, team news and coaches’ sentiments\nLiverpool FC: ⚠️ Bournemouth vs Liverpool injury news as eight players missing with Andoni Iraola without key stars | ⚠️ Giovanni Leoni Edges Closer to Liverpool Return After Year Long Injury Nightmare | ⚠️ ‘An easy decision’ - Alexander Isak opens up on record-breaking Liverpool move and overcoming injury nightmare"
       }
     },
     {
@@ -354,7 +234,7 @@
         "form": "Leeds United FC: المركز 6 من 20، 8 نقاط في 4 مباريات، آخر 4 مباريات: فوز · تعادل · تعادل · فوز. Crystal Palace FC: المركز 17 من 20، 3 نقاط في 4 مباريات، آخر 4 مباريات: خسارة · فوز · خسارة · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Leeds United FC 1.8 – 1.0 Crystal Palace FC. احتمال فوز Leeds United FC 58% · تعادل 22% · فوز Crystal Palace FC 20%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Leeds United FC: ⚠️ Leeds United team news: Blow as playmaker ruled out of Crystal Palace game | ⚠️ Leeds United star in Wales injury hammer blow as two key men now out | ⚠️ Leeds United & Crystal Palace final injury news as fresh blows leave 7 out and 1 doubt but key man back\nCrystal Palace FC: ⚠️ Crystal Palace handed injury boost as Mateta return date revealed | ⚠️ Leeds United & Crystal Palace final injury news as fresh blows leave 7 out and 1 doubt but key man back | ⚠️ Sarr + Henderson: Crystal Palace injury latest for FPL Gameweek 5"
+        "news": "Leeds United FC: ⚠️ Leeds United team news: Blow as playmaker ruled out of Crystal Palace game | ⚠️ Leeds United & Crystal Palace final injury news as fresh blows leave 7 out and 1 doubt but key man back | ⚠️ Leeds United star in Wales injury hammer blow as two key men now out\nCrystal Palace FC: ⚠️ Crystal Palace handed injury boost as Mateta return date revealed | ⚠️ Sarr + Henderson: Crystal Palace injury latest for FPL Gameweek 5 | ⚠️ Leeds United & Crystal Palace final injury news as fresh blows leave 7 out and 1 doubt but key man back"
       }
     },
     {
@@ -384,7 +264,7 @@
         "form": "Manchester City FC: المركز 1 من 20، 12 نقطة في 4 مباريات، آخر 4 مباريات: فوز · فوز · فوز · فوز. Sunderland AFC: المركز 14 من 20، 4 نقاط في 4 مباريات، آخر 4 مباريات: خسارة · تعادل · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Manchester City FC 2.0 – 0.6 Sunderland AFC. احتمال فوز Manchester City FC 71% · تعادل 19% · فوز Sunderland AFC 10%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Manchester City FC: ⚠️ Man City injury news with key man hoping to return vs Sunderland today | ⚠️ Man City XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League | ⚠️ Man City hope for Sunderland boost amid injury concern\nSunderland AFC: ⚠️ Man City XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League | ⚠️ Man City hope for Sunderland boost amid injury concern | ⚠️ Man City vs Sunderland injury news as 4 ruled out and 1 doubt"
+        "news": "Manchester City FC: ⚠️ Man City XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League | ⚠️ Man City injury news with key man hoping to return vs Sunderland today | ⚠️ Man City hope for Sunderland boost amid injury concern\nSunderland AFC: ⚠️ Man City XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League | ⚠️ Man City hope for Sunderland boost amid injury concern | ⚠️ Man City vs Sunderland injury news as 4 ruled out and 1 doubt"
       }
     },
     {
@@ -407,7 +287,7 @@
       "awayTeam": "Como 1907",
       "xg": {
         "home": 1.06,
-        "away": 1.88
+        "away": 1.87
       },
       "confidence": "high",
       "analysis": {
@@ -436,7 +316,7 @@
       "homeTeam": "Parma Calcio 1913",
       "awayTeam": "Genoa CFC",
       "xg": {
-        "home": 1.17,
+        "home": 1.16,
         "away": 1.02
       },
       "confidence": "high",
@@ -487,24 +367,24 @@
       "day": "الأحد",
       "time": "16:30",
       "kickoffISO": "2026-09-20T13:30:00Z",
-      "prob": 51,
+      "prob": 52,
       "probs": {
-        "home": 51,
+        "home": 52,
         "draw": 20,
-        "away": 29
+        "away": 28
       },
       "homeTeam": "Bayer 04 Leverkusen",
       "awayTeam": "RB Leipzig",
       "xg": {
-        "home": 2.31,
-        "away": 1.75
+        "home": 2.37,
+        "away": 1.72
       },
       "confidence": "medium",
       "analysis": {
         "form": "Bayer 04 Leverkusen: المركز 10 من 18، 4 نقاط في 3 مباريات، آخر 3 مباريات: تعادل · فوز · خسارة. RB Leipzig: المركز 7 من 18، 6 نقاط في 3 مباريات، آخر 3 مباريات: فوز · خسارة · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Bayer 04 Leverkusen 2.3 – 1.8 RB Leipzig. احتمال فوز Bayer 04 Leverkusen 51% · تعادل 20% · فوز RB Leipzig 29%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Bayer 04 Leverkusen: ⚠️ Bayer Leverkusen Guéla Doué injury puts Ivory Coast international call-up in doubt\nRB Leipzig: ⚠️ RB Leipzig striker Marc Guiu suffers injury setback | ⚠️ RB Leipzig announce injury setback for forward"
+        "goals": "الأهداف المتوقعة: Bayer 04 Leverkusen 2.4 – 1.7 RB Leipzig. احتمال فوز Bayer 04 Leverkusen 52% · تعادل 20% · فوز RB Leipzig 28%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "RB Leipzig: ⚠️ RB Leipzig striker Marc Guiu suffers injury setback | ⚠️ RB Leipzig announce injury setback for forward"
       }
     },
     {
@@ -556,8 +436,8 @@
       "homeTeam": "Club Atlético de Madrid",
       "awayTeam": "Real Madrid CF",
       "xg": {
-        "home": 1.64,
-        "away": 1.53
+        "home": 1.63,
+        "away": 1.52
       },
       "confidence": "high",
       "analysis": {
@@ -637,24 +517,24 @@
       "day": "الأحد",
       "time": "17:45",
       "kickoffISO": "2026-09-20T14:45:00Z",
-      "prob": 55,
+      "prob": 57,
       "probs": {
-        "home": 55,
-        "draw": 18,
-        "away": 27
+        "home": 57,
+        "draw": 17,
+        "away": 26
       },
       "homeTeam": "NEC",
       "awayTeam": "Go Ahead Eagles",
       "xg": {
-        "home": 2.65,
-        "away": 1.88
+        "home": 2.73,
+        "away": 1.85
       },
       "confidence": "high",
       "analysis": {
         "form": "NEC: المركز 11 من 18، 7 نقاط في 6 مباريات، آخر 5 مباريات: خسارة · تعادل · خسارة · فوز · فوز. Go Ahead Eagles: المركز 9 من 18، 9 نقاط في 6 مباريات، آخر 5 مباريات: تعادل · تعادل · خسارة · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: NEC 2.7 – 1.9 Go Ahead Eagles. احتمال فوز NEC 55% · تعادل 18% · فوز Go Ahead Eagles 27%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "NEC: ⚠️ Luciano Spalletti confirms USMNT star to start for Juventus against NEC as midfielder makes injury return | ⚠️ Official: Juventus squad list for Europa League opener vs. NEC as 10 players ruled out"
+        "goals": "الأهداف المتوقعة: NEC 2.7 – 1.9 Go Ahead Eagles. احتمال فوز NEC 57% · تعادل 17% · فوز Go Ahead Eagles 26%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "NEC: ⚠️ Luciano Spalletti confirms USMNT star to start for Juventus against NEC as midfielder makes injury return"
       }
     },
     {
@@ -714,7 +594,7 @@
         "form": "Fulham FC: المركز 20 من 20، نقطة واحدة في 4 مباريات، آخر 4 مباريات: تعادل · خسارة · خسارة · خسارة. Manchester United FC: المركز 13 من 20، 4 نقاط في 4 مباريات، آخر 4 مباريات: خسارة · تعادل · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Fulham FC 1.4 – 1.5 Manchester United FC. احتمال فوز Fulham FC 34% · تعادل 25% · فوز Manchester United FC 41%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Fulham FC: ⚠️ How To Watch Fulham vs Man Utd: Kick-Off Time, TV Channel, Injury News | ⚠️ Man Utd star not among squad for train journey to London ahead of Fulham clash as injury fears ramp up | ⚠️ Will Carlos Baleba play for Man United vs. Fulham? Michael Carrick offers positive injury update on midfielder\nManchester United FC: ⚠️ Sesko, Baleba, De Ligt - Man United injury news and return dates for Fulham | ⚠️ Will Carlos Baleba play for Man United vs. Fulham? Michael Carrick offers positive injury update on midfielder | ⚠️ Carlos Baleba, Luke Shaw, Amad - Man United injury news and return dates ahead of Fulham"
+        "news": "Fulham FC: ⚠️ How To Watch Fulham vs Man Utd: Kick-Off Time, TV Channel, Injury News | ⚠️ Man Utd star not among squad for train journey to London ahead of Fulham clash as injury fears ramp up | ⚠️ Manchester United 23-man squad vs Fulham confirmed with huge triple injury boost\nManchester United FC: ⚠️ Sesko, Baleba, De Ligt - Man United injury news and return dates for Fulham | ⚠️ Man United star expected to miss Fulham clash in major blow to Carrick | ⚠️ Will Carlos Baleba play for Man United vs. Fulham? Michael Carrick offers positive injury update on midfielder"
       }
     },
     {
@@ -774,7 +654,7 @@
         "form": "Juventus FC: المركز 8 من 20، 7 نقاط في 4 مباريات، آخر 4 مباريات: خسارة · تعادل · فوز · فوز. Atalanta BC: المركز 11 من 20، 6 نقاط في 4 مباريات، آخر 4 مباريات: خسارة · خسارة · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Juventus FC 1.5 – 1.1 Atalanta BC. احتمال فوز Juventus FC 48% · تعادل 25% · فوز Atalanta BC 27%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Juventus FC: ⚠️ Juventus Faces Major Setback with Grabara's ACL Injury | ⚠️ Luciano Spalletti confirms USMNT star to start for Juventus against NEC as midfielder makes injury return | ⚠️ Official: Juventus squad list for Europa League opener vs. NEC as 10 players ruled out"
+        "news": "Juventus FC: ⚠️ Juventus Faces Major Setback with Grabara's ACL Injury | ⚠️ Luciano Spalletti confirms USMNT star to start for Juventus against NEC as midfielder makes injury return | ⚠️ Juventus suffer Kamil Grabara injury blow as Spalletti faces goalkeeper crisis"
       }
     },
     {
@@ -796,8 +676,8 @@
       "homeTeam": "RC Deportivo La Coruña",
       "awayTeam": "Real Betis Balompié",
       "xg": {
-        "home": 1.35,
-        "away": 1.47
+        "home": 1.34,
+        "away": 1.46
       },
       "confidence": "high",
       "analysis": {
@@ -826,12 +706,12 @@
       "homeTeam": "Villarreal CF",
       "awayTeam": "Levante UD",
       "xg": {
-        "home": 2.55,
-        "away": 1.24
+        "home": 2.53,
+        "away": 1.23
       },
       "confidence": "high",
       "analysis": {
-        "form": "Villarreal CF: المركز 15 من 20، 5 نقاط في 6 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · خسارة · تعادل. Levante UD: المركز 16 من 20، 5 نقاط في 5 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · تعادل · خسارة.",
+        "form": "Villarreal CF: المركز 16 من 20، 5 نقاط في 6 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · خسارة · تعادل. Levante UD: المركز 17 من 20، 5 نقاط في 5 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · تعادل · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Villarreal CF 2.5 – 1.2 Levante UD. احتمال فوز Villarreal CF 66% · تعادل 17% · فوز Levante UD 17%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": "Villarreal CF: ⚠️ Oscar Villarreal Injury: Jockey's Long Recovery in Indiana"
@@ -946,7 +826,7 @@
       "homeTeam": "AC Milan",
       "awayTeam": "US Lecce",
       "xg": {
-        "home": 2.1,
+        "home": 2.09,
         "away": 0.69
       },
       "confidence": "high",
@@ -1006,12 +886,12 @@
       "homeTeam": "Valencia CF",
       "awayTeam": "Real Sociedad de Fútbol",
       "xg": {
-        "home": 1.49,
-        "away": 1.42
+        "home": 1.47,
+        "away": 1.41
       },
       "confidence": "high",
       "analysis": {
-        "form": "Valencia CF: المركز 19 من 20، 4 نقاط في 6 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · خسارة · خسارة. Real Sociedad de Fútbol: المركز 13 من 20، 7 نقاط في 6 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · خسارة.",
+        "form": "Valencia CF: المركز 20 من 20، 4 نقاط في 6 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · خسارة · خسارة. Real Sociedad de Fútbol: المركز 13 من 20، 7 نقاط في 6 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Valencia CF 1.5 – 1.4 Real Sociedad de Fútbol. احتمال فوز Valencia CF 39% · تعادل 25% · فوز Real Sociedad de Fútbol 36%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
