@@ -2,11 +2,15 @@ name: Update Predictions
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch: {}
+    - cron: "0 */6 * * *" # كل 6 ساعات (أخبار الإصابات تتغيّر أسرع من 12 ساعة)
+  workflow_dispatch: {} # تشغيل يدوي من تبويب Actions
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-predictions
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -20,9 +24,14 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Offline tests (model, news filter, parsers)
+        run: node --test agent/test.mjs
+
       - name: Run collection + analysis agent
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          # اختياري: مفتاح TheSportsDB المدفوع لتغطية كاملة للدوري المصري (بدونه: بيانات جزئية)
+          THESPORTSDB_KEY: ${{ secrets.THESPORTSDB_KEY }}
         run: node agent/collect.mjs
 
       - name: Commit updated data (if changed)
@@ -30,5 +39,6 @@ jobs:
           git config user.name "hamza-predictions-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/matches.json
-          git diff --cached --quiet || git commit -m "chore: تحديث تلقائي للتوقعات"
+          git diff --cached --quiet || git commit -m "chore: auto-update predictions"
+          git pull --rebase
           git push

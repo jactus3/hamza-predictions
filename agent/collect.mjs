@@ -1,57 +1,41 @@
 // agent/collect.mjs
 //
-// Hamza Predictions — وكيل الجمع والتحليل (نسخة football-data.org)
-// -----------------------------------------------------------------
-// يجمع المباريات القادمة وترتيب الدوريات من الخطة المجانية لـ football-data.org
-// (تدعم الموسم الحالي فعليًا، على عكس بعض المصادر المجانية الأخرى)،
-// ثم يحسب نسبة الفوز بنفسه (نموذج بسيط شفاف من نقاط الترتيب وفارق الأهداف).
+// Hamza Predictions — وكيل الجمع والتحليل
+// ----------------------------------------
+// 1) يجلب المباريات القادمة وترتيب/نتائج كل دوري من مصدره (agent/leagues.json يحدد المصدر لكل دوري):
+//      • footballdata : football-data.org (يحتاج FOOTBALL_DATA_TOKEN)
+//      • espn         : الدوري السعودي (بدون مفتاح)
+//      • sportsdb     : الدوري المصري (THESPORTSDB_KEY اختياري؛ المفتاح المجاني يعطي بيانات جزئية)
+// 2) يجلب أخبار الفرق (إصابات/إيقافات/عودة لاعبين) من آخر 72 ساعة ويعدّل بها الأهداف المتوقعة تعديلًا محدودًا.
+// 3) يحسب احتمالات (فوز / تعادل / فوز الضيف) بنموذج بواسون، ويكتب data/matches.json.
 //
-// يُشغَّل عبر GitHub Actions كل 12 ساعة (انظر .github/workflows/update-predictions.yml)
-//
-// المتطلبات: متغيّر بيئة FOOTBALL_DATA_TOKEN (مفتاح مجاني من football-data.org/client/register)
+// قواعد الأمان: فشل دوري واحد لا يوقف الباقي (نحتفظ بمبارياته السابقة)، ولا نكتب ملفًا فارغًا فوق بيانات سليمة.
 
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.resolve(__dirname, "..");
+import { buildMatch, resultsByTeam } from "./lib/build.mjs";
+import { leagueAverages } from "./lib/model.mjs";
+import { fetchTeamNews, NEUTRAL_NEWS } from "./lib/news.mjs";
+import { sleep } from "./lib/http.mjs";
+import { createProvider as footballData } from "./providers/footballdata.mjs";
+import { createProvider as espn } from "./providers/espn.mjs";
+import { createProvider as sportsDb } from "./providers/sportsdb.mjs";
 
-const TOKEN = process.env.FOOTBALL_DATA_TOKEN;
-const BASE_URL = "https://api.football-data.org/v4";
-const TIMEZONE = "Asia/Riyadh";
-const DAYS_AHEAD = 7;
-const DELAY_BETWEEN_CALLS_MS = 6800;
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const DAYS_AHEAD = Number(process.env.DAYS_AHEAD) || 7; // للاختبار فقط: DAYS_AHEAD=30
+const NEWS_DELAY_MS = 500;
 
-if (!TOKEN) {
-  console.error("❌ لم يتم ضبط متغيّر البيئة FOOTBALL_DATA_TOKEN. أوقفت العملية.");
-  process.exit(1);
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-async function fdGet(endpoint, params = {}) {
-  const url = new URL(BASE_URL + endpoint);
-  Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
-
-  const res = await fetch(url, {
-    headers: { "X-Auth-Token": TOKEN },
-  });
-
-  const json = await res.json().catch(() => null);
-
-  if (!res.ok) {
-    throw new Error(`فشل الطلب ${endpoint}: ${res.status} ${json?.message ?? res.statusText}`);
-  }
-  return json;
-}
+const providers = {
+  footballdata: footballData(process.env.FOOTBALL_DATA_TOKEN),
+  espn: espn(),
+  sportsdb: sportsDb(process.env.THESPORTSDB_KEY || "3"),
+};
 
 async function readJSON(relPath, fallback) {
   try {
-    const raw = await readFile(path.join(ROOT, relPath), "utf-8");
-    return JSON.parse(raw);
+    return JSON.parse(await readFile(path.join(ROOT, relPath), "utf-8"));
   } catch {
     return fallback;
   }
@@ -61,127 +45,80 @@ async function writeJSON(relPath, data) {
   await writeFile(path.join(ROOT, relPath), JSON.stringify(data, null, 2) + "\n", "utf-8");
 }
 
-function arabicWeekday(date) {
-  return new Intl.DateTimeFormat("ar", { weekday: "long", timeZone: TIMEZONE }).format(date);
-}
-
-function riyadhTime(date) {
-  return new Intl.DateTimeFormat("en-GB", {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-    timeZone: TIMEZONE,
-  }).format(date);
-}
-
-function isoDate(date) {
-  return date.toISOString().slice(0, 10);
-}
-
-function teamStrength(row, isHome) {
-  const ppg = row.playedGames ? row.points / row.playedGames : 1;
-  const gdpg = row.playedGames ? row.goalDifference / row.playedGames : 0;
-  const homeBonus = isHome ? 0.3 : 0;
-  return ppg + 0.25 * gdpg + homeBonus;
-}
-
-function predictMatch(homeRow, awayRow) {
-  const strengthHome = teamStrength(homeRow, true);
-  const strengthAway = teamStrength(awayRow, false);
-  const diff = strengthHome - strengthAway;
-  const logistic = 1 / (1 + Math.exp(-diff));
-
-  const favoredSide = logistic >= 0.5 ? "home" : "away";
-  const rawProb = favoredSide === "home" ? logistic : 1 - logistic;
-  const prob = Math.min(92, Math.max(50, Math.round(rawProb * 100)));
-
-  return { favoredSide, prob };
-}
-
-function buildAnalysis(favoredRow, otherRow, totalTeams) {
-  const positionLine = `${favoredRow.team.name} يحتل المركز ${favoredRow.position} من ${totalTeams}، برصيد ${favoredRow.points} نقطة من ${favoredRow.playedGames} مباراة — مقابل المركز ${otherRow.position} وبرصيد ${otherRow.points} نقطة لفريق ${otherRow.team.name}.`;
-
-  const favoredGfpg = favoredRow.playedGames ? (favoredRow.goalsFor / favoredRow.playedGames).toFixed(1) : "0.0";
-  const favoredGapg = favoredRow.playedGames ? (favoredRow.goalsAgainst / favoredRow.playedGames).toFixed(1) : "0.0";
-  const goalsLine = `${favoredRow.team.name} يسجل معدل ${favoredGfpg} هدف ويستقبل ${favoredGapg} هدف لكل مباراة هذا الموسم.`;
-
-  const gdLine = `فارق الأهداف هذا الموسم: ${favoredRow.goalDifference >= 0 ? "+" : ""}${favoredRow.goalDifference} لفريق ${favoredRow.team.name}، مقابل ${otherRow.goalDifference >= 0 ? "+" : ""}${otherRow.goalDifference} لفريق ${otherRow.team.name}.`;
-
-  return { form: positionLine, side: goalsLine, goals: gdLine };
-}
-
 async function run() {
-  const competitions = await readJSON("agent/leagues.json", []);
-  const matches = [];
+  const leagues = await readJSON("agent/leagues.json", []);
+  const previous = await readJSON("data/matches.json", { matches: [] });
+  const now = new Date();
+  const dateFrom = now.toISOString().slice(0, 10);
+  const dateTo = new Date(now.getTime() + DAYS_AHEAD * 86400000).toISOString().slice(0, 10);
 
-  const today = new Date();
-  const dateFrom = isoDate(today);
-  const dateToDate = new Date(today);
-  dateToDate.setDate(dateToDate.getDate() + DAYS_AHEAD);
-  const dateTo = isoDate(dateToDate);
-
-  for (const comp of competitions) {
+  // ---- 1) جلب البيانات من كل دوري ----
+  const loaded = [];
+  const status = {};
+  for (const comp of leagues) {
+    const provider = providers[comp.provider ?? "footballdata"];
     try {
-      const fixturesResp = await fdGet(`/competitions/${comp.code}/matches`, {
-        dateFrom,
-        dateTo,
-        status: "SCHEDULED",
-      });
-      await sleep(DELAY_BETWEEN_CALLS_MS);
-
-      const standingsResp = await fdGet(`/competitions/${comp.code}/standings`);
-      await sleep(DELAY_BETWEEN_CALLS_MS);
-
-      const table =
-        standingsResp.standings?.find((s) => s.type === "TOTAL")?.table ??
-        standingsResp.standings?.[0]?.table ??
-        [];
-      const totalTeams = table.length;
-      const byTeamId = Object.fromEntries(table.map((row) => [row.team.id, row]));
-
-      const fixtures = fixturesResp.matches ?? [];
-
-      for (const fx of fixtures) {
-        const homeRow = byTeamId[fx.homeTeam.id];
-        const awayRow = byTeamId[fx.awayTeam.id];
-        if (!homeRow || !awayRow) continue;
-
-        const { favoredSide, prob } = predictMatch(homeRow, awayRow);
-        const favoredRow = favoredSide === "home" ? homeRow : awayRow;
-        const otherRow = favoredSide === "home" ? awayRow : homeRow;
-        const analysis = buildAnalysis(favoredRow, otherRow, totalTeams);
-
-        const kickoff = new Date(fx.utcDate);
-
-        matches.push({
-          id: fx.id,
-          teamA: favoredRow.team.name,
-          teamB: otherRow.team.name,
-          venue: favoredSide,
-          league: comp.label,
-          country: comp.country,
-          day: arabicWeekday(kickoff),
-          time: riyadhTime(kickoff),
-          kickoffISO: fx.utcDate,
-          prob,
-          analysis,
-        });
-      }
-
-      console.log(`✅ ${comp.label}: ${fixtures.length} مباراة قادمة، ${table.length} فريق بالترتيب.`);
+      const data = await provider.load(comp, { now, daysAhead: DAYS_AHEAD, dateFrom, dateTo });
+      loaded.push({ comp, data });
+      status[comp.label] = { ok: true, fixtures: data.fixtures.length, teams: data.table.length, partial: data.partial };
+      console.log(`✅ ${comp.label}: ${data.fixtures.length} مباراة قادمة، ${data.table.length} فريق في الترتيب${data.partial ? " (بيانات جزئية)" : ""}.`);
     } catch (err) {
-      console.warn(`⚠️ تعذّر جلب بيانات دوري "${comp.label}":`, err.message);
+      status[comp.label] = { ok: false, error: err.message };
+      console.warn(`⚠️ تعذّر جلب بيانات "${comp.label}": ${err.message}`);
     }
   }
 
-  matches.sort((a, b) => b.prob - a.prob);
+  const failedLabels = Object.entries(status).filter(([, s]) => !s.ok).map(([label]) => label);
+  if (!loaded.length) {
+    console.error("❌ فشل جلب كل الدوريات — لن أكتب فوق البيانات الحالية.");
+    process.exit(1);
+  }
+
+  // ---- 2) أخبار الفرق التي تلعب فعلًا هذا الأسبوع ----
+  const newsNames = [...new Set(loaded.flatMap(({ data }) => data.fixtures.flatMap((f) => [f.home.newsName, f.away.newsName])))];
+  const newsByName = new Map();
+  let newsFailures = 0;
+  for (const name of newsNames) {
+    try {
+      newsByName.set(name, await fetchTeamNews(name));
+    } catch {
+      newsByName.set(name, NEUTRAL_NEWS);
+      newsFailures++;
+    }
+    await sleep(NEWS_DELAY_MS);
+  }
+  const withNews = [...newsByName.values()].filter((n) => n.headlines.length).length;
+  console.log(`📰 الأخبار: ${newsNames.length} فريق، ${withNews} منها فيها أخبار مؤثرة، ${newsFailures} تعذّر جلبها.`);
+
+  // ---- 3) الحساب ----
+  const matches = [];
+  for (const { comp, data } of loaded) {
+    const rowById = new Map(data.table.map((r) => [String(r.teamId), r]));
+    const lg = leagueAverages(data.table);
+    const formResults = resultsByTeam(data.results);
+    const byId = new Map([...formResults].map(([id, v]) => [String(id), v]));
+    const formLookup = { get: (id) => byId.get(String(id)) };
+
+    for (const fx of data.fixtures) {
+      matches.push(buildMatch({ fx, comp, rowById, lg, formResults: formLookup, newsByName, partialData: data.partial }));
+    }
+  }
+
+  // دوريات فشل جلبها هذه المرة: نُبقي مبارياتها السابقة (التي لم تبدأ بعد) بدل حذفها
+  const carried = (previous.matches ?? [])
+    .filter((m) => failedLabels.includes(m.league) && Date.parse(m.kickoffISO) > now.getTime())
+    .map((m) => ({ ...m, stale: true }));
+  if (carried.length) console.log(`↩️ إبقاء ${carried.length} مباراة سابقة من دوريات تعذّر تحديثها.`);
+
+  const all = [...matches, ...carried].sort((a, b) => Date.parse(a.kickoffISO) - Date.parse(b.kickoffISO));
 
   await writeJSON("data/matches.json", {
-    generatedAt: new Date().toISOString(),
-    matches,
+    generatedAt: now.toISOString(),
+    sources: status,
+    matches: all,
   });
 
-  console.log(`\n✅ تم تحديث ${matches.length} مباراة إجمالًا.`);
+  console.log(`\n✅ تم تحديث ${matches.length} مباراة (+${carried.length} محتفَظ بها).`);
 }
 
 run().catch((err) => {

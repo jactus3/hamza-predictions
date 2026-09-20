@@ -312,11 +312,22 @@
   var state = { tab:'today', day: todayName };
 
   // ---------- Helpers ----------
+  // نسب الفوز الآن حقيقية (تحسب التعادل) فلا تصل غالبًا إلى 80%، لذلك عتبات الألوان أقل من السابق
   function probTier(p){
-    if(p >= 80) return 'high';
-    if(p >= 70) return 'mid';
+    if(p >= 65) return 'high';
+    if(p >= 50) return 'mid';
     return 'low';
   }
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+      return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c];
+    });
+  }
+  function findMatch(id){
+    for(var i = 0; i < MATCHES.length; i++){ if(String(MATCHES[i].id) === String(id)) return MATCHES[i]; }
+    return null;
+  }
+  var CONF_AR = { high:'ثقة عالية', medium:'ثقة متوسطة', low:'ثقة منخفضة (بيانات قليلة)' };
   function badgeClass(p){
     var t = probTier(p);
     return t === 'high' ? 'badge-high' : (t === 'mid' ? 'badge-mid' : 'badge-low');
@@ -327,11 +338,12 @@
   }
 
   function getVisibleMatches(){
+    // للبيانات الحية نعتمد على فرق الأيام الفعلي (_off) حتى لا يختلط "الأحد" الحالي بالأحد القادم
     var list;
     if(state.tab === 'today'){
-      list = MATCHES.filter(function(m){ return m.day === todayName; });
+      list = MATCHES.filter(function(m){ return m._off === undefined ? m.day === todayName : m._off === 0; });
     } else {
-      list = MATCHES.filter(function(m){ return m.day === state.day; });
+      list = MATCHES.filter(function(m){ return m.day === state.day && (m._off === undefined || (m._off >= 0 && m._off < 7)); });
     }
     return list.slice().sort(function(a,b){ return b.prob - a.prob; });
   }
@@ -356,20 +368,24 @@
 
   // ---------- Render: matches ----------
   function matchCardHTML(m){
+    var hasNews = m.analysis && m.analysis.news;
     return (
-      '<div class="match-card glass rounded-2xl p-4 sm:p-5" data-id="' + m.id + '">' +
+      '<div class="match-card glass rounded-2xl p-4 sm:p-5" data-id="' + esc(m.id) + '">' +
         '<div class="flex items-start justify-between gap-3 mb-3">' +
           '<div>' +
-            '<div class="text-white font-bold text-base sm:text-lg">' + m.teamA + ' <span class="text-gray-500 font-normal">ضد</span> ' + m.teamB + '</div>' +
-            '<div class="text-xs sm:text-sm text-gray-400 mt-1">' + m.league + ' · ' + m.country + '</div>' +
+            '<div class="text-white font-bold text-base sm:text-lg">' + esc(m.teamA) + ' <span class="text-gray-500 font-normal">ضد</span> ' + esc(m.teamB) + '</div>' +
+            '<div class="text-xs sm:text-sm text-gray-400 mt-1">' + esc(m.league) + ' · ' + esc(m.country) + '</div>' +
           '</div>' +
-          '<span class="text-xs sm:text-sm text-gray-400 whitespace-nowrap">' + m.day + ' · ' + m.time + '</span>' +
+          '<span class="text-xs sm:text-sm text-gray-400 whitespace-nowrap">' + esc(m.day) + ' · ' + esc(m.time) + '</span>' +
         '</div>' +
         '<div class="flex items-center gap-3">' +
           '<div class="meter-track flex-1"><div class="meter-fill ' + fillClass(m.prob) + '" data-target="' + m.prob + '"></div></div>' +
           '<span class="badge-' + probTier(m.prob) + ' text-xs font-bold px-2.5 py-1 rounded-full">' + m.prob + '%</span>' +
         '</div>' +
-        '<div class="text-[11px] sm:text-xs text-gray-500 mt-2">فوز ' + m.teamA + ' متوقع (' + (m.venue === 'home' ? 'كمضيف' : 'كضيف') + ') · اضغط للتحليل</div>' +
+        '<div class="text-[11px] sm:text-xs text-gray-500 mt-2">فوز ' + esc(m.teamA) + ' متوقع (' + (m.venue === 'home' ? 'كمضيف' : 'كضيف') + ')' +
+          (m.probs ? ' · تعادل ' + m.probs.draw + '%' : '') +
+          (hasNews ? ' · 📰 أخبار مؤثرة' : '') +
+          ' · اضغط للتحليل</div>' +
       '</div>'
     );
   }
@@ -403,8 +419,8 @@
     // bind clicks
     listEl.querySelectorAll('.match-card').forEach(function(card){
       card.addEventListener('click', function(){
-        var id = parseInt(card.getAttribute('data-id'), 10);
-        openModal(MATCHES[id]);
+        var m = findMatch(card.getAttribute('data-id'));
+        if(m) openModal(m);
       });
     });
   }
@@ -414,30 +430,44 @@
   var content = document.getElementById('modalContent');
 
   function openModal(m){
+    var a = m.analysis || {};
+    var newsCard = a.news
+      ? '<div class="glass rounded-xl p-4">' +
+          '<div class="text-amber-400 text-xs font-bold mb-1">📰 أخبار الفريقين (آخر 72 ساعة)</div>' +
+          '<div class="text-gray-200 text-sm" style="white-space:pre-line">' + esc(a.news) + '</div>' +
+          '<div class="text-[10px] text-gray-500 mt-2">دخلت هذه الأخبار في الحساب بتأثير محدود (حتى ‎−10%‎ من هجوم الفريق). تصنيفها آلي من العناوين وقد لا يكون دقيقًا.</div>' +
+        '</div>'
+      : '';
+    var threeWay = m.probs
+      ? '<div class="text-xs text-gray-400 mb-6">فوز ' + esc(m.homeTeam) + ' ' + m.probs.home + '% · تعادل ' + m.probs.draw + '% · فوز ' + esc(m.awayTeam) + ' ' + m.probs.away + '%' +
+          (m.confidence ? ' · ' + CONF_AR[m.confidence] : '') + '</div>'
+      : '';
     content.innerHTML =
       '<div class="pl-8">' +
-        '<div class="text-xs text-gray-400 mb-1">' + m.league + ' · ' + m.country + '</div>' +
-        '<h3 class="text-white font-extrabold text-xl mb-1">' + m.teamA + ' <span class="text-gray-500 font-normal">ضد</span> ' + m.teamB + '</h3>' +
-        '<div class="text-sm text-gray-400 mb-4">' + m.day + ' · ' + m.time + '</div>' +
-        '<div class="flex items-center gap-3 mb-6">' +
+        '<div class="text-xs text-gray-400 mb-1">' + esc(m.league) + ' · ' + esc(m.country) + '</div>' +
+        '<h3 class="text-white font-extrabold text-xl mb-1">' + esc(m.teamA) + ' <span class="text-gray-500 font-normal">ضد</span> ' + esc(m.teamB) + '</h3>' +
+        '<div class="text-sm text-gray-400 mb-4">' + esc(m.day) + ' · ' + esc(m.time) + '</div>' +
+        '<div class="flex items-center gap-3 mb-2">' +
           '<div class="meter-track flex-1"><div class="meter-fill ' + fillClass(m.prob) + '" style="width:' + m.prob + '%"></div></div>' +
           '<span class="badge-' + probTier(m.prob) + ' text-sm font-bold px-3 py-1 rounded-full">' + m.prob + '%</span>' +
         '</div>' +
+        (threeWay || '<div class="mb-4"></div>') +
         '<div class="space-y-4">' +
           '<div class="glass rounded-xl p-4">' +
-            '<div class="text-emerald-400 text-xs font-bold mb-1">الفورمة الأخيرة</div>' +
-            '<div class="text-gray-200 text-sm">' + m.analysis.form + '</div>' +
+            '<div class="text-emerald-400 text-xs font-bold mb-1">الترتيب والفورمة الأخيرة</div>' +
+            '<div class="text-gray-200 text-sm">' + esc(a.form) + '</div>' +
           '</div>' +
           '<div class="glass rounded-xl p-4">' +
             '<div class="text-emerald-400 text-xs font-bold mb-1">الأداء كمضيف / كضيف</div>' +
-            '<div class="text-gray-200 text-sm">' + m.analysis.side + '</div>' +
+            '<div class="text-gray-200 text-sm">' + esc(a.side) + '</div>' +
           '</div>' +
           '<div class="glass rounded-xl p-4">' +
-            '<div class="text-emerald-400 text-xs font-bold mb-1">فارق الأهداف هذا الموسم</div>' +
-            '<div class="text-gray-200 text-sm">' + m.analysis.goals + '</div>' +
+            '<div class="text-emerald-400 text-xs font-bold mb-1">الأهداف المتوقعة والاحتمالات</div>' +
+            '<div class="text-gray-200 text-sm">' + esc(a.goals) + '</div>' +
           '</div>' +
+          newsCard +
         '</div>' +
-        '<div class="text-[10px] text-gray-600 mt-5">النسبة محسوبة بنموذج داخلي من بيانات الفورمة والترتيب — وليست توقعًا من جهة مراهنات.</div>' +
+        '<div class="text-[10px] text-gray-600 mt-5">النسبة محسوبة بنموذج داخلي (توزيع بواسون من الترتيب والأهداف والفورمة والأخبار) — وليست توقعًا من جهة مراهنات.</div>' +
       '</div>';
     overlay.classList.remove('hidden');
     overlay.classList.add('flex');
@@ -509,9 +539,17 @@
     fetch('data/matches.json', { cache: 'no-store' })
       .then(function(res){ if(!res.ok) throw new Error('no data file'); return res.json(); })
       .then(function(json){
-        if(json && Array.isArray(json.matches) && json.matches.length){
+        // ملف حيّ صالح (حتى لو خالٍ من المباريات، مثل فترة التوقف الدولي): لا نعرض بيانات تجريبية مكانه
+        if(json && Array.isArray(json.matches)){
           MATCHES = json.matches;
-          MATCHES.forEach(function(m, i){ if(m.id === undefined) m.id = i; });
+          var riyadhDay = new Intl.DateTimeFormat('en-CA', { timeZone:'Asia/Riyadh' });
+          var todayKey = Date.parse(riyadhDay.format(new Date()));
+          MATCHES.forEach(function(m, i){
+            if(m.id === undefined) m.id = i;
+            if(m.kickoffISO){
+              m._off = Math.round((Date.parse(riyadhDay.format(new Date(m.kickoffISO))) - todayKey) / 86400000);
+            }
+          });
           if(json.generatedAt){
             var updated = new Date(json.generatedAt);
             var fmt = new Intl.DateTimeFormat('ar', { hour:'2-digit', minute:'2-digit', day:'numeric', month:'short', timeZone:'Asia/Riyadh' });
@@ -520,7 +558,7 @@
             setSourceNote('بيانات مباشرة من الوكيل التلقائي');
           }
         } else {
-          throw new Error('empty data file');
+          throw new Error('invalid data file');
         }
         renderMatches();
       })

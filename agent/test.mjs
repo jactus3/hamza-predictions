@@ -1,0 +1,162 @@
+// agent/test.mjs — اختبارات بلا شبكة:  node --test agent/test.mjs
+import test from "node:test";
+import assert from "node:assert/strict";
+
+import { leagueAverages, outcomeProbabilities, predict, formFromResults } from "./lib/model.mjs";
+import { scoreHeadlines, parseRss, searchName } from "./lib/news.mjs";
+import { buildMatch, resultsByTeam } from "./lib/build.mjs";
+import { mapFixtures, mapStandings, mapResults } from "./providers/footballdata.mjs";
+import { tableFromResults } from "./providers/sportsdb.mjs";
+import { mapStandingEntry } from "./providers/espn.mjs";
+
+const row = (teamId, name, played, points, gf, ga) => ({
+  teamId, name, newsName: name, position: teamId, played, points, gf, ga, gd: gf - ga,
+  home: { played: Math.ceil(played / 2), gf: Math.round(gf * 0.55), ga: Math.round(ga * 0.45) },
+  away: { played: Math.floor(played / 2), gf: Math.round(gf * 0.45), ga: Math.round(ga * 0.55) },
+});
+
+test("الاحتمالات الثلاثية مجموعها 1 والقوي أفضل من الضعيف", () => {
+  const p = outcomeProbabilities(2.2, 0.7);
+  assert.ok(Math.abs(p.home + p.draw + p.away - 1) < 1e-9);
+  assert.ok(p.home > p.draw && p.draw > p.away);
+});
+
+test("النموذج: فريقان متكافئان → المضيف أفضل قليلًا والتعادل ظاهر", () => {
+  const table = [row(1, "A", 10, 15, 14, 10), row(2, "B", 10, 15, 14, 10)];
+  const lg = leagueAverages(table);
+  const r = predict(table[0], table[1], lg);
+  assert.equal(r.pct.home + r.pct.draw + r.pct.away, 100);
+  assert.ok(r.pct.home > r.pct.away);
+  assert.ok(r.pct.draw >= 20);
+});
+
+test("فريق بلا صف في الترتيب لا يكسر الحساب", () => {
+  const lg = leagueAverages([]);
+  const r = predict(null, null, lg);
+  assert.equal(r.pct.home + r.pct.draw + r.pct.away, 100);
+  assert.equal(r.minPlayed, 0);
+});
+
+test("الأخبار السلبية تخفّض نسبة الفريق وتزيد خصمه", () => {
+  const table = [row(1, "A", 10, 20, 18, 8), row(2, "B", 10, 15, 14, 10)];
+  const lg = leagueAverages(table);
+  const base = predict(table[0], table[1], lg);
+  const hurt = predict(table[0], table[1], lg, { homeNews: { atk: 0.9, def: 1.06 } });
+  assert.ok(hurt.pct.home < base.pct.home);
+  assert.ok(hurt.pct.away > base.pct.away);
+});
+
+test("الفورمة: سلسلة انتصارات ترفع المعامل وسقفها محدود", () => {
+  const good = formFromResults(["W", "W", "W", "W", "W"], 1.0);
+  const bad = formFromResults(["L", "L", "L", "L", "L"], 2.5);
+  assert.ok(good.mult > 1 && good.mult <= 1.07);
+  assert.ok(bad.mult < 1 && bad.mult >= 0.93);
+  assert.equal(formFromResults(["W", "L"], 1).mult, 1);
+});
+
+test("تحليل الأخبار: إصابة نجم تُحتسب، وعنوان قديم أو لفريق آخر يُتجاهل", () => {
+  const now = Date.parse("2026-09-20T12:00:00Z");
+  const hoursAgo = (h) => new Date(now - h * 3600e3).toUTCString();
+  const rss = `<rss><channel>
+    <item><title>Arsenal star ruled out for a month with hamstring injury - BBC</title><source>BBC</source><pubDate>${hoursAgo(5)}</pubDate></item>
+    <item><title>Arsenal star ruled out for a month with hamstring injury - Sky</title><source>Sky</source><pubDate>${hoursAgo(6)}</pubDate></item>
+    <item><title>Chelsea captain doubtful for weekend - Sky</title><source>Sky</source><pubDate>${hoursAgo(7)}</pubDate></item>
+    <item><title>Arsenal midfielder suspended - Old</title><source>Old</source><pubDate>${hoursAgo(200)}</pubDate></item>
+  </channel></rss>`;
+  const s = scoreHeadlines(parseRss(rss), "Arsenal FC", now);
+  assert.equal(s.headlines.length, 1); // المكرَّر، الفريق الآخر، والقديم كلها مستبعدة
+  assert.equal(s.impact, 1.5);
+  assert.ok(s.atk < 1 && s.atk >= 0.9);
+  assert.equal(searchName("Manchester City FC"), "Manchester City");
+});
+
+test("الأخبار: عناوين عن الخصم أو عبارات مضللة لا تُنسب للفريق (حالات حقيقية رُصدت)", () => {
+  const now = Date.parse("2026-09-20T12:00:00Z");
+  const t = new Date(now - 3600e3).toUTCString();
+  const mk = (title) => parseRss(`<item><title>${title} - Src</title><source>Src</source><pubDate>${t}</pubDate></item>`);
+  // عن الخصم: الفريق يظهر بعد العبارة
+  assert.equal(scoreHeadlines(mk("Mamelodi Sundowns have full squad available for Al Ahli Intercontinental Cup tie"), "Al Ahli", now).headlines.length, 0);
+  assert.equal(scoreHeadlines(mk("Sundowns midfielder passed fit ahead of Al Ahli clash"), "Al Ahli", now).headlines.length, 0);
+  // "cut out for" ليست غيابًا
+  assert.equal(scoreHeadlines(mk("Williams: Sundowns work cut out for Al Ahli"), "Al Ahli", now).headlines.length, 0);
+  // الفريق فاعل الخبر
+  assert.equal(scoreHeadlines(mk("ZED's Ahmed El Soghairy faces up to two months out with knee injury"), "ZED", now).headlines.length, 1);
+  // "ضربة لـ"
+  assert.equal(scoreHeadlines(mk("Injury blow for Arsenal as striker misses the derby"), "Arsenal", now).headlines.length, 1);
+  // عودة لاعب = إيجابي يقلّل الأثر
+  const back = scoreHeadlines(mk("Arsenal midfielder returns from injury ahead of Brighton trip"), "Arsenal", now);
+  assert.equal(back.impact, 0);
+});
+
+test("football-data: TIMED مقبولة، والفرق غير المحدّدة مستبعدة", () => {
+  const fx = mapFixtures([
+    { id: 1, utcDate: "2026-09-21T18:00:00Z", status: "TIMED", homeTeam: { id: 10, name: "X" }, awayTeam: { id: 11, name: "Y" } },
+    { id: 2, utcDate: "2026-09-21T18:00:00Z", status: "SCHEDULED", homeTeam: { id: 12, name: "Z" }, awayTeam: { id: 13, name: "W" } },
+    { id: 3, utcDate: "2026-09-21T18:00:00Z", status: "SCHEDULED", homeTeam: { id: null }, awayTeam: { id: 13, name: "W" } },
+    { id: 4, utcDate: "2026-09-19T18:00:00Z", status: "FINISHED", homeTeam: { id: 10, name: "X" }, awayTeam: { id: 11, name: "Y" } },
+  ]);
+  assert.deepEqual(fx.map((f) => f.id), [1, 2]);
+});
+
+test("football-data: دمج مجموعات البطولة + أداء المضيف/الضيف", () => {
+  const t = (id, name, p, pts, gf, ga) => ({ position: 1, team: { id, name }, playedGames: p, points: pts, goalsFor: gf, goalsAgainst: ga, goalDifference: gf - ga });
+  const table = mapStandings([
+    { type: "TOTAL", group: "A", table: [t(1, "A1", 3, 7, 5, 1), t(2, "A2", 3, 4, 3, 3)] },
+    { type: "TOTAL", group: "B", table: [t(3, "B1", 3, 9, 8, 0)] },
+    { type: "HOME", group: "A", table: [t(1, "A1", 2, 6, 4, 0)] },
+  ]);
+  assert.equal(table.length, 3); // المجموعتان معًا
+  assert.equal(table.find((r) => r.teamId === 1).home.gf, 4);
+  assert.equal(table.find((r) => r.teamId === 3).home, null);
+});
+
+test("نتائج → فورمة بالترتيب الأحدث أولًا", () => {
+  const res = mapResults([
+    { status: "FINISHED", utcDate: "2026-09-01T00:00:00Z", homeTeam: { id: 1 }, awayTeam: { id: 2 }, score: { fullTime: { home: 2, away: 0 } } },
+    { status: "FINISHED", utcDate: "2026-09-08T00:00:00Z", homeTeam: { id: 2 }, awayTeam: { id: 1 }, score: { fullTime: { home: 1, away: 1 } } },
+    { status: "FINISHED", utcDate: "2026-09-15T00:00:00Z", homeTeam: { id: 1 }, awayTeam: { id: 3 }, score: { fullTime: { home: 0, away: 1 } } },
+  ]);
+  assert.deepEqual(resultsByTeam(res).get(1), ["L", "D", "W"]);
+});
+
+test("TheSportsDB: بناء الترتيب من النتائج", () => {
+  const names = new Map([["1", "A"], ["2", "B"]]);
+  const table = tableFromResults(
+    [{ homeId: "1", awayId: "2", hg: 2, ag: 0 }, { homeId: "2", awayId: "1", hg: 1, ag: 1 }],
+    names,
+  );
+  assert.equal(table[0].name, "A");
+  assert.equal(table[0].points, 4);
+  assert.equal(table[0].position, 1);
+  assert.equal(table[1].away.played, 1);
+});
+
+test("ESPN: قراءة سجل الترتيب", () => {
+  const r = mapStandingEntry(
+    { records: [{ stats: [{ name: "rank", value: 1 }, { name: "gamesPlayed", value: 7 }, { name: "points", value: 18 }, { name: "pointsFor", value: 23 }, { name: "pointsAgainst", value: 5 }, { name: "homeGamesPlayed", value: 3 }, { name: "homePointsFor", value: 7 }] }] },
+    "929",
+    "Al Hilal",
+  );
+  assert.equal(r.played, 7);
+  assert.equal(r.gf, 23);
+  assert.equal(r.home.gf, 7);
+});
+
+test("buildMatch: سجل كامل متوافق مع الواجهة", () => {
+  const table = [row(1, "Strong FC", 10, 25, 25, 6), row(2, "Weak FC", 10, 5, 6, 22)];
+  const m = buildMatch({
+    fx: { id: 99, utcDate: "2026-09-21T18:00:00Z", home: { id: 2, name: "Weak FC", newsName: "Weak" }, away: { id: 1, name: "Strong FC", newsName: "Strong" } },
+    comp: { label: "دوري", country: "بلد" },
+    rowById: new Map(table.map((r) => [String(r.teamId), r])),
+    lg: leagueAverages(table),
+    formResults: { get: () => [] },
+    newsByName: new Map(),
+    partialData: false,
+  });
+  assert.equal(m.teamA, "Strong FC"); // الأقوى هو المرشّح حتى لو ضيف
+  assert.equal(m.venue, "away");
+  assert.ok(m.prob > 50 && m.prob < 100);
+  assert.equal(m.probs.home + m.probs.draw + m.probs.away, 100);
+  assert.equal(m.confidence, "high");
+  for (const k of ["form", "side", "goals"]) assert.ok(typeof m.analysis[k] === "string" && m.analysis[k].length > 10);
+});
