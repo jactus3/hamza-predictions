@@ -90,7 +90,20 @@ export function createProvider({ get = getJson } = {}) {
         return mapStandingEntry(entry, id, name);
       });
 
-      return { fixtures, table, results: [], partial: false };
+      let prevTable = null;
+      if (comp.usePrior) {
+        try {
+          const prev = await get(`${league}/seasons/${seasonYear(now) - 1}/types/1/groups/1/standings/0`);
+          prevTable = await mapLimit(prev.standings ?? [], 5, async (entry) => {
+            const { id, name } = await teamName(entry.team.$ref);
+            return mapStandingEntry(entry, id, name);
+          });
+        } catch (err) {
+          console.warn(`   (تعذّر جلب جدول الموسم السابق: ${err.message})`);
+        }
+      }
+
+      return { fixtures, table, results: [], prevTable, partial: false };
     },
   };
 }

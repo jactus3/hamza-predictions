@@ -16,7 +16,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildMatch, resultsByTeam } from "./lib/build.mjs";
-import { leagueAverages } from "./lib/model.mjs";
+import { buildPriors, leagueAverages } from "./lib/model.mjs";
 import { fetchTeamNews, NEUTRAL_NEWS } from "./lib/news.mjs";
 import { sleep } from "./lib/http.mjs";
 import { createProvider as footballData } from "./providers/footballdata.mjs";
@@ -93,7 +93,18 @@ async function run() {
   // ---- 3) الحساب ----
   const matches = [];
   for (const { comp, data } of loaded) {
+    // مستوى الموسم السابق لكل فريق (للدوريات المحلية فقط)؛ الفرق الصاعدة تأخذ قيمة افتراضية أضعف
+    const priorOf = data.prevTable?.length ? buildPriors(data.prevTable) : null;
+    if (priorOf) data.table.forEach((r) => { r.prior = priorOf(r.teamId); });
     const rowById = new Map(data.table.map((r) => [String(r.teamId), r]));
+    // فريق يلعب لكن غير موجود في الجدول بعد (مثلًا أول جولة): صف فارغ يحمل مستواه السابق
+    for (const fx of data.fixtures) {
+      for (const t of [fx.home, fx.away]) {
+        if (priorOf && !rowById.has(String(t.id))) {
+          rowById.set(String(t.id), { teamId: t.id, name: t.name, newsName: t.newsName, position: 0, played: 0, points: 0, gf: 0, ga: 0, gd: 0, home: null, away: null, prior: priorOf(t.id) });
+        }
+      }
+    }
     const lg = leagueAverages(data.table);
     const formResults = resultsByTeam(data.results);
     const byId = new Map([...formResults].map(([id, v]) => [String(id), v]));

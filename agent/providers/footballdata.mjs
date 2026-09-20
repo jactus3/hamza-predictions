@@ -86,16 +86,29 @@ export function createProvider(token, { get = getJson, wait = sleep } = {}) {
       const table = mapStandings(st.standings ?? []);
       await wait(DELAY_BETWEEN_CALLS_MS);
 
+      // جدول الموسم السابق: مستوى مبدئي للفرق (يحسّن التوقع كثيرًا في أول الموسم — انظر agent/backtest.mjs)
+      let prevTable = null;
+      if (comp.usePrior && st.season?.startDate) {
+        try {
+          const prevYear = Number(st.season.startDate.slice(0, 4)) - 1;
+          const prev = await call(`/competitions/${comp.code}/standings`, { season: prevYear });
+          prevTable = mapStandings(prev.standings ?? []);
+        } catch (err) {
+          console.warn(`   (تعذّر جلب جدول الموسم السابق: ${err.message})`);
+        }
+        await wait(DELAY_BETWEEN_CALLS_MS);
+      }
+
       let results = [];
       try {
         const fin = await call(`/competitions/${comp.code}/matches`, { status: "FINISHED" });
         results = mapResults(fin.matches ?? []);
       } catch (err) {
-        console.warn(`   (تعذّر جلب النتائج السابقة لحساب الفورمة: ${err.message})`);
+        console.warn(`   (تعذّر جلب النتائج السابقة لعرض الفورمة: ${err.message})`);
       }
       await wait(DELAY_BETWEEN_CALLS_MS);
 
-      return { fixtures, table, results, partial: false };
+      return { fixtures, table, results, prevTable, partial: false };
     },
   };
 }

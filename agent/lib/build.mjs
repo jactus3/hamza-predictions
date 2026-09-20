@@ -73,7 +73,8 @@ export function buildMatch({ fx, comp, rowById, lg, formResults, newsByName, par
 
   const goalsLine =
     `الأهداف المتوقعة: ${fx.home.name} ${p.lamHome.toFixed(1)} – ${p.lamAway.toFixed(1)} ${fx.away.name}. ` +
-    `احتمال فوز ${fx.home.name} ${p.pct.home}% · تعادل ${p.pct.draw}% · فوز ${fx.away.name} ${p.pct.away}%.`;
+    `احتمال فوز ${fx.home.name} ${p.pct.home}% · تعادل ${p.pct.draw}% · فوز ${fx.away.name} ${p.pct.away}%.` +
+    (p.hasPrior && p.minPlayed < 12 ? " (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)" : "");
 
   const sideLine =
     [splitLine(fx.home.name, homeRow?.home, "على أرضه"), splitLine(fx.away.name, awayRow?.away, "خارج أرضه")]
@@ -95,7 +96,7 @@ export function buildMatch({ fx, comp, rowById, lg, formResults, newsByName, par
     homeTeam: fx.home.name,
     awayTeam: fx.away.name,
     xg: { home: +p.lamHome.toFixed(2), away: +p.lamAway.toFixed(2) },
-    confidence: confidenceLevel(p.minPlayed, partialData),
+    confidence: confidenceLevel(p.minPlayed, partialData, p.hasPrior),
     analysis: {
       form: `${teamLine(homeRow, fx.home.name, homeForm, total)} ${teamLine(awayRow, fx.away.name, awayForm, total)}`,
       side: sideLine,

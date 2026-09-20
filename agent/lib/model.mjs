@@ -4,7 +4,36 @@
 // ينتج احتمالات ثلاثية: فوز المضيف / تعادل / فوز الضيف.
 // عوامل الفورمة والأخبار تُطبَّق كتعديلات صغيرة ومحدودة السقف على الأهداف المتوقعة.
 
-const PRIOR_GAMES = 5; // عدد مباريات "افتراضية" بمتوسط الدوري لتخفيف ضجيج العيّنات الصغيرة
+// معاملات النموذج (قابلة للتعديل لأغراض الـbacktest: agent/backtest.mjs)
+// القيم مضبوطة بـbacktest على موسم 2024-25 ومُقيَّمة على 2025-26 (5 دوريات، 1752 مباراة)
+export const PARAMS = {
+  priorGames: 5, // مباريات "افتراضية" بمتوسط الدوري لفريق بلا مستوى سابق (تخفيف ضجيج العيّنات الصغيرة)
+  priorGamesWithPrior: 16, // مباريات افتراضية بمستوى الموسم السابق للفريق (وزنه الأكبر في أول الموسم)
+  prevWeight: 0.85, // وزن مستوى الموسم السابق مقابل متوسط الدوري داخل ذلك المستوى
+  promoAttack: 0.85, // فريق صاعد (غير موجود في جدول الموسم السابق): هجوم أضعف من المتوسط
+  promoDefense: 1.15, // ودفاع أضعف
+  formCoef: 0, // الفورمة لم تُحسّن الدقة في الـbacktest فعُطّلت (0 = تعطيل)؛ تبقى النتائج تُعرض في التحليل
+  formCap: 0.07, // أقصى تأثير للفورمة إن فُعّلت (±7%)
+  spread: 1, // <1 يقلّص الفروق بين الفرق
+};
+
+// مستوى مبدئي لكل فريق من جدول الموسم السابق: ({teamId, played, gf, ga}[]) → (teamId) => {attack, defense}
+export function buildPriors(prevTable) {
+  const games = prevTable.reduce((s, r) => s + r.played, 0);
+  const avg = games ? prevTable.reduce((s, r) => s + r.gf, 0) / games : 0;
+  const w = PARAMS.prevWeight;
+  const map = new Map();
+  if (avg > 0) {
+    for (const r of prevTable) {
+      if (!r.played) continue;
+      map.set(String(r.teamId), {
+        attack: w * (r.gf / r.played / avg) + (1 - w),
+        defense: w * (r.ga / r.played / avg) + (1 - w),
+      });
+    }
+  }
+  return (teamId) => map.get(String(teamId)) ?? { attack: PARAMS.promoAttack, defense: PARAMS.promoDefense };
+}
 const DEFAULT_AVG_GOALS = 1.35; // أهداف الفريق في المباراة إن لم تتوفر بيانات
 const DEFAULT_HOME_FACTOR = 1.15;
 const DEFAULT_AWAY_FACTOR = 0.87;
@@ -48,9 +77,13 @@ export function teamRates(row, avgGoals) {
   const played = row?.played ?? 0;
   const gf = row?.gf ?? 0;
   const ga = row?.ga ?? 0;
+  // مستوى مبدئي للفريق (نسبة إلى متوسط الدوري) من الموسم السابق إن وُجد، وإلا المتوسط نفسه
+  const priorAtt = row?.prior?.attack ?? 1;
+  const priorDef = row?.prior?.defense ?? 1;
+  const k = row?.prior ? PARAMS.priorGamesWithPrior : PARAMS.priorGames;
   return {
-    attack: (gf + PRIOR_GAMES * avgGoals) / (played + PRIOR_GAMES) / avgGoals,
-    defense: (ga + PRIOR_GAMES * avgGoals) / (played + PRIOR_GAMES) / avgGoals,
+    attack: ((gf + k * avgGoals * priorAtt) / (played + k) / avgGoals) ** PARAMS.spread,
+    defense: ((ga + k * avgGoals * priorDef) / (played + k) / avgGoals) ** PARAMS.spread,
     played,
   };
 }
@@ -62,7 +95,8 @@ export function formFromResults(results, seasonPpg) {
   const pts = last.reduce((s, r) => s + (r === "W" ? 3 : r === "D" ? 1 : 0), 0);
   const ppg = pts / last.length;
   const base = seasonPpg ?? 1.35;
-  return { letters: last, ppg, mult: clamp(Math.exp(0.08 * (ppg - base)), 0.93, 1.07) };
+  const mult = clamp(Math.exp(PARAMS.formCoef * (ppg - base)), 1 - PARAMS.formCap, 1 + PARAMS.formCap);
+  return { letters: last, ppg, mult };
 }
 
 function poissonPmf(lambda) {
@@ -118,11 +152,19 @@ export function predict(homeRow, awayRow, lg, modifiers = {}) {
   const away = Math.round(p.away * 100);
   const draw = Math.max(0, 100 - home - away);
 
-  return { lamHome, lamAway, pct: { home, draw, away }, minPlayed: Math.min(h.played, a.played) };
+  return {
+    lamHome,
+    lamAway,
+    pct: { home, draw, away },
+    minPlayed: Math.min(h.played, a.played),
+    hasPrior: Boolean(homeRow?.prior && awayRow?.prior),
+  };
 }
 
-export function confidenceLevel(minPlayed, partialData) {
-  if (partialData || minPlayed < 4) return "low";
-  if (minPlayed < 8) return "medium";
-  return "high";
+// مع مستوى الموسم السابق يصبح التقدير جيدًا حتى في أول الموسم (انظر الـbacktest)، فترتفع الثقة
+export function confidenceLevel(minPlayed, partialData, hasPrior = false) {
+  if (partialData) return "low";
+  if (hasPrior) return minPlayed < 4 ? "medium" : "high";
+  if (minPlayed < 4) return "low";
+  return minPlayed < 8 ? "medium" : "high";
 }

@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 */6 * * *" # كل 6 ساعات (أخبار الإصابات تتغيّر أسرع من 12 ساعة)
   workflow_dispatch: {} # تشغيل يدوي من تبويب Actions
+  push: # أي تعديل على الوكيل يُجرَّب فورًا بدل انتظار الجدولة (تحديث data/ لا يُعيد التشغيل)
+    branches: [main]
+    paths: ["agent/**", ".github/workflows/update-predictions.yml"]
 
 permissions:
   contents: write

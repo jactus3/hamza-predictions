@@ -2,7 +2,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { leagueAverages, outcomeProbabilities, predict, formFromResults } from "./lib/model.mjs";
+import { PARAMS, buildPriors, confidenceLevel, leagueAverages, outcomeProbabilities, predict, formFromResults } from "./lib/model.mjs";
 import { scoreHeadlines, parseRss, searchName } from "./lib/news.mjs";
 import { buildMatch, resultsByTeam } from "./lib/build.mjs";
 import { mapFixtures, mapStandings, mapResults } from "./providers/footballdata.mjs";
@@ -49,8 +49,17 @@ test("الأخبار السلبية تخفّض نسبة الفريق وتزيد 
 test("الفورمة: سلسلة انتصارات ترفع المعامل وسقفها محدود", () => {
   const good = formFromResults(["W", "W", "W", "W", "W"], 1.0);
   const bad = formFromResults(["L", "L", "L", "L", "L"], 2.5);
-  assert.ok(good.mult > 1 && good.mult <= 1.07);
-  assert.ok(bad.mult < 1 && bad.mult >= 0.93);
+  // الفورمة معطّلة في الإنتاج (لم تُحسّن الدقة في الـbacktest): المعامل محايد
+  assert.equal(good.mult, 1);
+  assert.equal(bad.mult, 1);
+  // ومنطقها سليم عند تفعيلها
+  const saved = PARAMS.formCoef;
+  PARAMS.formCoef = 0.08;
+  const on = formFromResults(["W", "W", "W", "W", "W"], 1.0);
+  const off = formFromResults(["L", "L", "L", "L", "L"], 2.5);
+  PARAMS.formCoef = saved;
+  assert.ok(on.mult > 1 && on.mult <= 1.07);
+  assert.ok(off.mult < 1 && off.mult >= 0.929); // سقف السفلي 0.93 (هامش صغير لدقة الفاصلة العائمة)
   assert.equal(formFromResults(["W", "L"], 1).mult, 1);
 });
 
@@ -159,4 +168,34 @@ test("buildMatch: سجل كامل متوافق مع الواجهة", () => {
   assert.equal(m.probs.home + m.probs.draw + m.probs.away, 100);
   assert.equal(m.confidence, "high");
   for (const k of ["form", "side", "goals"]) assert.ok(typeof m.analysis[k] === "string" && m.analysis[k].length > 10);
+});
+
+test("المستوى المبدئي من الموسم السابق: يفرّق بين فريق قوي وضعيف، والصاعد يبدأ أضعف من المتوسط", () => {
+  const prev = [
+    { teamId: 1, played: 38, gf: 80, ga: 30 }, // قوي
+    { teamId: 2, played: 38, gf: 30, ga: 70 }, // ضعيف
+    { teamId: 3, played: 38, gf: 50, ga: 50 },
+  ];
+  const priorOf = buildPriors(prev);
+  assert.ok(priorOf(1).attack > 1 && priorOf(1).defense < 1);
+  assert.ok(priorOf(2).attack < 1 && priorOf(2).defense > 1);
+  assert.equal(priorOf(99).attack, PARAMS.promoAttack); // صاعد
+  assert.ok(priorOf(99).attack < 1 && priorOf(99).defense > 1);
+});
+
+test("بداية الموسم بلا مباريات: المستوى السابق وحده يحدد التوقع (وبدونه التوقع محايد)", () => {
+  const empty = (id, prior) => ({ teamId: id, played: 0, points: 0, gf: 0, ga: 0, ...(prior ? { prior } : {}) });
+  const lg = leagueAverages([]);
+  const neutral = predict(empty(1), empty(2), lg);
+  const withPrior = predict(empty(1, { attack: 1.4, defense: 0.7 }), empty(2, { attack: 0.8, defense: 1.2 }), lg);
+  assert.ok(withPrior.pct.home > neutral.pct.home + 10);
+  assert.equal(withPrior.hasPrior, true);
+  assert.equal(neutral.hasPrior, false);
+});
+
+test("مستوى الثقة: المستوى السابق يرفعها في أول الموسم، والبيانات الجزئية تبقيها منخفضة", () => {
+  assert.equal(confidenceLevel(1, false, false), "low");
+  assert.equal(confidenceLevel(1, false, true), "medium");
+  assert.equal(confidenceLevel(10, false, true), "high");
+  assert.equal(confidenceLevel(10, true, true), "low");
 });
