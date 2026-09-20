@@ -2,6 +2,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
+import { pickCurrentType } from "./providers/espn.mjs";
 import { PARAMS, buildPriors, confidenceLevel, leagueAverages, outcomeProbabilities, predict, formFromResults } from "./lib/model.mjs";
 import { scoreHeadlines, parseRss, searchName } from "./lib/news.mjs";
 import { buildMatch, resultsByTeam } from "./lib/build.mjs";
@@ -198,4 +199,21 @@ test("مستوى الثقة: المستوى السابق يرفعها في أو�
   assert.equal(confidenceLevel(1, false, true), "medium");
   assert.equal(confidenceLevel(10, false, true), "high");
   assert.equal(confidenceLevel(10, true, true), "low");
+});
+test("الأخبار: عناوين من رياضات أخرى تحمل اسم المدينة تُستبعد (حالة حقيقية: San Diego Padres)", () => {
+  const now = Date.parse("2026-09-20T12:00:00Z");
+  const t = new Date(now - 3600e3).toUTCString();
+  const rss = `<item><title>Padres news: San Diego pitcher gets big injury update amid playoff push - MLB.com</title><source>MLB</source><pubDate>${t}</pubDate></item>`;
+  assert.equal(scoreHeadlines(parseRss(rss), "San Diego FC", now).headlines.length, 0);
+});
+
+test("ESPN: اختيار مرحلة الموسم الحالية (تحتوي اليوم، وإلا آخر ما بدأ)", () => {
+  const types = [
+    { id: "1", startDate: "2026-01-01T00:00Z", endDate: "2026-05-30T00:00Z", groups: ["1"] }, // Apertura منتهية
+    { id: "6", startDate: "2026-07-01T00:00Z", endDate: "2026-12-15T00:00Z", groups: ["1", "2"] }, // Clausura جارية
+    { id: "9", startDate: "2026-12-16T00:00Z", endDate: "2026-12-30T00:00Z", groups: [] }, // بلا مجموعات
+  ];
+  assert.equal(pickCurrentType(types, new Date("2026-09-20T00:00Z")).id, "6");
+  assert.equal(pickCurrentType(types, new Date("2026-06-15T00:00Z")).id, "1"); // بين المرحلتين: آخر ما بدأ
+  assert.equal(pickCurrentType([], new Date()), null);
 });

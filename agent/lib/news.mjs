@@ -14,6 +14,9 @@ const KEY_ROLE = /\b(star|captain|key|top scorer|striker|goalkeeper|keeper|talis
 // "ضربة/دفعة لـ<الفريق>": الفريق يأتي بعد الكلمة المفتاحية لكنه هو المعنيّ بالخبر
 const BLOW_FOR = /\b(blow|boost|setback|worry|concern|scare|crisis)\s+(?:for|at|to)\s+$/i;
 
+// أسماء المدن تتكرر في رياضات أخرى (San Diego Padres، Miami Heat...): نستبعد العناوين الرياضية غير الكروية
+const OTHER_SPORTS = /\b(baseball|pitcher|mlb|nba|nfl|nhl|wnba|quarterback|touchdown|basketball|hockey|innings?|batter|padres|dodgers|yankees|lakers|cricket|rugby|volleyball|handball)\b/i;
+
 const NAME_NOISE = /\b(FC|AFC|CF|SC|AC|AS|SK|BV|FK|CD|UD|SSC|1\.|RC|RCD)\b\.?/gi;
 
 function decodeEntities(s) {
@@ -53,6 +56,7 @@ export function scoreHeadlines(items, teamName, now = Date.now()) {
   for (const it of items) {
     if (!it.title || now - it.pubDate > MAX_AGE_MS) continue;
     const title = it.title.replace(/\s+-\s+[^-]+$/, ""); // إزالة اسم المصدر الملحق بالعنوان
+    if (OTHER_SPORTS.test(title)) continue;
     const lower = title.toLowerCase();
     const teamIdx = lower.indexOf(key);
     if (teamIdx === -1) continue;
@@ -90,7 +94,7 @@ export function scoreHeadlines(items, teamName, now = Date.now()) {
 export const NEUTRAL_NEWS = { impact: 0, atk: 1, def: 1, headlines: [] };
 
 export async function fetchTeamNews(teamName) {
-  const q = `"${searchName(teamName)}" (injury OR injured OR suspended OR "ruled out" OR doubtful OR sidelined OR returns) when:3d`;
+  const q = `"${searchName(teamName)}" (football OR soccer) (injury OR injured OR suspended OR "ruled out" OR doubtful OR sidelined OR returns) when:3d`;
   const url = `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
   const res = await fetch(url, { headers: { "User-Agent": UA } });
   if (!res.ok) throw new Error(`news ${res.status}`);

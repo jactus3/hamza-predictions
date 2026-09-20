@@ -1,16 +1,23 @@
 // agent/providers/espn.mjs
 //
-// واجهة ESPN غير الرسمية (sports.core.api.espn.com) — مجانية وبدون مفتاح، وتغطي الدوري السعودي (ksa.1)
-// بمباريات وترتيب كاملين. ملاحظة: الواجهة غير موثّقة رسميًا وقد تتغيّر، لذلك أي فشل هنا
-// يُسجَّل ولا يوقف باقي الدوريات (الوكيل يحتفظ ببيانات المباريات السابقة لهذا الدوري).
+// واجهة ESPN غير الرسمية (sports.core.api.espn.com) — مجانية وبدون مفتاح.
+// تغطي الدوري السعودي وبطولات محلية أخرى (تركيا، بلجيكا، اسكتلندا، اليونان، MLS، الأرجنتين، المكسيك، اليابان، الصين).
+// ملاحظة: الواجهة غير موثّقة رسميًا وقد تتغيّر، لذلك أي فشل هنا يُسجَّل ولا يوقف باقي الدوريات
+// (الوكيل يحتفظ ببيانات المباريات السابقة لهذا الدوري).
+//
+// اختلاف بنية الجداول بين البطولات (مجموعات/مراحل/سنة تقويمية) يُحَلّ باكتشاف تلقائي:
+//   • الموسم الحالي: المرحلة (type) التي يقع تاريخ اليوم داخل مدّتها، وتُدمج كل مجموعاتها.
+//   • الموسم السابق (للمستوى المبدئي): المرحلة الأكبر عيّنة (أكثر مباريات) بعد استبعاد الأدوار الإقصائية.
 
 import { getJson } from "../lib/http.mjs";
 
 const BASE = "https://sports.core.api.espn.com/v2/sports/soccer/leagues";
+const KNOCKOUT = /play-?off|knockout|final|relegation|promotion|championship/i;
 
 const https = (u) => u.replace(/^http:/, "https:");
 const yyyymmdd = (d) => d.toISOString().slice(0, 10).replaceAll("-", "");
 const idFromRef = (ref) => ref.match(/\/teams\/(\d+)/)?.[1];
+const num = (v) => (Number.isFinite(Number(v)) ? Number(v) : 0);
 
 async function mapLimit(items, limit, fn) {
   const out = new Array(items.length);
@@ -26,12 +33,7 @@ async function mapLimit(items, limit, fn) {
   return out;
 }
 
-// الموسم في ESPN يُسمّى بسنة البداية (2026 = موسم 2026-27)
-function seasonYear(now) {
-  return now.getUTCMonth() >= 6 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
-}
-
-export function mapStandingEntry(entry, teamId, name) {
+export function mapStandingEntry(entry, teamId, name, groupSize = null) {
   const stat = Object.fromEntries((entry.records?.[0]?.stats ?? []).map((s) => [s.name, s.value]));
   return {
     teamId,
@@ -43,12 +45,33 @@ export function mapStandingEntry(entry, teamId, name) {
     gf: stat.pointsFor ?? 0,
     ga: stat.pointsAgainst ?? 0,
     gd: stat.pointDifferential ?? 0,
+    groupSize,
     home: { played: stat.homeGamesPlayed ?? 0, gf: stat.homePointsFor ?? 0, ga: stat.homePointsAgainst ?? 0 },
     away: { played: stat.awayGamesPlayed ?? 0, gf: stat.awayPointsFor ?? 0, ga: stat.awayPointsAgainst ?? 0 },
   };
 }
 
-export function createProvider({ get = getJson } = {}) {
+// يختار مرحلة الموسم (type) المناسبة من قائمة مراحل مع تواريخها ومجموعاتها.
+// mode "current": المرحلة التي تحتوي اليوم؛ وإلا آخر مرحلة بدأت؛ وإلا الأولى.
+export function pickCurrentType(types, now) {
+  const withGroups = types.filter((t) => t.groups.length);
+  const t = now.getTime();
+  const inside = withGroups.filter((x) => Date.parse(x.startDate) <= t && t <= Date.parse(x.endDate));
+  const byStartDesc = (a, b) => Date.parse(b.startDate) - Date.parse(a.startDate);
+  if (inside.length) return inside.sort(byStartDesc)[0];
+  const started = withGroups.filter((x) => Date.parse(x.startDate) <= t).sort(byStartDesc);
+  return started[0] ?? withGroups[0] ?? null;
+}
+
+export function createProvider({ get = (u) => getJson(u, { retries: 1, retryDelayMs: 1500 }) } = {}) {
+  const tryGet = async (url) => {
+    try {
+      return await get(https(url));
+    } catch {
+      return null;
+    }
+  };
+
   return {
     async load(comp, { now, daysAhead }) {
       const league = `${BASE}/${comp.code}`;
@@ -62,9 +85,9 @@ export function createProvider({ get = getJson } = {}) {
         return { id, name: teamNames.get(id) };
       };
 
+      // ---- المباريات القادمة ----
       const to = new Date(now.getTime() + daysAhead * 86400000);
-      const list = await get(`${league}/events?dates=${yyyymmdd(now)}-${yyyymmdd(to)}&limit=100`);
-
+      const list = await get(`${league}/events?dates=${yyyymmdd(now)}-${yyyymmdd(to)}&limit=200`);
       const events = await mapLimit(list.items ?? [], 5, (it) => get(https(it.$ref)));
       const fixtures = [];
       for (const ev of events) {
@@ -82,22 +105,56 @@ export function createProvider({ get = getJson } = {}) {
           away: { id: a.id, name: a.name, newsName: a.name },
         });
       }
-      if (!fixtures.length) return { fixtures: [], table: [], results: [], partial: false };
+      if (!fixtures.length) return { fixtures: [], table: [], results: [], prevTable: null, partial: false };
 
-      const st = await get(`${league}/seasons/${seasonYear(now)}/types/1/groups/1/standings/0`);
-      const table = await mapLimit(st.standings ?? [], 5, async (entry) => {
-        const { id, name } = await teamName(entry.team.$ref);
-        return mapStandingEntry(entry, id, name);
-      });
+      // ---- اكتشاف الموسم والجداول ----
+      const info = await get(league);
+      const season = info.season ? await get(https(info.season.$ref)) : null;
+      const year = season?.year;
+      if (!year) throw new Error("تعذّر تحديد موسم البطولة في ESPN");
+
+      const loadTypes = async (y) => {
+        const typesList = await tryGet(`${league}/seasons/${y}/types?limit=50`);
+        const docs = await mapLimit(typesList?.items ?? [], 6, async (it) => {
+          const T = await tryGet(it.$ref);
+          if (!T?.groups?.$ref) return null;
+          const G = await tryGet(T.groups.$ref);
+          const groups = (G?.items ?? []).map((g) => g.$ref.match(/groups\/(\d+)/)?.[1]).filter(Boolean);
+          return groups.length ? { id: T.id, name: T.name ?? "", startDate: T.startDate, endDate: T.endDate, groups } : null;
+        });
+        return docs.filter(Boolean);
+      };
+
+      const loadTable = async (y, type) => {
+        const perGroup = await mapLimit(type.groups, 4, async (gid) => {
+          const st = await tryGet(`${league}/seasons/${y}/types/${type.id}/groups/${gid}/standings/0`);
+          const entries = st?.standings ?? [];
+          return Promise.all(
+            entries.map(async (entry) => {
+              const { id, name } = await teamName(entry.team.$ref);
+              return mapStandingEntry(entry, id, name, entries.length);
+            }),
+          );
+        });
+        const seen = new Set();
+        return perGroup.flat().filter((r) => (seen.has(r.teamId) ? false : seen.add(r.teamId)));
+      };
+
+      const curTypes = await loadTypes(year);
+      const curType = pickCurrentType(curTypes, now);
+      const table = curType ? await loadTable(year, curType) : [];
 
       let prevTable = null;
       if (comp.usePrior) {
         try {
-          const prev = await get(`${league}/seasons/${seasonYear(now) - 1}/types/1/groups/1/standings/0`);
-          prevTable = await mapLimit(prev.standings ?? [], 5, async (entry) => {
-            const { id, name } = await teamName(entry.team.$ref);
-            return mapStandingEntry(entry, id, name);
-          });
+          const prevTypes = (await loadTypes(year - 1)).filter((t) => !KNOCKOUT.test(t.name));
+          let best = null;
+          for (const t of prevTypes) {
+            const tbl = await loadTable(year - 1, t);
+            const games = tbl.reduce((s, r) => s + num(r.played), 0);
+            if (!best || games > best.games) best = { games, tbl };
+          }
+          prevTable = best?.tbl?.length ? best.tbl : null;
         } catch (err) {
           console.warn(`   (تعذّر جلب جدول الموسم السابق: ${err.message})`);
         }
