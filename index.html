@@ -209,9 +209,7 @@
       </button>
     </div>
 
-    <p class="text-center text-[11px] text-gray-600 mt-6">
-      بيانات تجريبية للعرض التوضيحي — وليست نتائج مباشرة أو توقعات حقيقية.
-    </p>
+    <p id="footerNote" class="text-center text-[11px] text-gray-600 mt-6"></p>
 
   </main>
 
@@ -534,6 +532,12 @@
   function setSourceNote(text){
     document.getElementById('dataSourceNote').textContent = text;
   }
+  // النص السفلي يعكس مصدر البيانات فعلًا: حيّة، أو تجريبية عند تعذّر تحميلها فقط
+  function setFooterNote(isLive){
+    document.getElementById('footerNote').textContent = isLive
+      ? 'التوقعات محسوبة آليًا بنموذج إحصائي من بيانات حقيقية (الترتيب والنتائج وأخبار الفرق) وتُحدَّث كل 6 ساعات. هي احتمالات وليست ضمانًا للنتائج.'
+      : 'بيانات تجريبية للعرض التوضيحي — وليست نتائج مباشرة أو توقعات حقيقية.';
+  }
 
   function loadLiveDataThenRender(){
     fetch('data/matches.json', { cache: 'no-store' })
@@ -557,6 +561,7 @@
           } else {
             setSourceNote('بيانات مباشرة من الوكيل التلقائي');
           }
+          setFooterNote(true);
         } else {
           throw new Error('invalid data file');
         }
@@ -565,6 +570,7 @@
       .catch(function(){
         MATCHES = SAMPLE_MATCHES;
         setSourceNote('تحليلات ذكية وتوقعات نسب الفوز (بيانات تجريبية للعرض)');
+        setFooterNote(false);
         renderMatches();
       });
   }
