@@ -371,7 +371,7 @@
       '<div class="match-card glass rounded-2xl p-4 sm:p-5" data-id="' + esc(m.id) + '">' +
         '<div class="flex items-start justify-between gap-3 mb-3">' +
           '<div>' +
-            '<div class="text-white font-bold text-base sm:text-lg">' + esc(m.teamA) + ' <span class="text-gray-500 font-normal">ضد</span> ' + esc(m.teamB) + '</div>' +
+            '<div class="text-white font-bold text-base sm:text-lg">' + esc(m.teamA) + ' <span class="text-gray-500 font-normal">ضد</span> <span class="font-normal">' + esc(m.teamB) + '</span></div>' +
             '<div class="text-xs sm:text-sm text-gray-400 mt-1">' + esc(m.league) + ' · ' + esc(m.country) + '</div>' +
           '</div>' +
           '<span class="text-xs sm:text-sm text-gray-400 whitespace-nowrap">' + esc(m.day) + ' · ' + esc(m.time) + '</span>' +
@@ -443,7 +443,7 @@
     content.innerHTML =
       '<div class="pl-8">' +
         '<div class="text-xs text-gray-400 mb-1">' + esc(m.league) + ' · ' + esc(m.country) + '</div>' +
-        '<h3 class="text-white font-extrabold text-xl mb-1">' + esc(m.teamA) + ' <span class="text-gray-500 font-normal">ضد</span> ' + esc(m.teamB) + '</h3>' +
+        '<h3 class="text-white font-extrabold text-xl mb-1">' + esc(m.teamA) + ' <span class="text-gray-500 font-normal">ضد</span> <span class="font-normal">' + esc(m.teamB) + '</span></h3>' +
         '<div class="text-sm text-gray-400 mb-4">' + esc(m.day) + ' · ' + esc(m.time) + '</div>' +
         '<div class="flex items-center gap-3 mb-2">' +
           '<div class="meter-track flex-1"><div class="meter-fill ' + fillClass(m.prob) + '" style="width:' + m.prob + '%"></div></div>' +
@@ -517,7 +517,7 @@
       lines.push('لا توجد مباريات مسجّلة.');
     } else {
       list.forEach(function(m, idx){
-        lines.push((idx+1) + '. ' + m.teamA + ' ضد ' + m.teamB + ' — ' + m.league);
+        lines.push((idx+1) + '. *' + m.teamA + '* ضد ' + m.teamB + ' — ' + m.league); // *نجمتان* = خط عريض في واتساب
         lines.push('   نسبة الفوز المتوقعة: ' + m.prob + '% لصالح ' + m.teamA + ' · ' + m.time);
       });
     }
