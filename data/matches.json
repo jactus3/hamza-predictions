@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T18:06:10.539Z",
+  "generatedAt": "2026-09-21T00:07:33.128Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -9,14 +9,14 @@
     },
     "الدوري الإسباني": {
       "ok": true,
-      "fixtures": 1,
-      "teams": 20,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     },
     "الدوري الإيطالي": {
       "ok": true,
-      "fixtures": 1,
-      "teams": 20,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     },
     "الدوري الألماني": {
@@ -27,8 +27,8 @@
     },
     "الدوري الفرنسي": {
       "ok": true,
-      "fixtures": 1,
-      "teams": 18,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     },
     "الدوري الهولندي": {
@@ -39,8 +39,8 @@
     },
     "الدوري البرتغالي": {
       "ok": true,
-      "fixtures": 1,
-      "teams": 18,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     },
     "الدرجة الأولى الإنجليزية (Championship)": {
@@ -51,8 +51,8 @@
     },
     "الدوري البرازيلي": {
       "ok": true,
-      "fixtures": 4,
-      "teams": 20,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     },
     "دوري أبطال أوروبا": {
@@ -111,19 +111,19 @@
     },
     "الدوري الأمريكي (MLS)": {
       "ok": true,
-      "fixtures": 17,
+      "fixtures": 16,
       "teams": 30,
       "partial": false
     },
     "الدوري الأرجنتيني": {
       "ok": true,
-      "fixtures": 7,
+      "fixtures": 3,
       "teams": 30,
       "partial": false
     },
     "الدوري المكسيكي": {
       "ok": true,
-      "fixtures": 12,
+      "fixtures": 9,
       "teams": 18,
       "partial": false
     },
@@ -142,486 +142,6 @@
   },
   "matches": [
     {
-      "id": 558597,
-      "teamA": "AC Milan",
-      "teamB": "US Lecce",
-      "venue": "home",
-      "league": "الدوري الإيطالي",
-      "country": "إيطاليا",
-      "day": "الأحد",
-      "time": "21:45",
-      "kickoffISO": "2026-09-20T18:45:00Z",
-      "prob": 71,
-      "probs": {
-        "home": 71,
-        "draw": 19,
-        "away": 10
-      },
-      "homeTeam": "AC Milan",
-      "awayTeam": "US Lecce",
-      "xg": {
-        "home": 2.13,
-        "away": 0.67
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "AC Milan: المركز 8 من 20، 8 نقاط في 4 مباريات، آخر 4 مباريات: تعادل · تعادل · فوز · فوز. US Lecce: المركز 11 من 20، 6 نقاط في 4 مباريات، آخر 4 مباريات: فوز · خسارة · خسارة · فوز.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: AC Milan 2.1 – 0.7 US Lecce. احتمال فوز AC Milan 71% · تعادل 19% · فوز US Lecce 10%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "US Lecce: ⚠️ Opposition insight for Milan-Lecce: Form, injuries, predicted XI and more"
-      }
-    },
-    {
-      "id": 559675,
-      "teamA": "Paris Saint-Germain FC",
-      "teamB": "Olympique de Marseille",
-      "venue": "away",
-      "league": "الدوري الفرنسي",
-      "country": "فرنسا",
-      "day": "الأحد",
-      "time": "21:45",
-      "kickoffISO": "2026-09-20T18:45:00Z",
-      "prob": 42,
-      "probs": {
-        "home": 34,
-        "draw": 24,
-        "away": 42
-      },
-      "homeTeam": "Olympique de Marseille",
-      "awayTeam": "Paris Saint-Germain FC",
-      "xg": {
-        "home": 1.45,
-        "away": 1.61
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Olympique de Marseille: المركز 17 من 18، 3 نقاط في 4 مباريات، آخر 4 مباريات: خسارة · خسارة · خسارة · فوز. Paris Saint-Germain FC: المركز 10 من 18، 5 نقاط في 4 مباريات، آخر 4 مباريات: فوز · خسارة · تعادل · تعادل.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Olympique de Marseille 1.4 – 1.6 Paris Saint-Germain FC. احتمال فوز Olympique de Marseille 34% · تعادل 24% · فوز Paris Saint-Germain FC 42%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Olympique de Marseille: ⚠️ Marseille v Paris Saint-Germain: Injured-hit OM face stern test against improving champions | ⚠️ Marseille coach confirms Nigeria midfielder Nnadi will miss Le Classique clash against PSG\nParis Saint-Germain FC: ⚠️ OM-PSG: Luis Enrique fears the reaction of pride from the injured Marseille beast | ⚠️ Achraf Hakimi resumes training after PSG thigh injury"
-      }
-    },
-    {
-      "id": 564689,
-      "teamA": "Valencia CF",
-      "teamB": "Real Sociedad de Fútbol",
-      "venue": "home",
-      "league": "الدوري الإسباني",
-      "country": "إسبانيا",
-      "day": "الأحد",
-      "time": "22:00",
-      "kickoffISO": "2026-09-20T19:00:00Z",
-      "prob": 39,
-      "probs": {
-        "home": 39,
-        "draw": 25,
-        "away": 36
-      },
-      "homeTeam": "Valencia CF",
-      "awayTeam": "Real Sociedad de Fútbol",
-      "xg": {
-        "home": 1.47,
-        "away": 1.41
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Valencia CF: المركز 19 من 20، 4 نقاط في 6 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · خسارة · خسارة. Real Sociedad de Fútbol: المركز 15 من 20، 7 نقاط في 6 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · خسارة.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Valencia CF 1.5 – 1.4 Real Sociedad de Fútbol. احتمال فوز Valencia CF 39% · تعادل 25% · فوز Real Sociedad de Fútbol 36%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": 555012,
-      "teamA": "SC Corinthians Paulista",
-      "teamB": "Fluminense FC",
-      "venue": "home",
-      "league": "الدوري البرازيلي",
-      "country": "البرازيل",
-      "day": "الأحد",
-      "time": "22:00",
-      "kickoffISO": "2026-09-20T19:00:00Z",
-      "prob": 37,
-      "probs": {
-        "home": 37,
-        "draw": 29,
-        "away": 34
-      },
-      "homeTeam": "SC Corinthians Paulista",
-      "awayTeam": "Fluminense FC",
-      "xg": {
-        "home": 1.16,
-        "away": 1.11
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "SC Corinthians Paulista: المركز 14 من 20، 32 نقطة في 27 مباراة، آخر 5 مباريات: خسارة · خسارة · خسارة · خسارة · خسارة. Fluminense FC: المركز 5 من 20، 45 نقطة في 27 مباراة، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · فوز.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: SC Corinthians Paulista 1.2 – 1.1 Fluminense FC. احتمال فوز SC Corinthians Paulista 37% · تعادل 29% · فوز Fluminense FC 34%.",
-        "news": null
-      }
-    },
-    {
-      "id": 555019,
-      "teamA": "Cruzeiro EC",
-      "teamB": "EC Vitória",
-      "venue": "away",
-      "league": "الدوري البرازيلي",
-      "country": "البرازيل",
-      "day": "الأحد",
-      "time": "22:00",
-      "kickoffISO": "2026-09-20T19:00:00Z",
-      "prob": 43,
-      "probs": {
-        "home": 30,
-        "draw": 27,
-        "away": 43
-      },
-      "homeTeam": "EC Vitória",
-      "awayTeam": "Cruzeiro EC",
-      "xg": {
-        "home": 1.09,
-        "away": 1.38
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "EC Vitória: المركز 13 من 20، 33 نقطة في 27 مباراة، آخر 5 مباريات: تعادل · فوز · خسارة · خسارة · فوز. Cruzeiro EC: المركز 6 من 20، 42 نقطة في 27 مباراة، آخر 5 مباريات: خسارة · فوز · خسارة · فوز · فوز.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: EC Vitória 1.1 – 1.4 Cruzeiro EC. احتمال فوز EC Vitória 30% · تعادل 27% · فوز Cruzeiro EC 43%.",
-        "news": null
-      }
-    },
-    {
-      "id": 567316,
-      "teamA": "FC Porto",
-      "teamB": "Sport Lisboa e Benfica",
-      "venue": "home",
-      "league": "الدوري البرتغالي",
-      "country": "البرتغال",
-      "day": "الأحد",
-      "time": "22:30",
-      "kickoffISO": "2026-09-20T19:30:00Z",
-      "prob": 48,
-      "probs": {
-        "home": 48,
-        "draw": 27,
-        "away": 25
-      },
-      "homeTeam": "FC Porto",
-      "awayTeam": "Sport Lisboa e Benfica",
-      "xg": {
-        "home": 1.36,
-        "away": 0.89
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "FC Porto: المركز 1 من 18، 18 نقطة في 6 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز. Sport Lisboa e Benfica: المركز 2 من 18، 16 نقطة في 6 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: FC Porto 1.4 – 0.9 Sport Lisboa e Benfica. احتمال فوز FC Porto 48% · تعادل 27% · فوز Sport Lisboa e Benfica 25%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401841581",
-      "teamA": "Platense",
-      "teamB": "Newell's Old Boys",
-      "venue": "home",
-      "league": "الدوري الأرجنتيني",
-      "country": "الأرجنتين",
-      "day": "الأحد",
-      "time": "23:00",
-      "kickoffISO": "2026-09-20T20:00:00.000Z",
-      "prob": 37,
-      "probs": {
-        "home": 37,
-        "draw": 33,
-        "away": 30
-      },
-      "homeTeam": "Platense",
-      "awayTeam": "Newell's Old Boys",
-      "xg": {
-        "home": 0.96,
-        "away": 0.83
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Platense: المركز 13 من 15، 9 نقاط في 9 مباريات. Newell's Old Boys: المركز 8 من 15، 13 نقطة في 9 مباريات.",
-        "side": "Platense على أرضه: سجّل 4 واستقبل 8 في 4 مباريات. Newell's Old Boys خارج أرضه: سجّل 2 واستقبل 4 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Platense 1.0 – 0.8 Newell's Old Boys. احتمال فوز Platense 37% · تعادل 33% · فوز Newell's Old Boys 30%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401841578",
-      "teamA": "Rosario Central",
-      "teamB": "Argentinos Juniors",
-      "venue": "home",
-      "league": "الدوري الأرجنتيني",
-      "country": "الأرجنتين",
-      "day": "الأحد",
-      "time": "23:00",
-      "kickoffISO": "2026-09-20T20:00:00.000Z",
-      "prob": 38,
-      "probs": {
-        "home": 38,
-        "draw": 32,
-        "away": 30
-      },
-      "homeTeam": "Rosario Central",
-      "awayTeam": "Argentinos Juniors",
-      "xg": {
-        "home": 1.04,
-        "away": 0.89
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Rosario Central: المركز 5 من 15، 15 نقطة في 9 مباريات. Argentinos Juniors: المركز 1 من 15، 18 نقطة في 9 مباريات.",
-        "side": "Rosario Central على أرضه: سجّل 4 واستقبل 4 في 4 مباريات. Argentinos Juniors خارج أرضه: سجّل 5 واستقبل 5 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Rosario Central 1.0 – 0.9 Argentinos Juniors. احتمال فوز Rosario Central 38% · تعادل 32% · فوز Argentinos Juniors 30%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": 555013,
-      "teamA": "CR Flamengo",
-      "teamB": "RB Bragantino",
-      "venue": "home",
-      "league": "الدوري البرازيلي",
-      "country": "البرازيل",
-      "day": "الاثنين",
-      "time": "00:30",
-      "kickoffISO": "2026-09-20T21:30:00Z",
-      "prob": 73,
-      "probs": {
-        "home": 73,
-        "draw": 17,
-        "away": 10
-      },
-      "homeTeam": "CR Flamengo",
-      "awayTeam": "RB Bragantino",
-      "xg": {
-        "home": 2.2,
-        "away": 0.67
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "CR Flamengo: المركز 1 من 20، 57 نقطة في 27 مباراة، آخر 5 مباريات: فوز · فوز · فوز · فوز · خسارة. RB Bragantino: المركز 10 من 20، 36 نقطة في 26 مباراة، آخر 5 مباريات: تعادل · خسارة · خسارة · فوز · تعادل.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: CR Flamengo 2.2 – 0.7 RB Bragantino. احتمال فوز CR Flamengo 73% · تعادل 17% · فوز RB Bragantino 10%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401841571",
-      "teamA": "Belgrano (Córdoba)",
-      "teamB": "Estudiantes de Río Cuarto",
-      "venue": "home",
-      "league": "الدوري الأرجنتيني",
-      "country": "الأرجنتين",
-      "day": "الاثنين",
-      "time": "01:15",
-      "kickoffISO": "2026-09-20T22:15:00.000Z",
-      "prob": 47,
-      "probs": {
-        "home": 47,
-        "draw": 30,
-        "away": 23
-      },
-      "homeTeam": "Belgrano (Córdoba)",
-      "awayTeam": "Estudiantes de Río Cuarto",
-      "xg": {
-        "home": 1.22,
-        "away": 0.74
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Belgrano (Córdoba): المركز 7 من 15، 13 نقطة في 9 مباريات. Estudiantes de Río Cuarto: المركز 14 من 15، 6 نقاط في 9 مباريات.",
-        "side": "Belgrano (Córdoba) على أرضه: سجّل 6 واستقبل 5 في 5 مباريات. Estudiantes de Río Cuarto خارج أرضه: سجّل 3 واستقبل 8 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Belgrano (Córdoba) 1.2 – 0.7 Estudiantes de Río Cuarto. احتمال فوز Belgrano (Córdoba) 47% · تعادل 30% · فوز Estudiantes de Río Cuarto 23%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": 555010,
-      "teamA": "CA Paranaense",
-      "teamB": "EC Bahia",
-      "venue": "home",
-      "league": "الدوري البرازيلي",
-      "country": "البرازيل",
-      "day": "الاثنين",
-      "time": "01:30",
-      "kickoffISO": "2026-09-20T22:30:00Z",
-      "prob": 42,
-      "probs": {
-        "home": 42,
-        "draw": 26,
-        "away": 32
-      },
-      "homeTeam": "CA Paranaense",
-      "awayTeam": "EC Bahia",
-      "xg": {
-        "home": 1.48,
-        "away": 1.26
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "CA Paranaense: المركز 3 من 20، 46 نقطة في 27 مباراة، آخر 5 مباريات: تعادل · خسارة · تعادل · فوز · تعادل. EC Bahia: المركز 4 من 20، 46 نقطة في 27 مباراة، آخر 5 مباريات: فوز · فوز · فوز · فوز · تعادل.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: CA Paranaense 1.5 – 1.3 EC Bahia. احتمال فوز CA Paranaense 42% · تعادل 26% · فوز EC Bahia 32%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761829",
-      "teamA": "Inter Miami CF",
-      "teamB": "San Diego FC",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الاثنين",
-      "time": "02:00",
-      "kickoffISO": "2026-09-20T23:00:00.000Z",
-      "prob": 58,
-      "probs": {
-        "home": 58,
-        "draw": 18,
-        "away": 24
-      },
-      "homeTeam": "Inter Miami CF",
-      "awayTeam": "San Diego FC",
-      "xg": {
-        "home": 2.65,
-        "away": 1.73
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Inter Miami CF: المركز 3 من 15، 45 نقطة في 25 مباراة. San Diego FC: المركز 10 من 15، 30 نقطة في 25 مباراة.",
-        "side": "Inter Miami CF على أرضه: سجّل 33 واستقبل 24 في 12 مباراة. San Diego FC خارج أرضه: سجّل 10 واستقبل 18 في 11 مباراة.",
-        "goals": "الأهداف المتوقعة: Inter Miami CF 2.7 – 1.7 San Diego FC. احتمال فوز Inter Miami CF 58% · تعادل 18% · فوز San Diego FC 24%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876967",
-      "teamA": "Pachuca",
-      "teamB": "Tijuana",
-      "venue": "home",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الاثنين",
-      "time": "03:00",
-      "kickoffISO": "2026-09-21T00:00:00.000Z",
-      "prob": 40,
-      "probs": {
-        "home": 40,
-        "draw": 29,
-        "away": 31
-      },
-      "homeTeam": "Pachuca",
-      "awayTeam": "Tijuana",
-      "xg": {
-        "home": 1.25,
-        "away": 1.07
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Pachuca: المركز 12 من 18، 11 نقطة في 8 مباريات. Tijuana: المركز 10 من 18، 13 نقطة في 7 مباريات.",
-        "side": "Pachuca على أرضه: سجّل 4 واستقبل 6 في 3 مباريات. Tijuana خارج أرضه: سجّل 2 واستقبل 5 في مباراتين.",
-        "goals": "الأهداف المتوقعة: Pachuca 1.2 – 1.1 Tijuana. احتمال فوز Pachuca 40% · تعادل 29% · فوز Tijuana 31%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876966",
-      "teamA": "Toluca",
-      "teamB": "Santos",
-      "venue": "home",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الاثنين",
-      "time": "03:00",
-      "kickoffISO": "2026-09-21T00:00:00.000Z",
-      "prob": 81,
-      "probs": {
-        "home": 81,
-        "draw": 13,
-        "away": 6
-      },
-      "homeTeam": "Toluca",
-      "awayTeam": "Santos",
-      "xg": {
-        "home": 2.65,
-        "away": 0.6
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Toluca: المركز 1 من 18، 19 نقطة في 8 مباريات. Santos: المركز 17 من 18، 4 نقاط في 8 مباريات.",
-        "side": "Toluca على أرضه: سجّل 13 واستقبل 5 في 4 مباريات. Santos خارج أرضه: سجّل 4 واستقبل 10 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Toluca 2.7 – 0.6 Santos. احتمال فوز Toluca 81% · تعادل 13% · فوز Santos 6%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Toluca: ⚠️ Toluca Gets a Tough Break Before Facing Santos: Franco Romero’s Injury Confirmed\nSantos: ⚠️ Enyel De Los Santos Injury: Out with knee tendinitis | ⚠️ Houston Astros put reliever Enyel De Los Santos on injured list, ending his regular season | ⚠️ Toluca Gets a Tough Break Before Facing Santos: Franco Romero’s Injury Confirmed"
-      }
-    },
-    {
-      "id": "espn-401841570",
-      "teamA": "Tigre",
-      "teamB": "Vélez Sarsfield",
-      "venue": "away",
-      "league": "الدوري الأرجنتيني",
-      "country": "الأرجنتين",
-      "day": "الاثنين",
-      "time": "03:30",
-      "kickoffISO": "2026-09-21T00:30:00.000Z",
-      "prob": 43,
-      "probs": {
-        "home": 24,
-        "draw": 33,
-        "away": 43
-      },
-      "homeTeam": "Vélez Sarsfield",
-      "awayTeam": "Tigre",
-      "xg": {
-        "home": 0.69,
-        "away": 1.04
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Vélez Sarsfield: المركز 4 من 15، 17 نقطة في 9 مباريات. Tigre: المركز 10 من 15، 12 نقطة في 9 مباريات.",
-        "side": "Vélez Sarsfield على أرضه: سجّل 4 واستقبل 1 في 4 مباريات. Tigre خارج أرضه: سجّل 4 واستقبل 4 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Vélez Sarsfield 0.7 – 1.0 Tigre. احتمال فوز Vélez Sarsfield 24% · تعادل 33% · فوز Tigre 43%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876965",
-      "teamA": "Querétaro",
-      "teamB": "León",
-      "venue": "home",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الاثنين",
-      "time": "05:10",
-      "kickoffISO": "2026-09-21T02:10:00.000Z",
-      "prob": 47,
-      "probs": {
-        "home": 47,
-        "draw": 28,
-        "away": 25
-      },
-      "homeTeam": "Querétaro",
-      "awayTeam": "León",
-      "xg": {
-        "home": 1.33,
-        "away": 0.9
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Querétaro: المركز 8 من 18، 13 نقطة في 7 مباريات. León: المركز 9 من 18، 13 نقطة في 8 مباريات.",
-        "side": "Querétaro على أرضه: سجّل 4 واستقبل 5 في 3 مباريات. León خارج أرضه: سجّل 4 واستقبل 6 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Querétaro 1.3 – 0.9 León. احتمال فوز Querétaro 47% · تعادل 28% · فوز León 25%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
       "id": "espn-401841569",
       "teamA": "Atlético Tucumán",
       "teamB": "Aldosivi",
@@ -631,23 +151,23 @@
       "day": "الاثنين",
       "time": "20:30",
       "kickoffISO": "2026-09-21T17:30:00.000Z",
-      "prob": 40,
+      "prob": 41,
       "probs": {
-        "home": 35,
+        "home": 34,
         "draw": 25,
-        "away": 40
+        "away": 41
       },
       "homeTeam": "Aldosivi",
       "awayTeam": "Atlético Tucumán",
       "xg": {
-        "home": 1.36,
-        "away": 1.48
+        "home": 1.35,
+        "away": 1.49
       },
       "confidence": "high",
       "analysis": {
         "form": "Aldosivi: المركز 15 من 15، 5 نقاط في 9 مباريات. Atlético Tucumán: المركز 8 من 15، 13 نقطة في 9 مباريات.",
         "side": "Aldosivi على أرضه: سجّل 5 واستقبل 6 في 4 مباريات. Atlético Tucumán خارج أرضه: سجّل 5 واستقبل 1 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Aldosivi 1.4 – 1.5 Atlético Tucumán. احتمال فوز Aldosivi 35% · تعادل 25% · فوز Atlético Tucumán 40%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "goals": "الأهداف المتوقعة: Aldosivi 1.4 – 1.5 Atlético Tucumán. احتمال فوز Aldosivi 34% · تعادل 25% · فوز Atlético Tucumán 41%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
       }
     },
@@ -670,8 +190,8 @@
       "homeTeam": "Barracas Central",
       "awayTeam": "Independiente Rivadavia",
       "xg": {
-        "home": 1.36,
-        "away": 1.13
+        "home": 1.35,
+        "away": 1.14
       },
       "confidence": "high",
       "analysis": {
@@ -700,12 +220,12 @@
       "homeTeam": "Lanús",
       "awayTeam": "Estudiantes de La Plata",
       "xg": {
-        "home": 1.24,
+        "home": 1.23,
         "away": 0.77
       },
       "confidence": "high",
       "analysis": {
-        "form": "Lanús: المركز 7 من 15، 13 نقطة في 9 مباريات. Estudiantes de La Plata: المركز 11 من 15، 10 نقاط في 9 مباريات.",
+        "form": "Lanús: المركز 8 من 15، 13 نقطة في 9 مباريات. Estudiantes de La Plata: المركز 11 من 15، 10 نقاط في 9 مباريات.",
         "side": "Lanús على أرضه: سجّل 4 واستقبل 5 في 5 مباريات. Estudiantes de La Plata خارج أرضه: سجّل 0 واستقبل 6 في 4 مباريات.",
         "goals": "الأهداف المتوقعة: Lanús 1.2 – 0.8 Estudiantes de La Plata. احتمال فوز Lanús 47% · تعادل 30% · فوز Estudiantes de La Plata 23%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
@@ -781,24 +301,24 @@
       "day": "السبت",
       "time": "06:00",
       "kickoffISO": "2026-09-26T03:00:00.000Z",
-      "prob": 63,
+      "prob": 65,
       "probs": {
-        "home": 63,
-        "draw": 20,
-        "away": 17
+        "home": 65,
+        "draw": 19,
+        "away": 16
       },
       "homeTeam": "Tijuana",
       "awayTeam": "Atlas",
       "xg": {
-        "home": 2.11,
-        "away": 1
+        "home": 2.16,
+        "away": 0.96
       },
       "confidence": "high",
       "analysis": {
         "form": "Tijuana: المركز 10 من 18، 13 نقطة في 7 مباريات. Atlas: المركز 6 من 18، 14 نقطة في 9 مباريات.",
         "side": "Tijuana على أرضه: سجّل 8 واستقبل 3 في 5 مباريات. Atlas خارج أرضه: سجّل 8 واستقبل 7 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Tijuana 2.1 – 1.0 Atlas. احتمال فوز Tijuana 63% · تعادل 20% · فوز Atlas 17%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Atlas: ⚠️ Atlas Faces Injury Crisis as Duk Hospitalized During Pumas Draw | ⚠️ Atlas Striker Duk Hospitalized After Knee Injury Against Pumas"
+        "goals": "الأهداف المتوقعة: Tijuana 2.2 – 1.0 Atlas. احتمال فوز Tijuana 65% · تعادل 19% · فوز Atlas 16%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Atlas: ⚠️ Atlas Faces Injury Crisis as Duk Hospitalized During Pumas Draw | ⚠️ Duk, Atlas Striker, Out for the Season After Serious Knee Injury | ⚠️ Atlas Striker Duk Hospitalized After Knee Injury Against Pumas"
       }
     },
     {
@@ -918,7 +438,7 @@
         "form": "CF Montréal: المركز 15 من 15، 21 نقطة في 26 مباراة. FC Cincinnati: المركز 9 من 15، 33 نقطة في 25 مباراة.",
         "side": "CF Montréal على أرضه: سجّل 16 واستقبل 17 في 13 مباراة. FC Cincinnati خارج أرضه: سجّل 20 واستقبل 37 في 13 مباراة.",
         "goals": "الأهداف المتوقعة: CF Montréal 1.7 – 1.9 FC Cincinnati. احتمال فوز CF Montréal 36% · تعادل 22% · فوز FC Cincinnati 42%.",
-        "news": "FC Cincinnati: ⚠️ GOODBYE OLD TRAFFORD! Former Man Utd star Tyrell Malacia joins FC Cincinnati on free transfer after injury-hit spell in England | ⚠️ Cincinnati Bengals Spark Panic Over Joe Burrow’s Injury With Latest QB-Related Roster Move | ⚠️ Bengals news: Cincinnati adds more QB depth amid Joe Burrow injury"
+        "news": "FC Cincinnati: ⚠️ GOODBYE OLD TRAFFORD! Former Man Utd star Tyrell Malacia joins FC Cincinnati on free transfer after injury-hit spell in England | ⚠️ Bengals news: Cincinnati adds more QB depth amid Joe Burrow injury | ⚠️ Cincinnati Bengals Spark Panic Over Joe Burrow’s Injury With Latest QB-Related Roster Move"
       }
     },
     {
@@ -1068,7 +588,7 @@
         "form": "FC Dallas: المركز 4 من 15، 44 نقطة في 26 مباراة. LAFC: المركز 6 من 15، 41 نقطة في 27 مباراة.",
         "side": "FC Dallas على أرضه: سجّل 24 واستقبل 20 في 12 مباراة. LAFC خارج أرضه: سجّل 18 واستقبل 18 في 14 مباراة.",
         "goals": "الأهداف المتوقعة: FC Dallas 1.3 – 1.6 LAFC. احتمال فوز FC Dallas 31% · تعادل 24% · فوز LAFC 45%.",
-        "news": "FC Dallas: ⚠️ Dallas Goedert Iffy to return due to knee injury | ⚠️ Dallas Goedert injury update: Latest news on Eagles TE's status in Week 2 game | ⚠️ Dallas Goedert Hurts Knee"
+        "news": "FC Dallas: ⚠️ Dallas Goedert Iffy to return due to knee injury | ⚠️ Dallas Goedert injury update: Latest news on Eagles TE's status in Week 2 game | ⚠️ Eagles RB Saquon Barkley (stinger) returns; TE Dallas Goedert (knee) questionable"
       }
     },
     {
@@ -1111,24 +631,24 @@
       "day": "الأحد",
       "time": "03:30",
       "kickoffISO": "2026-09-27T00:30:00.000Z",
-      "prob": 73,
+      "prob": 75,
       "probs": {
-        "home": 73,
-        "draw": 17,
-        "away": 10
+        "home": 75,
+        "draw": 16,
+        "away": 9
       },
       "homeTeam": "Nashville SC",
       "awayTeam": "Toronto FC",
       "xg": {
-        "home": 2.38,
-        "away": 0.77
+        "home": 2.45,
+        "away": 0.73
       },
       "confidence": "high",
       "analysis": {
         "form": "Nashville SC: المركز 1 من 15، 57 نقطة في 26 مباراة. Toronto FC: المركز 12 من 15، 29 نقطة في 26 مباراة.",
         "side": "Nashville SC على أرضه: سجّل 39 واستقبل 12 في 13 مباراة. Toronto FC خارج أرضه: سجّل 10 واستقبل 21 في 12 مباراة.",
-        "goals": "الأهداف المتوقعة: Nashville SC 2.4 – 0.8 Toronto FC. احتمال فوز Nashville SC 73% · تعادل 17% · فوز Toronto FC 10%.",
-        "news": "Toronto FC: ⚠️ As Toronto Tempo wrap inaugural season marred by uncertainty and injury, the future remains the focus: 'We're building a legacy'"
+        "goals": "الأهداف المتوقعة: Nashville SC 2.5 – 0.7 Toronto FC. احتمال فوز Nashville SC 75% · تعادل 16% · فوز Toronto FC 9%.",
+        "news": "Toronto FC: ⚠️ Toronto Blue Jays Announce Dylan Cease Injury News Before Rangers Series Finale | ⚠️ Toronto Blue Jays Manager Provides Injury Update on Vladimir Guerrero Jr. | ⚠️ As Toronto Tempo wrap inaugural season marred by uncertainty and injury, the future remains the focus: 'We're building a legacy'"
       }
     },
     {
