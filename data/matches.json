@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T18:06:08.195Z",
+  "generatedAt": "2026-09-26T00:07:01.575Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -51,7 +51,7 @@
     },
     "الدوري البرازيلي": {
       "ok": true,
-      "fixtures": 1,
+      "fixtures": 2,
       "teams": 20,
       "partial": false
     },
@@ -117,13 +117,13 @@
     },
     "الدوري الأرجنتيني": {
       "ok": true,
-      "fixtures": 2,
+      "fixtures": 7,
       "teams": 30,
       "partial": false
     },
     "الدوري المكسيكي": {
       "ok": true,
-      "fixtures": 9,
+      "fixtures": 7,
       "teams": 18,
       "partial": false
     },
@@ -141,66 +141,6 @@
     }
   },
   "matches": [
-    {
-      "id": "espn-401876964",
-      "teamA": "Monterrey",
-      "teamB": "Atlante",
-      "venue": "away",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "السبت",
-      "time": "04:00",
-      "kickoffISO": "2026-09-26T01:00:00.000Z",
-      "prob": 50,
-      "probs": {
-        "home": 26,
-        "draw": 24,
-        "away": 50
-      },
-      "homeTeam": "Atlante",
-      "awayTeam": "Monterrey",
-      "xg": {
-        "home": 1.21,
-        "away": 1.74
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Atlante: المركز 14 من 18، 8 نقاط في 9 مباريات. Monterrey: المركز 10 من 18، 13 نقطة في 8 مباريات.",
-        "side": "Atlante على أرضه: سجّل 2 واستقبل 5 في 4 مباريات. Monterrey خارج أرضه: سجّل 3 واستقبل 4 في 3 مباريات.",
-        "goals": "الأهداف المتوقعة: Atlante 1.2 – 1.7 Monterrey. احتمال فوز Atlante 26% · تعادل 24% · فوز Monterrey 50%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876963",
-      "teamA": "Tijuana",
-      "teamB": "Atlas",
-      "venue": "home",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "السبت",
-      "time": "06:00",
-      "kickoffISO": "2026-09-26T03:00:00.000Z",
-      "prob": 59,
-      "probs": {
-        "home": 59,
-        "draw": 21,
-        "away": 20
-      },
-      "homeTeam": "Tijuana",
-      "awayTeam": "Atlas",
-      "xg": {
-        "home": 2.06,
-        "away": 1.1
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Tijuana: المركز 7 من 18، 14 نقطة في 8 مباريات. Atlas: المركز 9 من 18، 14 نقطة في 9 مباريات.",
-        "side": "Tijuana على أرضه: سجّل 8 واستقبل 3 في 5 مباريات. Atlas خارج أرضه: سجّل 8 واستقبل 7 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Tijuana 2.1 – 1.1 Atlas. احتمال فوز Tijuana 59% · تعادل 21% · فوز Atlas 20%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
     {
       "id": "espn-401876959",
       "teamA": "Toluca",
@@ -301,23 +241,23 @@
       "day": "الأحد",
       "time": "02:30",
       "kickoffISO": "2026-09-26T23:30:00.000Z",
-      "prob": 41,
+      "prob": 43,
       "probs": {
-        "home": 37,
-        "draw": 22,
-        "away": 41
+        "home": 36,
+        "draw": 21,
+        "away": 43
       },
       "homeTeam": "CF Montréal",
       "awayTeam": "FC Cincinnati",
       "xg": {
-        "home": 1.76,
-        "away": 1.87
+        "home": 1.74,
+        "away": 1.92
       },
       "confidence": "high",
       "analysis": {
         "form": "CF Montréal: المركز 15 من 15، 21 نقطة في 26 مباراة. FC Cincinnati: المركز 9 من 15، 33 نقطة في 25 مباراة.",
         "side": "CF Montréal على أرضه: سجّل 16 واستقبل 17 في 13 مباراة. FC Cincinnati خارج أرضه: سجّل 20 واستقبل 37 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: CF Montréal 1.8 – 1.9 FC Cincinnati. احتمال فوز CF Montréal 37% · تعادل 22% · فوز FC Cincinnati 41%.",
+        "goals": "الأهداف المتوقعة: CF Montréal 1.7 – 1.9 FC Cincinnati. احتمال فوز CF Montréal 36% · تعادل 21% · فوز FC Cincinnati 43%.",
         "news": "FC Cincinnati: ⚠️ Cincinnati Bengals: Wide receiver depth to be tested after Iosivas injury | ⚠️ Kansas State football vs Cincinnati injury report lists all Wildcats backup QBs - The Topeka Capital-Journal | ⚠️ Cincinnati Reds Share Surprising Injury News Involving Two Players as Season Winds Down"
       }
     },
@@ -468,7 +408,7 @@
         "form": "FC Dallas: المركز 4 من 15، 44 نقطة في 26 مباراة. LAFC: المركز 6 من 15، 41 نقطة في 27 مباراة.",
         "side": "FC Dallas على أرضه: سجّل 24 واستقبل 20 في 12 مباراة. LAFC خارج أرضه: سجّل 18 واستقبل 18 في 14 مباراة.",
         "goals": "الأهداف المتوقعة: FC Dallas 1.3 – 1.6 LAFC. احتمال فوز FC Dallas 31% · تعادل 24% · فوز LAFC 45%.",
-        "news": "FC Dallas: ⚠️ Dallas Goedert Receives IR List Update After Knee Injury | ⚠️ Can Dallas Cowboys stop Lamar Jackson? Injury concerns add doubt | ⚠️ DeeJay Dallas Injury: Limited practice Wednesday"
+        "news": "FC Dallas: ⚠️ FC Dallas Injury Report vs. LAFC: Who Is In and Who Is Out? | ⚠️ When Is Dallas Goedert Coming Back - Week 3 Fantasy Football Injury Return Update (2026) | ⚠️ Dallas Goedert Receives IR List Update After Knee Injury"
       }
     },
     {
@@ -691,24 +631,24 @@
       "day": "الأحد",
       "time": "06:05",
       "kickoffISO": "2026-09-27T03:05:00.000Z",
-      "prob": 46,
+      "prob": 47,
       "probs": {
-        "home": 27,
+        "home": 26,
         "draw": 27,
-        "away": 46
+        "away": 47
       },
       "homeTeam": "Santos",
       "awayTeam": "Pachuca",
       "xg": {
-        "home": 0.98,
-        "away": 1.37
+        "home": 0.96,
+        "away": 1.39
       },
       "confidence": "high",
       "analysis": {
         "form": "Santos: المركز 17 من 18، 7 نقاط في 9 مباريات. Pachuca: المركز 11 من 18، 12 نقطة في 9 مباريات.",
         "side": "Santos على أرضه: سجّل 2 واستقبل 3 في 4 مباريات. Pachuca خارج أرضه: سجّل 9 واستقبل 2 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Santos 1.0 – 1.4 Pachuca. احتمال فوز Santos 27% · تعادل 27% · فوز Pachuca 46%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Santos: ⚠️ Cairo Santos Injury: DNP on initial Week 3 practice estimate | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update | ⚠️ Cairo Santos (right hip) sidelined to begin week"
+        "goals": "الأهداف المتوقعة: Santos 1.0 – 1.4 Pachuca. احتمال فوز Santos 26% · تعادل 27% · فوز Pachuca 47%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Santos: ⚠️ Cairo Santos Injury: DNP on Friday | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update | ⚠️ Bears’ Cairo Santos Injury Should Lead Them to Consider an Old Friend"
       }
     },
     {
@@ -931,24 +871,24 @@
       "day": "السبت",
       "time": "02:00",
       "kickoffISO": "2026-10-02T23:00:00Z",
-      "prob": 47,
+      "prob": 49,
       "probs": {
-        "home": 47,
-        "draw": 26,
-        "away": 27
+        "home": 49,
+        "draw": 25,
+        "away": 26
       },
       "homeTeam": "São Paulo FC",
       "awayTeam": "Santos FC",
       "xg": {
-        "home": 1.51,
-        "away": 1.07
+        "home": 1.54,
+        "away": 1.05
       },
       "confidence": "high",
       "analysis": {
         "form": "São Paulo FC: المركز 11 من 20، 36 نقطة في 27 مباراة، آخر 5 مباريات: فوز · خسارة · فوز · فوز · خسارة. Santos FC: المركز 8 من 20، 38 نقطة في 27 مباراة، آخر 5 مباريات: فوز · فوز · فوز · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: São Paulo FC 1.5 – 1.1 Santos FC. احتمال فوز São Paulo FC 47% · تعادل 26% · فوز Santos FC 27%.",
-        "news": "Santos FC: ⚠️ Cairo Santos Injury: DNP on initial Week 3 practice estimate | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update | ⚠️ Cairo Santos (right hip) sidelined to begin week"
+        "goals": "الأهداف المتوقعة: São Paulo FC 1.5 – 1.0 Santos FC. احتمال فوز São Paulo FC 49% · تعادل 25% · فوز Santos FC 26%.",
+        "news": "Santos FC: ⚠️ Cairo Santos Injury: DNP on Friday | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update | ⚠️ Bears’ Cairo Santos Injury Should Lead Them to Consider an Old Friend"
       }
     },
     {
@@ -978,6 +918,186 @@
         "form": "Independiente Rivadavia: المركز 3 من 15، 17 نقطة في 10 مباريات. Gimnasia La Plata: المركز 4 من 15، 17 نقطة في 10 مباريات.",
         "side": "Independiente Rivadavia على أرضه: سجّل 11 واستقبل 6 في 4 مباريات. Gimnasia La Plata خارج أرضه: سجّل 6 واستقبل 9 في 5 مباريات.",
         "goals": "الأهداف المتوقعة: Independiente Rivadavia 1.8 – 1.0 Gimnasia La Plata. احتمال فوز Independiente Rivadavia 57% · تعادل 23% · فوز Gimnasia La Plata 20%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841593",
+      "teamA": "Defensa y Justicia",
+      "teamB": "San Lorenzo",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "السبت",
+      "time": "20:45",
+      "kickoffISO": "2026-10-03T17:45:00.000Z",
+      "prob": 38,
+      "probs": {
+        "home": 38,
+        "draw": 33,
+        "away": 29
+      },
+      "homeTeam": "Defensa y Justicia",
+      "awayTeam": "San Lorenzo",
+      "xg": {
+        "home": 0.98,
+        "away": 0.81
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Defensa y Justicia: المركز 3 من 15، 18 نقطة في 10 مباريات. San Lorenzo: المركز 10 من 15، 11 نقطة في 10 مباريات.",
+        "side": "Defensa y Justicia على أرضه: سجّل 8 واستقبل 3 في 5 مباريات. San Lorenzo خارج أرضه: سجّل 1 واستقبل 4 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Defensa y Justicia 1.0 – 0.8 San Lorenzo. احتمال فوز Defensa y Justicia 38% · تعادل 33% · فوز San Lorenzo 29%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841596",
+      "teamA": "Atlético Tucumán",
+      "teamB": "Barracas Central",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "السبت",
+      "time": "23:00",
+      "kickoffISO": "2026-10-03T20:00:00.000Z",
+      "prob": 38,
+      "probs": {
+        "home": 38,
+        "draw": 31,
+        "away": 31
+      },
+      "homeTeam": "Atlético Tucumán",
+      "awayTeam": "Barracas Central",
+      "xg": {
+        "home": 1.02,
+        "away": 0.89
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Atlético Tucumán: المركز 9 من 15، 13 نقطة في 10 مباريات. Barracas Central: المركز 11 من 15، 12 نقطة في 10 مباريات.",
+        "side": "Atlético Tucumán على أرضه: سجّل 2 واستقبل 4 في 5 مباريات. Barracas Central خارج أرضه: سجّل 3 واستقبل 3 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Atlético Tucumán 1.0 – 0.9 Barracas Central. احتمال فوز Atlético Tucumán 38% · تعادل 31% · فوز Barracas Central 31%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841586",
+      "teamA": "Newell's Old Boys",
+      "teamB": "Lanús",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "السبت",
+      "time": "23:00",
+      "kickoffISO": "2026-10-03T20:00:00.000Z",
+      "prob": 33,
+      "probs": {
+        "home": 33,
+        "draw": 34,
+        "away": 33
+      },
+      "homeTeam": "Newell's Old Boys",
+      "awayTeam": "Lanús",
+      "xg": {
+        "home": 0.82,
+        "away": 0.82
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Newell's Old Boys: المركز 8 من 15، 16 نقطة في 10 مباريات. Lanús: المركز 7 من 15، 16 نقطة في 10 مباريات.",
+        "side": "Newell's Old Boys على أرضه: سجّل 8 واستقبل 4 في 5 مباريات. Lanús خارج أرضه: سجّل 7 واستقبل 3 في 4 مباريات.",
+        "goals": "الأهداف المتوقعة: Newell's Old Boys 0.8 – 0.8 Lanús. احتمال فوز Newell's Old Boys 33% · تعادل 34% · فوز Lanús 33%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": 554940,
+      "teamA": "CA Mineiro",
+      "teamB": "RB Bragantino",
+      "venue": "home",
+      "league": "الدوري البرازيلي",
+      "country": "البرازيل",
+      "day": "الأحد",
+      "time": "00:30",
+      "kickoffISO": "2026-10-03T21:30:00Z",
+      "prob": 48,
+      "probs": {
+        "home": 48,
+        "draw": 27,
+        "away": 25
+      },
+      "homeTeam": "CA Mineiro",
+      "awayTeam": "RB Bragantino",
+      "xg": {
+        "home": 1.44,
+        "away": 0.97
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "CA Mineiro: المركز 7 من 20، 40 نقطة في 27 مباراة، آخر 5 مباريات: تعادل · فوز · خسارة · فوز · تعادل. RB Bragantino: المركز 10 من 20، 36 نقطة في 27 مباراة، آخر 5 مباريات: خسارة · تعادل · خسارة · خسارة · فوز.",
+        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
+        "goals": "الأهداف المتوقعة: CA Mineiro 1.4 – 1.0 RB Bragantino. احتمال فوز CA Mineiro 48% · تعادل 27% · فوز RB Bragantino 25%.",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841597",
+      "teamA": "Argentinos Juniors",
+      "teamB": "Tigre",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "الأحد",
+      "time": "01:15",
+      "kickoffISO": "2026-10-03T22:15:00.000Z",
+      "prob": 52,
+      "probs": {
+        "home": 52,
+        "draw": 29,
+        "away": 19
+      },
+      "homeTeam": "Argentinos Juniors",
+      "awayTeam": "Tigre",
+      "xg": {
+        "home": 1.31,
+        "away": 0.68
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Argentinos Juniors: المركز 1 من 15، 18 نقطة في 10 مباريات. Tigre: المركز 10 من 15، 12 نقطة في 10 مباريات.",
+        "side": "Argentinos Juniors على أرضه: سجّل 8 واستقبل 3 في 4 مباريات. Tigre خارج أرضه: سجّل 6 واستقبل 7 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Argentinos Juniors 1.3 – 0.7 Tigre. احتمال فوز Argentinos Juniors 52% · تعادل 29% · فوز Tigre 19%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841589",
+      "teamA": "Huracán",
+      "teamB": "Aldosivi",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "الأحد",
+      "time": "03:30",
+      "kickoffISO": "2026-10-04T00:30:00.000Z",
+      "prob": 66,
+      "probs": {
+        "home": 66,
+        "draw": 20,
+        "away": 14
+      },
+      "homeTeam": "Huracán",
+      "awayTeam": "Aldosivi",
+      "xg": {
+        "home": 2.06,
+        "away": 0.82
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Huracán: المركز 6 من 15، 16 نقطة في 10 مباريات. Aldosivi: المركز 13 من 15، 8 نقاط في 10 مباريات.",
+        "side": "Huracán على أرضه: سجّل 4 واستقبل 2 في 5 مباريات. Aldosivi خارج أرضه: سجّل 6 واستقبل 10 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Huracán 2.1 – 0.8 Aldosivi. احتمال فوز Huracán 66% · تعادل 20% · فوز Aldosivi 14%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
       }
     }
