@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T06:07:07.470Z",
+  "generatedAt": "2026-09-27T12:06:52.916Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -111,7 +111,7 @@
     },
     "الدوري الأمريكي (MLS)": {
       "ok": true,
-      "fixtures": 2,
+      "fixtures": 3,
       "teams": 30,
       "partial": false
     },
@@ -262,6 +262,36 @@
       }
     },
     {
+      "id": "espn-761833",
+      "teamA": "Red Bull New York",
+      "teamB": "St. Louis CITY SC",
+      "venue": "home",
+      "league": "الدوري الأمريكي (MLS)",
+      "country": "أمريكا",
+      "day": "الخميس",
+      "time": "02:30",
+      "kickoffISO": "2026-09-30T23:30:00.000Z",
+      "prob": 39,
+      "probs": {
+        "home": 39,
+        "draw": 24,
+        "away": 37
+      },
+      "homeTeam": "Red Bull New York",
+      "awayTeam": "St. Louis CITY SC",
+      "xg": {
+        "home": 1.52,
+        "away": 1.48
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Red Bull New York: المركز 8 من 15، 33 نقطة في 26 مباراة. St. Louis CITY SC: المركز 5 من 15، 44 نقطة في 26 مباراة.",
+        "side": "Red Bull New York على أرضه: سجّل 18 واستقبل 23 في 12 مباراة. St. Louis CITY SC خارج أرضه: سجّل 17 واستقبل 19 في 13 مباراة.",
+        "goals": "الأهداف المتوقعة: Red Bull New York 1.5 – 1.5 St. Louis CITY SC. احتمال فوز Red Bull New York 39% · تعادل 24% · فوز St. Louis CITY SC 37%.",
+        "news": null
+      }
+    },
+    {
       "id": "espn-761798",
       "teamA": "Seattle Sounders FC",
       "teamB": "Sporting Kansas City",
@@ -349,6 +379,36 @@
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: São Paulo FC 1.6 – 1.0 Santos FC. احتمال فوز São Paulo FC 51% · تعادل 25% · فوز Santos FC 24%.",
         "news": "Santos FC: ⚠️ Cairo Santos (right hip) sidelined to begin week | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update | ⚠️ Bears’ Cairo Santos Injury Should Lead Them to Consider an Old Friend"
+      }
+    },
+    {
+      "id": "espn-401841594",
+      "teamA": "Boca Juniors",
+      "teamB": "Unión (Santa Fe)",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "السبت",
+      "time": "03:30",
+      "kickoffISO": "2026-10-03T00:30:00.000Z",
+      "prob": 65,
+      "probs": {
+        "home": 65,
+        "draw": 20,
+        "away": 15
+      },
+      "homeTeam": "Boca Juniors",
+      "awayTeam": "Unión (Santa Fe)",
+      "xg": {
+        "home": 2.04,
+        "away": 0.85
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Boca Juniors: المركز 5 من 15، 17 نقطة في 10 مباريات. Unión (Santa Fe): المركز 9 من 15، 13 نقطة في 10 مباريات.",
+        "side": "Boca Juniors على أرضه: سجّل 6 واستقبل 2 في 4 مباريات. Unión (Santa Fe) خارج أرضه: سجّل 6 واستقبل 8 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Boca Juniors 2.0 – 0.9 Unión (Santa Fe). احتمال فوز Boca Juniors 65% · تعادل 20% · فوز Unión (Santa Fe) 15%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
       }
     },
     {
@@ -502,36 +562,6 @@
       }
     },
     {
-      "id": "espn-401841597",
-      "teamA": "Argentinos Juniors",
-      "teamB": "Tigre",
-      "venue": "home",
-      "league": "الدوري الأرجنتيني",
-      "country": "الأرجنتين",
-      "day": "الأحد",
-      "time": "01:15",
-      "kickoffISO": "2026-10-03T22:15:00.000Z",
-      "prob": 52,
-      "probs": {
-        "home": 52,
-        "draw": 29,
-        "away": 19
-      },
-      "homeTeam": "Argentinos Juniors",
-      "awayTeam": "Tigre",
-      "xg": {
-        "home": 1.31,
-        "away": 0.68
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Argentinos Juniors: المركز 1 من 15، 18 نقطة في 10 مباريات. Tigre: المركز 10 من 15، 12 نقطة في 10 مباريات.",
-        "side": "Argentinos Juniors على أرضه: سجّل 8 واستقبل 3 في 4 مباريات. Tigre خارج أرضه: سجّل 6 واستقبل 7 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Argentinos Juniors 1.3 – 0.7 Tigre. احتمال فوز Argentinos Juniors 52% · تعادل 29% · فوز Tigre 19%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
       "id": "espn-401841589",
       "teamA": "Huracán",
       "teamB": "Aldosivi",
@@ -539,8 +569,8 @@
       "league": "الدوري الأرجنتيني",
       "country": "الأرجنتين",
       "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-10-04T00:30:00.000Z",
+      "time": "20:45",
+      "kickoffISO": "2026-10-04T17:45:00.000Z",
       "prob": 66,
       "probs": {
         "home": 66,
@@ -592,32 +622,32 @@
       }
     },
     {
-      "id": "espn-401841594",
-      "teamA": "Boca Juniors",
-      "teamB": "Unión (Santa Fe)",
+      "id": "espn-401841597",
+      "teamA": "Argentinos Juniors",
+      "teamB": "Tigre",
       "venue": "home",
       "league": "الدوري الأرجنتيني",
       "country": "الأرجنتين",
       "day": "الاثنين",
       "time": "01:15",
       "kickoffISO": "2026-10-04T22:15:00.000Z",
-      "prob": 65,
+      "prob": 52,
       "probs": {
-        "home": 65,
-        "draw": 20,
-        "away": 15
+        "home": 52,
+        "draw": 29,
+        "away": 19
       },
-      "homeTeam": "Boca Juniors",
-      "awayTeam": "Unión (Santa Fe)",
+      "homeTeam": "Argentinos Juniors",
+      "awayTeam": "Tigre",
       "xg": {
-        "home": 2.04,
-        "away": 0.85
+        "home": 1.31,
+        "away": 0.68
       },
       "confidence": "high",
       "analysis": {
-        "form": "Boca Juniors: المركز 5 من 15، 17 نقطة في 10 مباريات. Unión (Santa Fe): المركز 9 من 15، 13 نقطة في 10 مباريات.",
-        "side": "Boca Juniors على أرضه: سجّل 6 واستقبل 2 في 4 مباريات. Unión (Santa Fe) خارج أرضه: سجّل 6 واستقبل 8 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Boca Juniors 2.0 – 0.9 Unión (Santa Fe). احتمال فوز Boca Juniors 65% · تعادل 20% · فوز Unión (Santa Fe) 15%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "form": "Argentinos Juniors: المركز 1 من 15، 18 نقطة في 10 مباريات. Tigre: المركز 10 من 15، 12 نقطة في 10 مباريات.",
+        "side": "Argentinos Juniors على أرضه: سجّل 8 واستقبل 3 في 4 مباريات. Tigre خارج أرضه: سجّل 6 واستقبل 7 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Argentinos Juniors 1.3 – 0.7 Tigre. احتمال فوز Argentinos Juniors 52% · تعادل 29% · فوز Tigre 19%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
       }
     },
