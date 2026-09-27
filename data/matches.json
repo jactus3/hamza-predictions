@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T18:06:29.480Z",
+  "generatedAt": "2026-09-27T00:08:03.102Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -111,19 +111,19 @@
     },
     "الدوري الأمريكي (MLS)": {
       "ok": true,
-      "fixtures": 16,
+      "fixtures": 2,
       "teams": 30,
       "partial": false
     },
     "الدوري الأرجنتيني": {
       "ok": true,
-      "fixtures": 7,
+      "fixtures": 10,
       "teams": 30,
       "partial": false
     },
     "الدوري المكسيكي": {
       "ok": true,
-      "fixtures": 7,
+      "fixtures": 3,
       "teams": 18,
       "partial": false
     },
@@ -141,546 +141,6 @@
     }
   },
   "matches": [
-    {
-      "id": "espn-401876959",
-      "teamA": "Toluca",
-      "teamB": "Cruz Azul",
-      "venue": "away",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الأحد",
-      "time": "01:50",
-      "kickoffISO": "2026-09-26T22:50:00.000Z",
-      "prob": 50,
-      "probs": {
-        "home": 28,
-        "draw": 22,
-        "away": 50
-      },
-      "homeTeam": "Cruz Azul",
-      "awayTeam": "Toluca",
-      "xg": {
-        "home": 1.35,
-        "away": 1.88
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Cruz Azul: المركز 5 من 18، 15 نقطة في 9 مباريات. Toluca: المركز 1 من 18، 19 نقطة في 9 مباريات.",
-        "side": "Cruz Azul على أرضه: سجّل 9 واستقبل 9 في 5 مباريات. Toluca خارج أرضه: سجّل 5 واستقبل 1 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Cruz Azul 1.4 – 1.9 Toluca. احتمال فوز Cruz Azul 28% · تعادل 22% · فوز Toluca 50%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876962",
-      "teamA": "Guadalajara",
-      "teamB": "Querétaro",
-      "venue": "home",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الأحد",
-      "time": "02:07",
-      "kickoffISO": "2026-09-26T23:07:00.000Z",
-      "prob": 60,
-      "probs": {
-        "home": 60,
-        "draw": 23,
-        "away": 17
-      },
-      "homeTeam": "Guadalajara",
-      "awayTeam": "Querétaro",
-      "xg": {
-        "home": 1.78,
-        "away": 0.82
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Guadalajara: المركز 2 من 18، 18 نقطة في 9 مباريات. Querétaro: المركز 6 من 18، 14 نقطة في 8 مباريات.",
-        "side": "Guadalajara على أرضه: سجّل 9 واستقبل 4 في 4 مباريات. Querétaro خارج أرضه: سجّل 6 واستقبل 2 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Guadalajara 1.8 – 0.8 Querétaro. احتمال فوز Guadalajara 60% · تعادل 23% · فوز Querétaro 17%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Querétaro: ⚠️ Could Chivas vs. Querétaro Be Suspended? Hurricane Polo Threatens Liga MX Clash"
-      }
-    },
-    {
-      "id": "espn-761830",
-      "teamA": "New York City FC",
-      "teamB": "Atlanta United FC",
-      "venue": "away",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "02:30",
-      "kickoffISO": "2026-09-26T23:30:00.000Z",
-      "prob": 44,
-      "probs": {
-        "home": 30,
-        "draw": 26,
-        "away": 44
-      },
-      "homeTeam": "Atlanta United FC",
-      "awayTeam": "New York City FC",
-      "xg": {
-        "home": 1.13,
-        "away": 1.44
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Atlanta United FC: المركز 14 من 15، 26 نقطة في 26 مباراة. New York City FC: المركز 10 من 15، 32 نقطة في 26 مباراة.",
-        "side": "Atlanta United FC على أرضه: سجّل 17 واستقبل 21 في 12 مباراة. New York City FC خارج أرضه: سجّل 13 واستقبل 13 في 12 مباراة.",
-        "goals": "الأهداف المتوقعة: Atlanta United FC 1.1 – 1.4 New York City FC. احتمال فوز Atlanta United FC 30% · تعادل 26% · فوز New York City FC 44%.",
-        "news": "Atlanta United FC: ⚠️ Atlanta United vs. New York City FC: Preview, projected lineups, injuries, and prediction\nNew York City FC: ⚠️ Atlanta United vs. New York City FC: Preview, projected lineups, injuries, and prediction"
-      }
-    },
-    {
-      "id": "espn-761831",
-      "teamA": "FC Cincinnati",
-      "teamB": "CF Montréal",
-      "venue": "away",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "02:30",
-      "kickoffISO": "2026-09-26T23:30:00.000Z",
-      "prob": 43,
-      "probs": {
-        "home": 36,
-        "draw": 21,
-        "away": 43
-      },
-      "homeTeam": "CF Montréal",
-      "awayTeam": "FC Cincinnati",
-      "xg": {
-        "home": 1.74,
-        "away": 1.92
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "CF Montréal: المركز 15 من 15، 21 نقطة في 26 مباراة. FC Cincinnati: المركز 9 من 15، 33 نقطة في 25 مباراة.",
-        "side": "CF Montréal على أرضه: سجّل 16 واستقبل 17 في 13 مباراة. FC Cincinnati خارج أرضه: سجّل 20 واستقبل 37 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: CF Montréal 1.7 – 1.9 FC Cincinnati. احتمال فوز CF Montréal 36% · تعادل 21% · فوز FC Cincinnati 43%.",
-        "news": "FC Cincinnati: ⚠️ Cincinnati Bengals: Wide receiver depth to be tested after Iosivas injury - Journal-News.com | ⚠️ Kansas State football vs Cincinnati injury report lists all Wildcats backup QBs | ⚠️ Cincinnati Reds Share Surprising Injury News Involving Two Players as Season Winds Down"
-      }
-    },
-    {
-      "id": "espn-761832",
-      "teamA": "Charlotte FC",
-      "teamB": "Chicago Fire FC",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "02:30",
-      "kickoffISO": "2026-09-26T23:30:00.000Z",
-      "prob": 53,
-      "probs": {
-        "home": 53,
-        "draw": 21,
-        "away": 26
-      },
-      "homeTeam": "Charlotte FC",
-      "awayTeam": "Chicago Fire FC",
-      "xg": {
-        "home": 2.09,
-        "away": 1.44
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Charlotte FC: المركز 4 من 15، 43 نقطة في 26 مباراة. Chicago Fire FC: المركز 5 من 15، 39 نقطة في 25 مباراة.",
-        "side": "Charlotte FC على أرضه: سجّل 26 واستقبل 13 في 13 مباراة. Chicago Fire FC خارج أرضه: سجّل 23 واستقبل 24 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: Charlotte FC 2.1 – 1.4 Chicago Fire FC. احتمال فوز Charlotte FC 53% · تعادل 21% · فوز Chicago Fire FC 26%.",
-        "news": "Chicago Fire FC: ⚠️ Chicago fire leaves man dead, 2 women injured"
-      }
-    },
-    {
-      "id": "espn-761834",
-      "teamA": "Philadelphia Union",
-      "teamB": "Orlando City SC",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "02:30",
-      "kickoffISO": "2026-09-26T23:30:00.000Z",
-      "prob": 64,
-      "probs": {
-        "home": 64,
-        "draw": 17,
-        "away": 19
-      },
-      "homeTeam": "Philadelphia Union",
-      "awayTeam": "Orlando City SC",
-      "xg": {
-        "home": 2.69,
-        "away": 1.43
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Philadelphia Union: المركز 6 من 15، 36 نقطة في 26 مباراة. Orlando City SC: المركز 7 من 15، 34 نقطة في 26 مباراة.",
-        "side": "Philadelphia Union على أرضه: سجّل 19 واستقبل 11 في 12 مباراة. Orlando City SC خارج أرضه: سجّل 23 واستقبل 43 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: Philadelphia Union 2.7 – 1.4 Orlando City SC. احتمال فوز Philadelphia Union 64% · تعادل 17% · فوز Orlando City SC 19%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761833",
-      "teamA": "Red Bull New York",
-      "teamB": "St. Louis CITY SC",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "02:30",
-      "kickoffISO": "2026-09-26T23:30:00.000Z",
-      "prob": 38,
-      "probs": {
-        "home": 38,
-        "draw": 25,
-        "away": 37
-      },
-      "homeTeam": "Red Bull New York",
-      "awayTeam": "St. Louis CITY SC",
-      "xg": {
-        "home": 1.51,
-        "away": 1.49
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Red Bull New York: المركز 8 من 15، 33 نقطة في 26 مباراة. St. Louis CITY SC: المركز 3 من 15، 44 نقطة في 26 مباراة.",
-        "side": "Red Bull New York على أرضه: سجّل 18 واستقبل 23 في 12 مباراة. St. Louis CITY SC خارج أرضه: سجّل 17 واستقبل 19 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: Red Bull New York 1.5 – 1.5 St. Louis CITY SC. احتمال فوز Red Bull New York 38% · تعادل 25% · فوز St. Louis CITY SC 37%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761839",
-      "teamA": "San Diego FC",
-      "teamB": "Austin FC",
-      "venue": "away",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-09-27T00:30:00.000Z",
-      "prob": 42,
-      "probs": {
-        "home": 33,
-        "draw": 25,
-        "away": 42
-      },
-      "homeTeam": "Austin FC",
-      "awayTeam": "San Diego FC",
-      "xg": {
-        "home": 1.33,
-        "away": 1.51
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Austin FC: المركز 12 من 15، 30 نقطة في 26 مباراة. San Diego FC: المركز 11 من 15، 31 نقطة في 26 مباراة.",
-        "side": "Austin FC على أرضه: سجّل 16 واستقبل 12 في 12 مباراة. San Diego FC خارج أرضه: سجّل 12 واستقبل 20 في 12 مباراة.",
-        "goals": "الأهداف المتوقعة: Austin FC 1.3 – 1.5 San Diego FC. احتمال فوز Austin FC 33% · تعادل 25% · فوز San Diego FC 42%.",
-        "news": "Austin FC: ⚠️ 9/24 Arizona Football Notebook: Daylen Austin for for season with injury | ⚠️ Panthers Work Out Austin Ekeler After Jonathon Brooks Injury\nSan Diego FC: ⚠️ San Diego State's Javion Kinnard helped off field after injury vs. Toledo | ⚠️ San Diego State gets Lucky Sutton back for Toledo game after injury absence"
-      }
-    },
-    {
-      "id": "espn-761835",
-      "teamA": "LAFC",
-      "teamB": "FC Dallas",
-      "venue": "away",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-09-27T00:30:00.000Z",
-      "prob": 45,
-      "probs": {
-        "home": 31,
-        "draw": 24,
-        "away": 45
-      },
-      "homeTeam": "FC Dallas",
-      "awayTeam": "LAFC",
-      "xg": {
-        "home": 1.32,
-        "away": 1.64
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "FC Dallas: المركز 4 من 15، 44 نقطة في 26 مباراة. LAFC: المركز 6 من 15، 41 نقطة في 27 مباراة.",
-        "side": "FC Dallas على أرضه: سجّل 24 واستقبل 20 في 12 مباراة. LAFC خارج أرضه: سجّل 18 واستقبل 18 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: FC Dallas 1.3 – 1.6 LAFC. احتمال فوز FC Dallas 31% · تعادل 24% · فوز LAFC 45%.",
-        "news": "FC Dallas: ⚠️ FC Dallas Injury Report vs. LAFC: Who Is In and Who Is Out? | ⚠️ Dallas Goedert Injury: No practice again Friday | ⚠️ Can Dallas Cowboys stop Lamar Jackson? Injury concerns add doubt"
-      }
-    },
-    {
-      "id": "espn-761836",
-      "teamA": "Houston Dynamo FC",
-      "teamB": "Sporting Kansas City",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-09-27T00:30:00.000Z",
-      "prob": 66,
-      "probs": {
-        "home": 66,
-        "draw": 19,
-        "away": 15
-      },
-      "homeTeam": "Houston Dynamo FC",
-      "awayTeam": "Sporting Kansas City",
-      "xg": {
-        "home": 2.24,
-        "away": 0.95
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Houston Dynamo FC: المركز 2 من 15، 44 نقطة في 26 مباراة. Sporting Kansas City: المركز 15 من 15، 18 نقطة في 25 مباراة.",
-        "side": "Houston Dynamo FC على أرضه: سجّل 17 واستقبل 10 في 13 مباراة. Sporting Kansas City خارج أرضه: سجّل 11 واستقبل 37 في 12 مباراة.",
-        "goals": "الأهداف المتوقعة: Houston Dynamo FC 2.2 – 1.0 Sporting Kansas City. احتمال فوز Houston Dynamo FC 66% · تعادل 19% · فوز Sporting Kansas City 15%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761838",
-      "teamA": "Nashville SC",
-      "teamB": "Toronto FC",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-09-27T00:30:00.000Z",
-      "prob": 72,
-      "probs": {
-        "home": 72,
-        "draw": 17,
-        "away": 11
-      },
-      "homeTeam": "Nashville SC",
-      "awayTeam": "Toronto FC",
-      "xg": {
-        "home": 2.35,
-        "away": 0.79
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Nashville SC: المركز 1 من 15، 57 نقطة في 26 مباراة. Toronto FC: المركز 12 من 15، 29 نقطة في 26 مباراة.",
-        "side": "Nashville SC على أرضه: سجّل 39 واستقبل 12 في 13 مباراة. Toronto FC خارج أرضه: سجّل 10 واستقبل 21 في 12 مباراة.",
-        "goals": "الأهداف المتوقعة: Nashville SC 2.3 – 0.8 Toronto FC. احتمال فوز Nashville SC 72% · تعادل 17% · فوز Toronto FC 11%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761837",
-      "teamA": "Seattle Sounders FC",
-      "teamB": "Minnesota United FC",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-09-27T00:30:00.000Z",
-      "prob": 47,
-      "probs": {
-        "home": 47,
-        "draw": 24,
-        "away": 29
-      },
-      "homeTeam": "Seattle Sounders FC",
-      "awayTeam": "Minnesota United FC",
-      "xg": {
-        "home": 1.6,
-        "away": 1.2
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Seattle Sounders FC: المركز 10 من 15، 32 نقطة في 25 مباراة. Minnesota United FC: المركز 14 من 15، 29 نقطة في 26 مباراة.",
-        "side": "Seattle Sounders FC على أرضه: سجّل 18 واستقبل 18 في 12 مباراة. Minnesota United FC خارج أرضه: سجّل 25 واستقبل 30 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: Seattle Sounders FC 1.6 – 1.2 Minnesota United FC. احتمال فوز Seattle Sounders FC 47% · تعادل 24% · فوز Minnesota United FC 29%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761840",
-      "teamA": "New England Revolution",
-      "teamB": "Real Salt Lake",
-      "venue": "away",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "04:30",
-      "kickoffISO": "2026-09-27T01:30:00.000Z",
-      "prob": 39,
-      "probs": {
-        "home": 35,
-        "draw": 26,
-        "away": 39
-      },
-      "homeTeam": "Real Salt Lake",
-      "awayTeam": "New England Revolution",
-      "xg": {
-        "home": 1.34,
-        "away": 1.43
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Real Salt Lake: المركز 13 من 15، 29 نقطة في 26 مباراة. New England Revolution: المركز 2 من 15، 46 نقطة في 26 مباراة.",
-        "side": "Real Salt Lake على أرضه: سجّل 24 واستقبل 20 في 13 مباراة. New England Revolution خارج أرضه: سجّل 19 واستقبل 20 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: Real Salt Lake 1.3 – 1.4 New England Revolution. احتمال فوز Real Salt Lake 35% · تعادل 26% · فوز New England Revolution 39%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761841",
-      "teamA": "LA Galaxy",
-      "teamB": "Colorado Rapids",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "05:30",
-      "kickoffISO": "2026-09-27T02:30:00.000Z",
-      "prob": 39,
-      "probs": {
-        "home": 39,
-        "draw": 25,
-        "away": 36
-      },
-      "homeTeam": "LA Galaxy",
-      "awayTeam": "Colorado Rapids",
-      "xg": {
-        "home": 1.38,
-        "away": 1.32
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "LA Galaxy: المركز 8 من 15، 33 نقطة في 27 مباراة. Colorado Rapids: المركز 7 من 15، 36 نقطة في 26 مباراة.",
-        "side": "LA Galaxy على أرضه: سجّل 15 واستقبل 16 في 13 مباراة. Colorado Rapids خارج أرضه: سجّل 11 واستقبل 23 في 13 مباراة.",
-        "goals": "الأهداف المتوقعة: LA Galaxy 1.4 – 1.3 Colorado Rapids. احتمال فوز LA Galaxy 39% · تعادل 25% · فوز Colorado Rapids 36%.",
-        "news": "LA Galaxy: ⚠️ Will Sergi Roberto Play This Weekend? LA Galaxy Faces Major Injury Question Before Colorado Clash"
-      }
-    },
-    {
-      "id": "espn-761843",
-      "teamA": "San Jose Earthquakes",
-      "teamB": "Portland Timbers",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "05:30",
-      "kickoffISO": "2026-09-27T02:30:00.000Z",
-      "prob": 55,
-      "probs": {
-        "home": 55,
-        "draw": 20,
-        "away": 25
-      },
-      "homeTeam": "San Jose Earthquakes",
-      "awayTeam": "Portland Timbers",
-      "xg": {
-        "home": 2.19,
-        "away": 1.44
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "San Jose Earthquakes: المركز 5 من 15، 42 نقطة في 26 مباراة. Portland Timbers: المركز 9 من 15، 32 نقطة في 26 مباراة.",
-        "side": "San Jose Earthquakes على أرضه: سجّل 22 واستقبل 21 في 13 مباراة. Portland Timbers خارج أرضه: سجّل 16 واستقبل 23 في 12 مباراة.",
-        "goals": "الأهداف المتوقعة: San Jose Earthquakes 2.2 – 1.4 Portland Timbers. احتمال فوز San Jose Earthquakes 55% · تعادل 20% · فوز Portland Timbers 25%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-761842",
-      "teamA": "Vancouver Whitecaps",
-      "teamB": "D.C. United",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "05:30",
-      "kickoffISO": "2026-09-27T02:30:00.000Z",
-      "prob": 79,
-      "probs": {
-        "home": 79,
-        "draw": 14,
-        "away": 7
-      },
-      "homeTeam": "Vancouver Whitecaps",
-      "awayTeam": "D.C. United",
-      "xg": {
-        "home": 2.64,
-        "away": 0.66
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Vancouver Whitecaps: المركز 1 من 15، 49 نقطة في 25 مباراة. D.C. United: المركز 11 من 15، 29 نقطة في 25 مباراة.",
-        "side": "Vancouver Whitecaps على أرضه: سجّل 32 واستقبل 11 في 14 مباراة. D.C. United خارج أرضه: سجّل 13 واستقبل 14 في 11 مباراة.",
-        "goals": "الأهداف المتوقعة: Vancouver Whitecaps 2.6 – 0.7 D.C. United. احتمال فوز Vancouver Whitecaps 79% · تعادل 14% · فوز D.C. United 7%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876961",
-      "teamA": "Pachuca",
-      "teamB": "Santos",
-      "venue": "away",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الأحد",
-      "time": "06:05",
-      "kickoffISO": "2026-09-27T03:05:00.000Z",
-      "prob": 49,
-      "probs": {
-        "home": 24,
-        "draw": 27,
-        "away": 49
-      },
-      "homeTeam": "Santos",
-      "awayTeam": "Pachuca",
-      "xg": {
-        "home": 0.91,
-        "away": 1.44
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Santos: المركز 17 من 18، 7 نقاط في 9 مباريات. Pachuca: المركز 11 من 18، 12 نقطة في 9 مباريات.",
-        "side": "Santos على أرضه: سجّل 2 واستقبل 3 في 4 مباريات. Pachuca خارج أرضه: سجّل 9 واستقبل 2 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Santos 0.9 – 1.4 Pachuca. احتمال فوز Santos 24% · تعادل 27% · فوز Pachuca 49%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Santos: ⚠️ Cairo Santos Injury: DNP on Friday | ⚠️ Cairo Santos (right hip) sidelined to begin week | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update"
-      }
-    },
-    {
-      "id": "espn-401876960",
-      "teamA": "Tigres UANL",
-      "teamB": "Puebla",
-      "venue": "home",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الأحد",
-      "time": "06:10",
-      "kickoffISO": "2026-09-27T03:10:00.000Z",
-      "prob": 66,
-      "probs": {
-        "home": 66,
-        "draw": 20,
-        "away": 14
-      },
-      "homeTeam": "Tigres UANL",
-      "awayTeam": "Puebla",
-      "xg": {
-        "home": 2.13,
-        "away": 0.87
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Tigres UANL: المركز 16 من 18، 7 نقاط في 9 مباريات. Puebla: المركز 9 من 18، 14 نقطة في 9 مباريات.",
-        "side": "Tigres UANL على أرضه: سجّل 5 واستقبل 3 في 3 مباريات. Puebla خارج أرضه: سجّل 6 واستقبل 6 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Tigres UANL 2.1 – 0.9 Puebla. احتمال فوز Tigres UANL 66% · تعادل 20% · فوز Puebla 14%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
     {
       "id": "espn-401876958",
       "teamA": "Pumas UNAM",
@@ -888,7 +348,7 @@
         "form": "São Paulo FC: المركز 11 من 20، 36 نقطة في 27 مباراة، آخر 5 مباريات: فوز · خسارة · فوز · فوز · خسارة. Santos FC: المركز 8 من 20، 38 نقطة في 27 مباراة، آخر 5 مباريات: فوز · فوز · فوز · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: São Paulo FC 1.6 – 1.0 Santos FC. احتمال فوز São Paulo FC 51% · تعادل 25% · فوز Santos FC 24%.",
-        "news": "Santos FC: ⚠️ Cairo Santos Injury: DNP on Friday | ⚠️ Cairo Santos (right hip) sidelined to begin week | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update"
+        "news": "Santos FC: ⚠️ Cairo Santos (right hip) sidelined to begin week | ⚠️ Bears Give Hint About Cairo Santos' Week 3 Status After Surprise Injury Update | ⚠️ Bears’ Cairo Santos Injury Should Lead Them to Consider an Old Friend"
       }
     },
     {
@@ -1098,6 +558,96 @@
         "form": "Huracán: المركز 6 من 15، 16 نقطة في 10 مباريات. Aldosivi: المركز 13 من 15، 8 نقاط في 10 مباريات.",
         "side": "Huracán على أرضه: سجّل 4 واستقبل 2 في 5 مباريات. Aldosivi خارج أرضه: سجّل 6 واستقبل 10 في 5 مباريات.",
         "goals": "الأهداف المتوقعة: Huracán 2.1 – 0.8 Aldosivi. احتمال فوز Huracán 66% · تعادل 20% · فوز Aldosivi 14%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841584",
+      "teamA": "Talleres (Córdoba)",
+      "teamB": "Belgrano (Córdoba)",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "الأحد",
+      "time": "23:00",
+      "kickoffISO": "2026-10-04T20:00:00.000Z",
+      "prob": 38,
+      "probs": {
+        "home": 38,
+        "draw": 29,
+        "away": 33
+      },
+      "homeTeam": "Talleres (Córdoba)",
+      "awayTeam": "Belgrano (Córdoba)",
+      "xg": {
+        "home": 1.13,
+        "away": 1.04
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Talleres (Córdoba): المركز 14 من 15، 8 نقاط في 10 مباريات. Belgrano (Córdoba): المركز 5 من 15، 16 نقطة في 10 مباريات.",
+        "side": "Talleres (Córdoba) على أرضه: سجّل 5 واستقبل 9 في 5 مباريات. Belgrano (Córdoba) خارج أرضه: سجّل 3 واستقبل 1 في 4 مباريات.",
+        "goals": "الأهداف المتوقعة: Talleres (Córdoba) 1.1 – 1.0 Belgrano (Córdoba). احتمال فوز Talleres (Córdoba) 38% · تعادل 29% · فوز Belgrano (Córdoba) 33%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841594",
+      "teamA": "Boca Juniors",
+      "teamB": "Unión (Santa Fe)",
+      "venue": "home",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "الاثنين",
+      "time": "01:15",
+      "kickoffISO": "2026-10-04T22:15:00.000Z",
+      "prob": 65,
+      "probs": {
+        "home": 65,
+        "draw": 20,
+        "away": 15
+      },
+      "homeTeam": "Boca Juniors",
+      "awayTeam": "Unión (Santa Fe)",
+      "xg": {
+        "home": 2.04,
+        "away": 0.85
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Boca Juniors: المركز 5 من 15، 17 نقطة في 10 مباريات. Unión (Santa Fe): المركز 9 من 15، 13 نقطة في 10 مباريات.",
+        "side": "Boca Juniors على أرضه: سجّل 6 واستقبل 2 في 4 مباريات. Unión (Santa Fe) خارج أرضه: سجّل 6 واستقبل 8 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Boca Juniors 2.0 – 0.9 Unión (Santa Fe). احتمال فوز Boca Juniors 65% · تعادل 20% · فوز Unión (Santa Fe) 15%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401841591",
+      "teamA": "Racing Club",
+      "teamB": "Estudiantes de Río Cuarto",
+      "venue": "away",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "الاثنين",
+      "time": "03:30",
+      "kickoffISO": "2026-10-05T00:30:00.000Z",
+      "prob": 49,
+      "probs": {
+        "home": 25,
+        "draw": 26,
+        "away": 49
+      },
+      "homeTeam": "Estudiantes de Río Cuarto",
+      "awayTeam": "Racing Club",
+      "xg": {
+        "home": 1.01,
+        "away": 1.51
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Estudiantes de Río Cuarto: المركز 15 من 15، 6 نقاط في 10 مباريات. Racing Club: المركز 14 من 15، 8 نقاط في 10 مباريات.",
+        "side": "Estudiantes de Río Cuarto على أرضه: سجّل 1 واستقبل 3 في 5 مباريات. Racing Club خارج أرضه: سجّل 3 واستقبل 7 في 4 مباريات.",
+        "goals": "الأهداف المتوقعة: Estudiantes de Río Cuarto 1.0 – 1.5 Racing Club. احتمال فوز Estudiantes de Río Cuarto 25% · تعادل 26% · فوز Racing Club 49%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
       }
     }
