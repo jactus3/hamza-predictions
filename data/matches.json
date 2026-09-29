@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T18:07:00.190Z",
+  "generatedAt": "2026-09-29T00:08:03.746Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -111,7 +111,7 @@
     },
     "الدوري الأمريكي (MLS)": {
       "ok": true,
-      "fixtures": 2,
+      "fixtures": 3,
       "teams": 30,
       "partial": false
     },
@@ -241,24 +241,24 @@
       "day": "السبت",
       "time": "02:00",
       "kickoffISO": "2026-10-02T23:00:00Z",
-      "prob": 50,
+      "prob": 49,
       "probs": {
-        "home": 50,
+        "home": 49,
         "draw": 25,
-        "away": 25
+        "away": 26
       },
       "homeTeam": "São Paulo FC",
       "awayTeam": "Santos FC",
       "xg": {
-        "home": 1.56,
-        "away": 1.02
+        "home": 1.54,
+        "away": 1.05
       },
       "confidence": "high",
       "analysis": {
         "form": "São Paulo FC: المركز 11 من 20، 36 نقطة في 27 مباراة، آخر 5 مباريات: فوز · خسارة · فوز · فوز · خسارة. Santos FC: المركز 8 من 20، 38 نقطة في 27 مباراة، آخر 5 مباريات: فوز · فوز · فوز · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: São Paulo FC 1.6 – 1.0 Santos FC. احتمال فوز São Paulo FC 50% · تعادل 25% · فوز Santos FC 25%.",
-        "news": "Santos FC: ⚠️ Neymar | 2026 World Cup, Brazil, Santos FC, FC Barcelona, PSG, Al Hilal, & Injuries | ⚠️ Cairo Santos Injury: DNP on Friday | ⚠️ Bears’ Cairo Santos Injury Should Lead Them to Consider an Old Friend"
+        "goals": "الأهداف المتوقعة: São Paulo FC 1.5 – 1.0 Santos FC. احتمال فوز São Paulo FC 49% · تعادل 25% · فوز Santos FC 26%.",
+        "news": "Santos FC: ⚠️ Neymar | 2026 World Cup, Brazil, Santos FC, FC Barcelona, PSG, Al Hilal, & Injuries | ⚠️ Bears’ Cairo Santos Injury Should Lead Them to Consider an Old Friend"
       }
     },
     {
@@ -679,6 +679,36 @@
         "side": "Banfield على أرضه: سجّل 6 واستقبل 8 في 4 مباريات. Rosario Central خارج أرضه: سجّل 6 واستقبل 4 في 5 مباريات.",
         "goals": "الأهداف المتوقعة: Banfield 0.7 – 1.5 Rosario Central. احتمال فوز Banfield 18% · تعادل 27% · فوز Rosario Central 55%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
+      }
+    },
+    {
+      "id": "espn-761660",
+      "teamA": "Vancouver Whitecaps",
+      "teamB": "Chicago Fire FC",
+      "venue": "away",
+      "league": "الدوري الأمريكي (MLS)",
+      "country": "أمريكا",
+      "day": "الأربعاء",
+      "time": "03:30",
+      "kickoffISO": "2026-10-07T00:30:00.000Z",
+      "prob": 49,
+      "probs": {
+        "home": 29,
+        "draw": 22,
+        "away": 49
+      },
+      "homeTeam": "Chicago Fire FC",
+      "awayTeam": "Vancouver Whitecaps",
+      "xg": {
+        "home": 1.43,
+        "away": 1.9
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Chicago Fire FC: المركز 5 من 15، 42 نقطة في 26 مباراة. Vancouver Whitecaps: المركز 1 من 15، 50 نقطة في 26 مباراة.",
+        "side": "Chicago Fire FC على أرضه: سجّل 22 واستقبل 14 في 12 مباراة. Vancouver Whitecaps خارج أرضه: سجّل 24 واستقبل 12 في 11 مباراة.",
+        "goals": "الأهداف المتوقعة: Chicago Fire FC 1.4 – 1.9 Vancouver Whitecaps. احتمال فوز Chicago Fire FC 29% · تعادل 22% · فوز Vancouver Whitecaps 49%.",
+        "news": "Chicago Fire FC: ⚠️ Bafana Bafana's Mbekezeli Mbokazi makes long-awaited return for Chicago Fire after three-month injury nightmare"
       }
     }
   ]
