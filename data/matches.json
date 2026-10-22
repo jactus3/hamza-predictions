@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:55:53.773Z",
+  "generatedAt": "2026-10-22T16:23:39.341Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -75,7 +75,7 @@
     },
     "دوري روشن السعودي": {
       "ok": true,
-      "fixtures": 13,
+      "fixtures": 11,
       "teams": 18,
       "partial": false
     },
@@ -140,96 +140,6 @@
   },
   "matches": [
     {
-      "id": "espn-401900891",
-      "teamA": "Al Hazem",
-      "teamB": "Al Fayha",
-      "venue": "home",
-      "league": "دوري روشن السعودي",
-      "country": "السعودية",
-      "day": "الخميس",
-      "time": "16:40",
-      "kickoffISO": "2026-10-22T13:40:00.000Z",
-      "prob": 38,
-      "probs": {
-        "home": 38,
-        "draw": 28,
-        "away": 34
-      },
-      "homeTeam": "Al Hazem",
-      "awayTeam": "Al Fayha",
-      "xg": {
-        "home": 1.22,
-        "away": 1.13
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Al Hazem: المركز 11 من 18، 9 نقاط في 10 مباريات. Al Fayha: المركز 14 من 18، 7 نقاط في 10 مباريات.",
-        "side": "Al Hazem على أرضه: سجّل 5 واستقبل 6 في 5 مباريات. Al Fayha خارج أرضه: سجّل 2 واستقبل 6 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Al Hazem 1.2 – 1.1 Al Fayha. احتمال فوز Al Hazem 38% · تعادل 28% · فوز Al Fayha 34%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401900445",
-      "teamA": "Al Shabab",
-      "teamB": "Al Fateh",
-      "venue": "away",
-      "league": "دوري روشن السعودي",
-      "country": "السعودية",
-      "day": "الخميس",
-      "time": "17:45",
-      "kickoffISO": "2026-10-22T14:45:00.000Z",
-      "prob": 43,
-      "probs": {
-        "home": 31,
-        "draw": 26,
-        "away": 43
-      },
-      "homeTeam": "Al Fateh",
-      "awayTeam": "Al Shabab",
-      "xg": {
-        "home": 1.19,
-        "away": 1.44
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Al Fateh: المركز 16 من 18، 6 نقاط في 10 مباريات. Al Shabab: المركز 13 من 18، 8 نقاط في 9 مباريات.",
-        "side": "Al Fateh على أرضه: سجّل 3 واستقبل 10 في 5 مباريات. Al Shabab خارج أرضه: سجّل 2 واستقبل 3 في 3 مباريات.",
-        "goals": "الأهداف المتوقعة: Al Fateh 1.2 – 1.4 Al Shabab. احتمال فوز Al Fateh 31% · تعادل 26% · فوز Al Shabab 43%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401900892",
-      "teamA": "Al Ahli",
-      "teamB": "Al Khaleej",
-      "venue": "home",
-      "league": "دوري روشن السعودي",
-      "country": "السعودية",
-      "day": "الخميس",
-      "time": "21:00",
-      "kickoffISO": "2026-10-22T18:00:00.000Z",
-      "prob": 71,
-      "probs": {
-        "home": 71,
-        "draw": 17,
-        "away": 12
-      },
-      "homeTeam": "Al Ahli",
-      "awayTeam": "Al Khaleej",
-      "xg": {
-        "home": 2.38,
-        "away": 0.86
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Al Ahli: المركز 5 من 18، 18 نقطة في 9 مباريات. Al Khaleej: المركز 10 من 18، 12 نقطة في 10 مباريات.",
-        "side": "Al Ahli على أرضه: سجّل 12 واستقبل 1 في 3 مباريات. Al Khaleej خارج أرضه: سجّل 5 واستقبل 7 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Al Ahli 2.4 – 0.9 Al Khaleej. احتمال فوز Al Ahli 71% · تعادل 17% · فوز Al Khaleej 12%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
       "id": "espn-401900444",
       "teamA": "Al Nassr",
       "teamB": "Al Faisaly",
@@ -249,7 +159,7 @@
       "awayTeam": "Al Nassr",
       "xg": {
         "home": 0.72,
-        "away": 2.62
+        "away": 2.63
       },
       "confidence": "high",
       "analysis": {
@@ -350,6 +260,36 @@
       }
     },
     {
+      "id": "espn-401900892",
+      "teamA": "Al Ahli",
+      "teamB": "Al Khaleej",
+      "venue": "home",
+      "league": "دوري روشن السعودي",
+      "country": "السعودية",
+      "day": "الجمعة",
+      "time": "21:00",
+      "kickoffISO": "2026-10-23T18:00:00.000Z",
+      "prob": 71,
+      "probs": {
+        "home": 71,
+        "draw": 17,
+        "away": 12
+      },
+      "homeTeam": "Al Ahli",
+      "awayTeam": "Al Khaleej",
+      "xg": {
+        "home": 2.38,
+        "away": 0.86
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Al Ahli: المركز 5 من 18، 18 نقطة في 9 مباريات. Al Khaleej: المركز 10 من 18، 12 نقطة في 10 مباريات.",
+        "side": "Al Ahli على أرضه: سجّل 12 واستقبل 1 في 3 مباريات. Al Khaleej خارج أرضه: سجّل 5 واستقبل 7 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Al Ahli 2.4 – 0.9 Al Khaleej. احتمال فوز Al Ahli 71% · تعادل 17% · فوز Al Khaleej 12%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
       "id": "espn-401900888",
       "teamA": "Al Hilal",
       "teamB": "Al Qadsiah",
@@ -361,8 +301,8 @@
       "kickoffISO": "2026-10-23T18:00:00.000Z",
       "prob": 45,
       "probs": {
-        "home": 32,
-        "draw": 23,
+        "home": 31,
+        "draw": 24,
         "away": 45
       },
       "homeTeam": "Al Qadsiah",
@@ -375,7 +315,7 @@
       "analysis": {
         "form": "Al Qadsiah: المركز 1 من 18، 25 نقطة في 10 مباريات. Al Hilal: المركز 2 من 18، 24 نقطة في 9 مباريات.",
         "side": "Al Qadsiah على أرضه: سجّل 11 واستقبل 8 في 5 مباريات. Al Hilal خارج أرضه: سجّل 16 واستقبل 1 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Al Qadsiah 1.4 – 1.7 Al Hilal. احتمال فوز Al Qadsiah 32% · تعادل 23% · فوز Al Hilal 45%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "goals": "الأهداف المتوقعة: Al Qadsiah 1.4 – 1.7 Al Hilal. احتمال فوز Al Qadsiah 31% · تعادل 24% · فوز Al Hilal 45%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
       }
     },
@@ -509,24 +449,24 @@
       "day": "الجمعة",
       "time": "22:00",
       "kickoffISO": "2026-10-23T19:00:00Z",
-      "prob": 46,
+      "prob": 44,
       "probs": {
-        "home": 46,
-        "draw": 25,
-        "away": 29
+        "home": 44,
+        "draw": 26,
+        "away": 30
       },
       "homeTeam": "Ipswich Town FC",
       "awayTeam": "Nottingham Forest FC",
       "xg": {
-        "home": 1.51,
-        "away": 1.15
+        "home": 1.47,
+        "away": 1.17
       },
       "confidence": "high",
       "analysis": {
         "form": "Ipswich Town FC: المركز 10 من 20، 9 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · خسارة · فوز · خسارة. Nottingham Forest FC: المركز 19 من 20، 5 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · خسارة · خسارة · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Ipswich Town FC 1.5 – 1.1 Nottingham Forest FC. احتمال فوز Ipswich Town FC 46% · تعادل 25% · فوز Nottingham Forest FC 29%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Ipswich Town FC: ⚠️ Ipswich Town vs Nottingham Forest Preview, prediction, injury news & lineups | Premier League 2026-27\nNottingham Forest FC: ⚠️ Morgan Gibbs-White latest as Nottingham Forest injury update provided ahead of key clash | ⚠️ Nottingham Forest handed injury boost ahead of big Town clash as star set to return | ⚠️ Gibbs-White, Jesus, Savona - Nottingham Forest injury latest and return dates ahead of Ipswich Town"
+        "goals": "الأهداف المتوقعة: Ipswich Town FC 1.5 – 1.2 Nottingham Forest FC. احتمال فوز Ipswich Town FC 44% · تعادل 26% · فوز Nottingham Forest FC 30%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Ipswich Town FC: ⚠️ Ipswich Town hit with injury blow ahead of Nottingham Forest match | ⚠️ Ipswich Town vs Nottingham Forest Preview, prediction, injury news & lineups | Premier League 2026-27\nNottingham Forest FC: ⚠️ Morgan Gibbs-White latest as Nottingham Forest injury update provided ahead of key clash | ⚠️ Nottingham Forest handed injury boost ahead of big Town clash as star set to return | ⚠️ Nottingham Forest injury news: Morgan Gibbs-White update as Oliver Glasner reveals mixed team news for Ipswich Town game"
       }
     },
     {
@@ -569,24 +509,24 @@
       "day": "الجمعة",
       "time": "22:00",
       "kickoffISO": "2026-10-23T19:00:00Z",
-      "prob": 41,
+      "prob": 40,
       "probs": {
-        "home": 36,
+        "home": 37,
         "draw": 23,
-        "away": 41
+        "away": 40
       },
       "homeTeam": "Bolton Wanderers FC",
       "awayTeam": "Middlesbrough FC",
       "xg": {
-        "home": 1.61,
-        "away": 1.74
+        "home": 1.63,
+        "away": 1.69
       },
       "confidence": "high",
       "analysis": {
         "form": "Bolton Wanderers FC: المركز 15 من 24، 14 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · فوز · خسارة · فوز · فوز. Middlesbrough FC: المركز 3 من 24، 22 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · فوز · فوز · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Bolton Wanderers FC 1.6 – 1.7 Middlesbrough FC. احتمال فوز Bolton Wanderers FC 36% · تعادل 23% · فوز Middlesbrough FC 41%.",
-        "news": null
+        "goals": "الأهداف المتوقعة: Bolton Wanderers FC 1.6 – 1.7 Middlesbrough FC. احتمال فوز Bolton Wanderers FC 37% · تعادل 23% · فوز Middlesbrough FC 40%.",
+        "news": "Middlesbrough FC: ⚠️ Middlesbrough injury update and why Kim Hellberg won't be resting players at Bolton"
       }
     },
     {
@@ -1246,7 +1186,7 @@
         "form": "Aston Villa FC: المركز 12 من 20، 8 نقاط في 7 مباريات، آخر 5 مباريات: فوز · تعادل · فوز · خسارة · تعادل. Manchester City FC: المركز 1 من 20، 21 نقطة في 7 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Aston Villa FC 1.1 – 1.8 Manchester City FC. احتمال فوز Aston Villa FC 22% · تعادل 23% · فوز Manchester City FC 55%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Aston Villa FC: ⚠️ Aston Villa’s Aaron Wan-Bissaka set to miss at least three weeks due to hamstring injury | ⚠️ Unai Emery makes no excuses as Aston Villa injury crisis deepens for European clash | ⚠️ Aston Villa vs Manchester City Preview, prediction, injury news & lineups | Premier League 2026-27\nManchester City FC: ⚠️ Man City winger Semenyo out for eight weeks with knee injury | ⚠️ Man City’s Semenyo out for up to eight weeks due to knee injury | ⚠️ Haaland, Gvardiol, Nunes - Man City injury news and return dates after AEK Athens win"
+        "news": "Aston Villa FC: ⚠️ Aston Villa’s Aaron Wan-Bissaka set to miss at least three weeks due to hamstring injury | ⚠️ Man City XI vs Aston Villa: Confirmed team news, predicted lineup and injury latest for Premier League | ⚠️ Unai Emery makes no excuses as Aston Villa injury crisis deepens for European clash\nManchester City FC: ⚠️ Man City XI vs Aston Villa: Confirmed team news, predicted lineup and injury latest for Premier League | ⚠️ Man City winger Semenyo out for eight weeks with knee injury | ⚠️ Which Man City players will benefit most from Semenyo’s injury?"
       }
     },
     {
@@ -1259,24 +1199,24 @@
       "day": "السبت",
       "time": "14:30",
       "kickoffISO": "2026-10-24T11:30:00Z",
-      "prob": 64,
+      "prob": 65,
       "probs": {
-        "home": 64,
+        "home": 65,
         "draw": 21,
-        "away": 15
+        "away": 14
       },
       "homeTeam": "Sheffield United FC",
       "awayTeam": "Derby County FC",
       "xg": {
-        "home": 1.91,
-        "away": 0.79
+        "home": 1.94,
+        "away": 0.77
       },
       "confidence": "high",
       "analysis": {
         "form": "Sheffield United FC: المركز 11 من 24، 15 نقطة في 11 مباراة، آخر 5 مباريات: فوز · خسارة · فوز · خسارة · خسارة. Derby County FC: المركز 23 من 24، 6 نقاط في 11 مباراة، آخر 5 مباريات: خسارة · خسارة · تعادل · تعادل · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Sheffield United FC 1.9 – 0.8 Derby County FC. احتمال فوز Sheffield United FC 64% · تعادل 21% · فوز Derby County FC 15%.",
-        "news": "Derby County FC: ⚠️ Derby County need to rekindle transfer pursuit of Coventry City man in January amid injury crisis: Opinion"
+        "goals": "الأهداف المتوقعة: Sheffield United FC 1.9 – 0.8 Derby County FC. احتمال فوز Sheffield United FC 65% · تعادل 21% · فوز Derby County FC 14%.",
+        "news": "Derby County FC: ⚠️ Eustace reveals latest Derby County injury blow | ⚠️ Derby County need to rekindle transfer pursuit of Coventry City man in January amid injury crisis: Opinion"
       }
     },
     {
@@ -1319,24 +1259,24 @@
       "day": "السبت",
       "time": "14:30",
       "kickoffISO": "2026-10-24T11:30:00Z",
-      "prob": 50,
+      "prob": 48,
       "probs": {
-        "home": 50,
+        "home": 48,
         "draw": 24,
-        "away": 26
+        "away": 28
       },
       "homeTeam": "Portsmouth FC",
       "awayTeam": "Millwall FC",
       "xg": {
-        "home": 1.7,
-        "away": 1.16
+        "home": 1.63,
+        "away": 1.19
       },
       "confidence": "high",
       "analysis": {
         "form": "Portsmouth FC: المركز 13 من 24، 15 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · فوز · فوز · خسارة · تعادل. Millwall FC: المركز 12 من 24، 15 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · خسارة · فوز · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Portsmouth FC 1.7 – 1.2 Millwall FC. احتمال فوز Portsmouth FC 50% · تعادل 24% · فوز Millwall FC 26%.",
-        "news": "Portsmouth FC: ⚠️ Portsmouth boss John Mousinho delivers key injury update on latest addition to the treatment room\nMillwall FC: ⚠️ Millwall boss sees confidence boost in Esse after injury return | ⚠️ Millwall Face Further Injury Woes Following Lincoln City Clash | ⚠️ Millwall goalkeeper faces spell on the sidelines with ankle injury"
+        "goals": "الأهداف المتوقعة: Portsmouth FC 1.6 – 1.2 Millwall FC. احتمال فوز Portsmouth FC 48% · تعادل 24% · فوز Millwall FC 28%.",
+        "news": "Portsmouth FC: ⚠️ ‘Big one’: The plan for Portsmouth striker as he bolsters injury-hit ranks | ⚠️ Portsmouth boss John Mousinho delivers key injury update on latest addition to the treatment room\nMillwall FC: ⚠️ Millwall Face Further Injury Woes Following Lincoln City Clash | ⚠️ Millwall boss sees confidence boost in Esse after injury return | ⚠️ Millwall goalkeeper faces spell on the sidelines with ankle injury"
       }
     },
     {
@@ -1619,24 +1559,24 @@
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00Z",
-      "prob": 62,
+      "prob": 64,
       "probs": {
-        "home": 62,
-        "draw": 24,
-        "away": 14
+        "home": 64,
+        "draw": 23,
+        "away": 13
       },
       "homeTeam": "Arsenal FC",
       "awayTeam": "Everton FC",
       "xg": {
-        "home": 1.66,
-        "away": 0.64
+        "home": 1.71,
+        "away": 0.61
       },
       "confidence": "high",
       "analysis": {
         "form": "Arsenal FC: المركز 2 من 20، 18 نقطة في 7 مباريات، آخر 5 مباريات: فوز · فوز · خسارة · فوز · فوز. Everton FC: المركز 8 من 20، 10 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Arsenal FC 1.7 – 0.6 Everton FC. احتمال فوز Arsenal FC 62% · تعادل 24% · فوز Everton FC 14%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Arsenal FC: ⚠️ Arsenal winger Bukayo Saka’s left quad injury ‘doesn’t look good at all’ – Mikel Arteta | ⚠️ Arsenal forward Bukayo Saka forced off early with apparent leg injury against Bayern Munich | ⚠️ Arsenal 'concerned' about Saka injury: Arteta\nEverton FC: ⚠️ Neto double fires Chelsea past Everton but Emi Martinez head injury mars win"
+        "goals": "الأهداف المتوقعة: Arsenal FC 1.7 – 0.6 Everton FC. احتمال فوز Arsenal FC 64% · تعادل 23% · فوز Everton FC 13%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Arsenal FC: ⚠️ The Selection Crisis Facing Arsenal After Bukayo Saka’s Injury | ⚠️ Arsenal winger Bukayo Saka’s left quad injury ‘doesn’t look good at all’ – Mikel Arteta | ⚠️ Three ways Arsenal can immediately solve Bukayo Saka injury puzzle as Mikel Arteta dealt blow\nEverton FC: ⚠️ Neto double fires Chelsea past Everton but Emi Martinez head injury mars win | ⚠️ Arsenal receive unexpected injury boost for Everton as 'outside chance' revealed | ⚠️ Arsenal vs Everton Preview, prediction, injury news & lineups | Premier League 2026-27"
       }
     },
     {
@@ -1649,24 +1589,24 @@
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00Z",
-      "prob": 39,
+      "prob": 40,
       "probs": {
-        "home": 35,
-        "draw": 26,
-        "away": 39
+        "home": 33,
+        "draw": 27,
+        "away": 40
       },
       "homeTeam": "Coventry City FC",
       "awayTeam": "Fulham FC",
       "xg": {
-        "home": 1.23,
-        "away": 1.32
+        "home": 1.2,
+        "away": 1.34
       },
       "confidence": "high",
       "analysis": {
         "form": "Coventry City FC: المركز 17 من 20، 6 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · فوز · خسارة · خسارة. Fulham FC: المركز 18 من 20، 5 نقاط في 7 مباريات، آخر 5 مباريات: فوز · خسارة · تعادل · تعادل · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Coventry City FC 1.2 – 1.3 Fulham FC. احتمال فوز Coventry City FC 35% · تعادل 26% · فوز Fulham FC 39%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Coventry City FC: ⚠️ Derby County need to rekindle transfer pursuit of Coventry City man in January amid injury crisis: Opinion"
+        "goals": "الأهداف المتوقعة: Coventry City FC 1.2 – 1.3 Fulham FC. احتمال فوز Coventry City FC 33% · تعادل 27% · فوز Fulham FC 40%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Coventry City FC: ⚠️ Lampard on Coventry City midfielder’s injury setback and duo’s absences | ⚠️ Derby County need to rekindle transfer pursuit of Coventry City man in January amid injury crisis: Opinion"
       }
     },
     {
@@ -1696,7 +1636,7 @@
         "form": "Cardiff City FC: المركز 19 من 24، 11 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · فوز · خسارة · فوز · خسارة. Birmingham City FC: المركز 4 من 24، 20 نقطة في 11 مباراة، آخر 5 مباريات: فوز · فوز · فوز · تعادل · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Cardiff City FC 1.3 – 1.6 Birmingham City FC. احتمال فوز Cardiff City FC 30% · تعادل 24% · فوز Birmingham City FC 46%.",
-        "news": "Cardiff City FC: ⚠️ Cardiff City dealt another Dylan Lawlor blow as full extent of injury emerges | ⚠️ Dylan Lawlor: Cardiff City defender to miss Wales' November matches | ⚠️ Le Roux Malan finds new home with Cardiff after horror injury"
+        "news": "Cardiff City FC: ⚠️ Dylan Lawlor: Cardiff City defender to miss Wales' November matches | ⚠️ Cardiff City dealt another Dylan Lawlor blow as full extent of injury emerges | ⚠️ Le Roux Malan finds new home with Cardiff after horror injury"
       }
     },
     {
@@ -1709,24 +1649,24 @@
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00Z",
-      "prob": 39,
+      "prob": 35,
       "probs": {
-        "home": 31,
-        "draw": 30,
-        "away": 39
+        "home": 34,
+        "draw": 31,
+        "away": 35
       },
       "homeTeam": "Queens Park Rangers FC",
       "awayTeam": "Swansea City AFC",
       "xg": {
-        "home": 0.95,
-        "away": 1.11
+        "home": 1,
+        "away": 1.02
       },
       "confidence": "high",
       "analysis": {
         "form": "Queens Park Rangers FC: المركز 9 من 24، 17 نقطة في 11 مباراة، آخر 5 مباريات: خسارة · فوز · تعادل · تعادل · تعادل. Swansea City AFC: المركز 1 من 24، 23 نقطة في 11 مباراة، آخر 5 مباريات: خسارة · فوز · فوز · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Queens Park Rangers FC 0.9 – 1.1 Swansea City AFC. احتمال فوز Queens Park Rangers FC 31% · تعادل 30% · فوز Swansea City AFC 39%.",
-        "news": "Queens Park Rangers FC: ⚠️ QPR suffer triple injury setback with earliest returns after November break | ⚠️ More QPR injury blows revealed following Mbengue confirmation | ⚠️ QPR rocked by major injury blow with long layoff ahead"
+        "goals": "الأهداف المتوقعة: Queens Park Rangers FC 1.0 – 1.0 Swansea City AFC. احتمال فوز Queens Park Rangers FC 34% · تعادل 31% · فوز Swansea City AFC 35%.",
+        "news": "Queens Park Rangers FC: ⚠️ QPR suffer triple injury setback with earliest returns after November break | ⚠️ More QPR injury blows revealed following Mbengue confirmation | ⚠️ QPR rocked by major injury blow with long layoff ahead\nSwansea City AFC: ⚠️ Swansea City suffer Ronald blow as winger ruled out with hamstring injury | ⚠️ Swansea City dealt major injury blow | ⚠️ Swansea City dealt huge injury blow as door opens for forgotten star"
       }
     },
     {
@@ -1739,24 +1679,24 @@
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00Z",
-      "prob": 53,
+      "prob": 55,
       "probs": {
-        "home": 53,
-        "draw": 24,
-        "away": 23
+        "home": 55,
+        "draw": 23,
+        "away": 22
       },
       "homeTeam": "Stoke City FC",
       "awayTeam": "Bristol City FC",
       "xg": {
-        "home": 1.73,
-        "away": 1.04
+        "home": 1.75,
+        "away": 1.01
       },
       "confidence": "high",
       "analysis": {
         "form": "Stoke City FC: المركز 6 من 24، 19 نقطة في 11 مباراة، آخر 5 مباريات: فوز · خسارة · فوز · فوز · فوز. Bristol City FC: المركز 16 من 24، 14 نقطة في 11 مباراة، آخر 5 مباريات: خسارة · خسارة · تعادل · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Stoke City FC 1.7 – 1.0 Bristol City FC. احتمال فوز Stoke City FC 53% · تعادل 24% · فوز Bristol City FC 23%.",
-        "news": "Stoke City FC: ⚠️ Bristol City expect ex-Port Vale man injury boost for Stoke clash\nBristol City FC: ⚠️ Bristol City expect ex-Port Vale man injury boost for Stoke clash"
+        "goals": "الأهداف المتوقعة: Stoke City FC 1.8 – 1.0 Bristol City FC. احتمال فوز Stoke City FC 55% · تعادل 23% · فوز Bristol City FC 22%.",
+        "news": "Stoke City FC: ⚠️ Bristol City expect ex-Port Vale man injury boost for Stoke clash\nBristol City FC: ⚠️ Bristol City hopeful of earlier-than-expected boost with Rob Dickie on 'way back' from injury | ⚠️ Bristol City expect ex-Port Vale man injury boost for Stoke clash"
       }
     },
     {
@@ -1791,32 +1731,32 @@
     },
     {
       "id": 561899,
-      "teamA": "Burnley FC",
-      "teamB": "Lincoln City FC",
-      "venue": "away",
+      "teamA": "Lincoln City FC",
+      "teamB": "Burnley FC",
+      "venue": "home",
       "league": "الدرجة الأولى الإنجليزية (Championship)",
       "country": "إنجلترا",
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00Z",
-      "prob": 38,
+      "prob": 41,
       "probs": {
-        "home": 37,
+        "home": 41,
         "draw": 25,
-        "away": 38
+        "away": 34
       },
       "homeTeam": "Lincoln City FC",
       "awayTeam": "Burnley FC",
       "xg": {
-        "home": 1.41,
-        "away": 1.42
+        "home": 1.47,
+        "away": 1.31
       },
       "confidence": "high",
       "analysis": {
         "form": "Lincoln City FC: المركز 18 من 24، 12 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · خسارة · خسارة · خسارة · فوز. Burnley FC: المركز 22 من 24، 8 نقاط في 11 مباراة، آخر 5 مباريات: خسارة · تعادل · فوز · تعادل · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Lincoln City FC 1.4 – 1.4 Burnley FC. احتمال فوز Lincoln City FC 37% · تعادل 25% · فوز Burnley FC 38%.",
-        "news": "Lincoln City FC: ⚠️ Lincoln City v Burnley early team news: 15 ruled out and 1 fitness doubt\nBurnley FC: ⚠️ Lincoln City v Burnley early team news: 15 ruled out and 1 fitness doubt"
+        "goals": "الأهداف المتوقعة: Lincoln City FC 1.5 – 1.3 Burnley FC. احتمال فوز Lincoln City FC 41% · تعادل 25% · فوز Burnley FC 34%.",
+        "news": "Lincoln City FC: ⚠️ Lincoln City v Burnley early team news: 15 ruled out and 1 fitness doubt\nBurnley FC: ⚠️ Burnley injury problems stack up as Nicky Hayen issues Jamie Vardy latest | ⚠️ Burnley's woes go from bad to worse with pre-Lincoln double injury blow | ⚠️ Burnley injury crisis worsens with double blow revealed"
       }
     },
     {
@@ -1829,24 +1769,24 @@
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00Z",
-      "prob": 53,
+      "prob": 54,
       "probs": {
-        "home": 53,
+        "home": 54,
         "draw": 22,
-        "away": 25
+        "away": 24
       },
       "homeTeam": "West Ham United FC",
       "awayTeam": "Southampton FC",
       "xg": {
-        "home": 1.95,
-        "away": 1.3
+        "home": 1.98,
+        "away": 1.26
       },
       "confidence": "high",
       "analysis": {
         "form": "West Ham United FC: المركز 2 من 24، 22 نقطة في 11 مباراة، آخر 5 مباريات: فوز · فوز · تعادل · تعادل · فوز. Southampton FC: المركز 8 من 24، 17 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · فوز · فوز · خسارة · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: West Ham United FC 1.9 – 1.3 Southampton FC. احتمال فوز West Ham United FC 53% · تعادل 22% · فوز Southampton FC 25%.",
-        "news": "West Ham United FC: ⚠️ How Divine Mukasa can benefit at West Ham as injury latest drops at Southampton"
+        "goals": "الأهداف المتوقعة: West Ham United FC 2.0 – 1.3 Southampton FC. احتمال فوز West Ham United FC 54% · تعادل 22% · فوز Southampton FC 24%.",
+        "news": "West Ham United FC: ⚠️ How Divine Mukasa can benefit at West Ham as injury latest drops at Southampton\nSouthampton FC: ⚠️ West Ham United v. Southampton: Injury news, predicted XI, head-to-head and stats"
       }
     },
     {
@@ -1859,24 +1799,24 @@
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00Z",
-      "prob": 55,
+      "prob": 53,
       "probs": {
-        "home": 55,
+        "home": 53,
         "draw": 23,
-        "away": 22
+        "away": 24
       },
       "homeTeam": "Blackburn Rovers FC",
       "awayTeam": "Wrexham AFC",
       "xg": {
-        "home": 1.86,
-        "away": 1.09
+        "home": 1.79,
+        "away": 1.12
       },
       "confidence": "high",
       "analysis": {
         "form": "Blackburn Rovers FC: المركز 10 من 24، 15 نقطة في 11 مباراة، آخر 5 مباريات: خسارة · فوز · فوز · تعادل · فوز. Wrexham AFC: المركز 14 من 24، 14 نقطة في 11 مباراة، آخر 5 مباريات: فوز · خسارة · تعادل · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Blackburn Rovers FC 1.9 – 1.1 Wrexham AFC. احتمال فوز Blackburn Rovers FC 55% · تعادل 23% · فوز Wrexham AFC 22%.",
-        "news": "Wrexham AFC: ⚠️ Wrexham Injury News: Latest Updates, Potential Return Dates for Seven Players | ⚠️ Wrexham Injury Update Ahead of Blackburn | ⚠️ ‘The Worst Run’—Parkinson Staring Down Seven Wrexham Injury Concerns"
+        "goals": "الأهداف المتوقعة: Blackburn Rovers FC 1.8 – 1.1 Wrexham AFC. احتمال فوز Blackburn Rovers FC 53% · تعادل 23% · فوز Wrexham AFC 24%.",
+        "news": "Blackburn Rovers FC: ⚠️ Blackburn Rovers face nervous wait as key player visits consultant over injury concern\nWrexham AFC: ⚠️ Wrexham Injury News: Latest Updates, Potential Return Dates for Seven Players | ⚠️ Wrexham Injury Update Ahead of Blackburn | ⚠️ 'The lads are all behind Libby' - Wrexham star Sheaf on Cacace's injury battle"
       }
     },
     {
@@ -1929,7 +1869,7 @@
       "awayTeam": "Abha",
       "xg": {
         "home": 1.62,
-        "away": 0.84
+        "away": 0.85
       },
       "confidence": "high",
       "analysis": {
@@ -1979,24 +1919,24 @@
       "day": "السبت",
       "time": "17:00",
       "kickoffISO": "2026-10-24T14:00:00.000Z",
-      "prob": 40,
+      "prob": 41,
       "probs": {
-        "home": 40,
+        "home": 41,
         "draw": 28,
-        "away": 32
+        "away": 31
       },
       "homeTeam": "Dundee United",
       "awayTeam": "Aberdeen",
       "xg": {
-        "home": 1.27,
-        "away": 1.11
+        "home": 1.29,
+        "away": 1.08
       },
       "confidence": "high",
       "analysis": {
         "form": "Dundee United: المركز 6 من 12، 12 نقطة في 9 مباريات. Aberdeen: المركز 7 من 12، 11 نقطة في 9 مباريات.",
         "side": "Dundee United على أرضه: سجّل 3 واستقبل 4 في 4 مباريات. Aberdeen خارج أرضه: سجّل 5 واستقبل 6 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Dundee United 1.3 – 1.1 Aberdeen. احتمال فوز Dundee United 40% · تعادل 28% · فوز Aberdeen 32%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Dundee United: ⚠️ Dundee United duo an injury doubt for Aberdeen as Jim Goodwin admits worry over lack of goals"
+        "goals": "الأهداف المتوقعة: Dundee United 1.3 – 1.1 Aberdeen. احتمال فوز Dundee United 41% · تعادل 28% · فوز Aberdeen 31%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Dundee United: ⚠️ Dundee United duo an injury doubt for Aberdeen as Jim Goodwin admits worry over lack of goals\nAberdeen: ⚠️ Aberdeen handed major Brad Lyons injury boost as semi-final clash looms"
       }
     },
     {
@@ -2219,24 +2159,24 @@
       "day": "السبت",
       "time": "19:00",
       "kickoffISO": "2026-10-24T16:00:00Z",
-      "prob": 41,
+      "prob": 40,
       "probs": {
-        "home": 31,
+        "home": 32,
         "draw": 28,
-        "away": 41
+        "away": 40
       },
       "homeTeam": "SSC Napoli",
       "awayTeam": "AS Roma",
       "xg": {
-        "home": 1.08,
-        "away": 1.3
+        "home": 1.09,
+        "away": 1.26
       },
       "confidence": "high",
       "analysis": {
         "form": "SSC Napoli: المركز 9 من 20، 10 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · خسارة. AS Roma: المركز 3 من 20، 17 نقطة في 7 مباريات، آخر 5 مباريات: فوز · تعادل · تعادل · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: SSC Napoli 1.1 – 1.3 AS Roma. احتمال فوز SSC Napoli 31% · تعادل 28% · فوز AS Roma 41%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "SSC Napoli: ⚠️ Napoli message to Kvaratskhelia after injury sparks social media confusion | ⚠️ Napoli confirm Alisson Santos blow on first appearance after recovering from injury | ⚠️ Napoli receive injury boost as Antonio Vergara targets return for Roma clash\nAS Roma: ⚠️ What games will Dybala miss as Roma’s injury crisis worsens? | ⚠️ Roma: injuries are a cause for concern for Gasperini. Pellegrini is sidelined, and options up front are limited | ⚠️ Gasperini: ‘Roma in good shape, but worry for Pellegrini injury’"
+        "goals": "الأهداف المتوقعة: SSC Napoli 1.1 – 1.3 AS Roma. احتمال فوز SSC Napoli 32% · تعادل 28% · فوز AS Roma 40%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "SSC Napoli: ⚠️ Napoli message to Kvaratskhelia after injury sparks social media confusion | ⚠️ Napoli receive injury boost as Antonio Vergara targets return for Roma clash | ⚠️ Soccer: Napoli; Alisson suffers a relapse from his previous injury.\nAS Roma: ⚠️ Roma lose Pellegrini for at least 6-8 weeks with serious injury | ⚠️ Roma: injuries are a cause for concern for Gasperini. Pellegrini is sidelined, and options up front are limited | ⚠️ What games will Dybala miss as Roma’s injury crisis worsens?"
       }
     },
     {
@@ -2356,7 +2296,7 @@
         "form": "Chelsea FC: المركز 4 من 20، 13 نقطة في 7 مباريات، آخر 5 مباريات: فوز · فوز · خسارة · تعادل · خسارة. Tottenham Hotspur FC: المركز 16 من 20، 6 نقاط في 7 مباريات، آخر 5 مباريات: فوز · تعادل · خسارة · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Chelsea FC 2.1 – 1.1 Tottenham Hotspur FC. احتمال فوز Chelsea FC 61% · تعادل 21% · فوز Tottenham Hotspur FC 18%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Chelsea FC: ⚠️ Nathalie Bjorn: Chelsea Women defender on her incredible injury comeback, vice-captaincy and WSL improvements | ⚠️ Chelsea injury update: Martinez, Chavarria, James latest return dates | ⚠️ News | Xabi Alonso faces Chelsea injury problems ahead of crucial Tottenham encounter\nTottenham Hotspur FC: ⚠️ Tottenham Injury Updates Ahead Of Chelsea | ⚠️ Dejan Kulusevski returns to Tottenham matchday squad after 526-day injury absence - The Athletic | ⚠️ Dejan Kulusevski makes Tottenham return 526 days after suffering knee injury"
+        "news": "Chelsea FC: ⚠️ Nathalie Bjorn: Chelsea Women defender on her incredible injury comeback, vice-captaincy and WSL improvements | ⚠️ Chelsea XI vs Tottenham: Confirmed team news, predicted lineup and injury latest for Premier League | ⚠️ News | Xabi Alonso faces Chelsea injury problems ahead of crucial Tottenham encounter\nTottenham Hotspur FC: ⚠️ Tottenham Injury Updates Ahead Of Chelsea | ⚠️ Dejan Kulusevski returns to Tottenham matchday squad after 526-day injury absence - The Athletic | ⚠️ Dejan Kulusevski makes Tottenham return 526 days after suffering knee injury"
       }
     },
     {
@@ -2386,7 +2326,7 @@
         "form": "Valencia CF: المركز 19 من 20، 6 نقاط في 9 مباريات، آخر 5 مباريات: تعادل · تعادل · خسارة · فوز · خسارة. Villarreal CF: المركز 12 من 20، 9 نقاط في 9 مباريات، آخر 5 مباريات: تعادل · خسارة · فوز · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Valencia CF 1.3 – 1.5 Villarreal CF. احتمال فوز Valencia CF 32% · تعادل 24% · فوز Villarreal CF 44%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Villarreal CF: ⚠️ Liverpool Predicted Lineup vs. Villarreal: Iraola Manages More Injury Concerns | ⚠️ News | Liverpool face Villarreal with Frimpong and Szoboszlai both Champions League injury doubts | ⚠️ Liverpool vs Villarreal Predictions: Reds overcome injury woes"
+        "news": "Villarreal CF: ⚠️ News | Liverpool face Villarreal with Frimpong and Szoboszlai both Champions League injury doubts | ⚠️ Liverpool XI vs Villarreal: Confirmed team news, predicted lineup and injury latest for Champions League today | ⚠️ Liverpool vs Villarreal Predictions: Reds overcome injury woes"
       }
     },
     {
@@ -2686,7 +2626,7 @@
         "form": "Racing Club de Lens: المركز 8 من 18، 10 نقاط في 7 مباريات، آخر 5 مباريات: فوز · فوز · خسارة · تعادل · خسارة. Paris FC: المركز 3 من 18، 14 نقطة في 7 مباريات، آخر 5 مباريات: فوز · خسارة · فوز · تعادل · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Racing Club de Lens 2.2 – 1.0 Paris FC. احتمال فوز Racing Club de Lens 65% · تعادل 19% · فوز Paris FC 16%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Paris FC: ⚠️ Paris Saint-Germain’s Khvicha Kvaratskhelia sustains ACL injury - The Athletic | ⚠️ Sports - Champions League: Paris defeat Barcelona but lose three major players to injuries | ⚠️ Paris Saint-Germain announces injury of Georgian player Kvaratskhelia"
+        "news": "Paris FC: ⚠️ Paris Saint-Germain’s Khvicha Kvaratskhelia sustains ACL injury - The Athletic | ⚠️ Sports - Champions League: Paris defeat Barcelona but lose three major players to injuries | ⚠️ Paris Saint-Germain sweating over serious injury to Khvicha Kvaratskhelia"
       }
     },
     {
@@ -2939,24 +2879,24 @@
       "day": "السبت",
       "time": "22:30",
       "kickoffISO": "2026-10-24T19:30:00.000Z",
-      "prob": 56,
+      "prob": 57,
       "probs": {
-        "home": 56,
+        "home": 57,
         "draw": 22,
-        "away": 22
+        "away": 21
       },
       "homeTeam": "Columbus Crew",
       "awayTeam": "Toronto FC",
       "xg": {
-        "home": 1.95,
-        "away": 1.15
+        "home": 1.98,
+        "away": 1.12
       },
       "confidence": "high",
       "analysis": {
         "form": "Columbus Crew: المركز 11 من 15، 35 نقطة في 30 مباراة. Toronto FC: المركز 10 من 15، 36 نقطة في 30 مباراة.",
         "side": "Columbus Crew على أرضه: سجّل 22 واستقبل 17 في 15 مباراة. Toronto FC خارج أرضه: سجّل 12 واستقبل 23 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Columbus Crew 2.0 – 1.2 Toronto FC. احتمال فوز Columbus Crew 56% · تعادل 22% · فوز Toronto FC 22%.",
-        "news": "Toronto FC: ⚠️ Was Cristiano Ronaldo's last Portugal goal scored in Toronto? Legend suspended after storming out | ⚠️ Toronto Raptors Injury Report and Analysis vs. Chicago Bulls"
+        "goals": "الأهداف المتوقعة: Columbus Crew 2.0 – 1.1 Toronto FC. احتمال فوز Columbus Crew 57% · تعادل 22% · فوز Toronto FC 21%.",
+        "news": "Toronto FC: ⚠️ Was Cristiano Ronaldo's last Portugal goal scored in Toronto? Legend suspended after storming out | ⚠️ Toronto Raptors Injury Report and Analysis vs. Chicago Bulls | ⚠️ Toronto Crime Stoppers temporality suspended over cybersecurity breach"
       }
     },
     {
@@ -3209,24 +3149,24 @@
       "day": "الأحد",
       "time": "02:30",
       "kickoffISO": "2026-10-24T23:30:00.000Z",
-      "prob": 44,
+      "prob": 42,
       "probs": {
-        "home": 34,
+        "home": 36,
         "draw": 22,
-        "away": 44
+        "away": 42
       },
       "homeTeam": "D.C. United",
       "awayTeam": "FC Cincinnati",
       "xg": {
-        "home": 1.67,
-        "away": 1.91
+        "home": 1.71,
+        "away": 1.84
       },
       "confidence": "high",
       "analysis": {
         "form": "D.C. United: المركز 13 من 15، 33 نقطة في 30 مباراة. FC Cincinnati: المركز 8 من 15، 39 نقطة في 30 مباراة.",
         "side": "D.C. United على أرضه: سجّل 20 واستقبل 26 في 15 مباراة. FC Cincinnati خارج أرضه: سجّل 24 واستقبل 41 في 15 مباراة.",
-        "goals": "الأهداف المتوقعة: D.C. United 1.7 – 1.9 FC Cincinnati. احتمال فوز D.C. United 34% · تعادل 22% · فوز FC Cincinnati 44%.",
-        "news": null
+        "goals": "الأهداف المتوقعة: D.C. United 1.7 – 1.8 FC Cincinnati. احتمال فوز D.C. United 36% · تعادل 22% · فوز FC Cincinnati 42%.",
+        "news": "FC Cincinnati: ⚠️ Texas Tech football could catch a big break with a key Cincinnati injury"
       }
     },
     {
@@ -3320,36 +3260,6 @@
       }
     },
     {
-      "id": "espn-761897",
-      "teamA": "Vancouver Whitecaps",
-      "teamB": "Colorado Rapids",
-      "venue": "away",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-10-25T00:30:00.000Z",
-      "prob": 51,
-      "probs": {
-        "home": 25,
-        "draw": 24,
-        "away": 51
-      },
-      "homeTeam": "Colorado Rapids",
-      "awayTeam": "Vancouver Whitecaps",
-      "xg": {
-        "home": 1.08,
-        "away": 1.67
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Colorado Rapids: المركز 9 من 15، 39 نقطة في 30 مباراة. Vancouver Whitecaps: المركز 1 من 15، 55 نقطة في 30 مباراة.",
-        "side": "Colorado Rapids على أرضه: سجّل 28 واستقبل 15 في 15 مباراة. Vancouver Whitecaps خارج أرضه: سجّل 28 واستقبل 17 في 15 مباراة.",
-        "goals": "الأهداف المتوقعة: Colorado Rapids 1.1 – 1.7 Vancouver Whitecaps. احتمال فوز Colorado Rapids 25% · تعادل 24% · فوز Vancouver Whitecaps 51%.",
-        "news": null
-      }
-    },
-    {
       "id": "espn-761900",
       "teamA": "FC Dallas",
       "teamB": "San Jose Earthquakes",
@@ -3359,24 +3269,24 @@
       "day": "الأحد",
       "time": "03:30",
       "kickoffISO": "2026-10-25T00:30:00.000Z",
-      "prob": 46,
+      "prob": 48,
       "probs": {
-        "home": 46,
-        "draw": 22,
-        "away": 32
+        "home": 48,
+        "draw": 21,
+        "away": 31
       },
       "homeTeam": "FC Dallas",
       "awayTeam": "San Jose Earthquakes",
       "xg": {
-        "home": 1.92,
-        "away": 1.57
+        "home": 1.96,
+        "away": 1.55
       },
       "confidence": "high",
       "analysis": {
         "form": "FC Dallas: المركز 3 من 15، 51 نقطة في 30 مباراة. San Jose Earthquakes: المركز 4 من 15، 48 نقطة في 30 مباراة.",
         "side": "FC Dallas على أرضه: سجّل 26 واستقبل 20 في 14 مباراة. San Jose Earthquakes خارج أرضه: سجّل 26 واستقبل 19 في 15 مباراة.",
-        "goals": "الأهداف المتوقعة: FC Dallas 1.9 – 1.6 San Jose Earthquakes. احتمال فوز FC Dallas 46% · تعادل 22% · فوز San Jose Earthquakes 32%.",
-        "news": "FC Dallas: ⚠️ Dallas Cowboys Injury Updates After Week 6 Loss Include Another Starting Defender"
+        "goals": "الأهداف المتوقعة: FC Dallas 2.0 – 1.5 San Jose Earthquakes. احتمال فوز FC Dallas 48% · تعادل 21% · فوز San Jose Earthquakes 31%.",
+        "news": null
       }
     },
     {
@@ -3407,36 +3317,6 @@
         "side": "Houston Dynamo FC على أرضه: سجّل 19 واستقبل 14 في 15 مباراة. Minnesota United FC خارج أرضه: سجّل 28 واستقبل 35 في 15 مباراة.",
         "goals": "الأهداف المتوقعة: Houston Dynamo FC 1.6 – 1.3 Minnesota United FC. احتمال فوز Houston Dynamo FC 45% · تعادل 24% · فوز Minnesota United FC 31%.",
         "news": null
-      }
-    },
-    {
-      "id": "espn-761898",
-      "teamA": "Real Salt Lake",
-      "teamB": "St. Louis CITY SC",
-      "venue": "home",
-      "league": "الدوري الأمريكي (MLS)",
-      "country": "أمريكا",
-      "day": "الأحد",
-      "time": "03:30",
-      "kickoffISO": "2026-10-25T00:30:00.000Z",
-      "prob": 44,
-      "probs": {
-        "home": 44,
-        "draw": 25,
-        "away": 31
-      },
-      "homeTeam": "Real Salt Lake",
-      "awayTeam": "St. Louis CITY SC",
-      "xg": {
-        "home": 1.6,
-        "away": 1.31
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Real Salt Lake: المركز 10 من 15، 36 نقطة في 30 مباراة. St. Louis CITY SC: المركز 2 من 15، 51 نقطة في 30 مباراة.",
-        "side": "Real Salt Lake على أرضه: سجّل 28 واستقبل 21 في 15 مباراة. St. Louis CITY SC خارج أرضه: سجّل 22 واستقبل 22 في 15 مباراة.",
-        "goals": "الأهداف المتوقعة: Real Salt Lake 1.6 – 1.3 St. Louis CITY SC. احتمال فوز Real Salt Lake 44% · تعادل 25% · فوز St. Louis CITY SC 31%.",
-        "news": "St. Louis CITY SC: ⚠️ St. Louis City wins U.S. Open Cup in PKs, with backup GK in place of injured Bürki | ⚠️ St. Louis City goalkeeper Roman Bürki stretchered off with head injury in Open Cup final | ⚠️ St. Louis City SC Claim Historic US Open Cup Title as Captain Roman Bürki Suffers Head Injury"
       }
     },
     {
@@ -3509,24 +3389,84 @@
       "day": "الأحد",
       "time": "04:00",
       "kickoffISO": "2026-10-25T01:00:00Z",
-      "prob": 38,
+      "prob": 39,
       "probs": {
-        "home": 38,
+        "home": 39,
         "draw": 25,
-        "away": 37
+        "away": 36
       },
       "homeTeam": "Santos FC",
       "awayTeam": "EC Bahia",
       "xg": {
-        "home": 1.43,
-        "away": 1.41
+        "home": 1.47,
+        "away": 1.39
       },
       "confidence": "high",
       "analysis": {
         "form": "Santos FC: المركز 8 من 20، 45 نقطة في 31 مباراة، آخر 5 مباريات: فوز · خسارة · تعادل · فوز · فوز. EC Bahia: المركز 7 من 20، 49 نقطة في 31 مباراة، آخر 5 مباريات: خسارة · فوز · خسارة · خسارة · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Santos FC 1.4 – 1.4 EC Bahia. احتمال فوز Santos FC 38% · تعادل 25% · فوز EC Bahia 37%.",
-        "news": "Santos FC: ⚠️ Napoli confirm Alisson Santos blow on first appearance after recovering from injury | ⚠️ Gui Santos admits Warriors were ‘scared' after brief Steph Curry injury scare | ⚠️ Steve Kerr, Gui Santos break down Warriors' open practice, Steph Curry injury"
+        "goals": "الأهداف المتوقعة: Santos FC 1.5 – 1.4 EC Bahia. احتمال فوز Santos FC 39% · تعادل 25% · فوز EC Bahia 36%.",
+        "news": "Santos FC: ⚠️ Gui Santos admits Warriors were ‘scared' after brief Steph Curry injury scare | ⚠️ Steve Kerr, Gui Santos break down Warriors' open practice, Steph Curry injury | ⚠️ Napoli suffer Alisson Santos injury blow ahead of Bodo/Glimt Champions League clash"
+      }
+    },
+    {
+      "id": "espn-761897",
+      "teamA": "Vancouver Whitecaps",
+      "teamB": "Colorado Rapids",
+      "venue": "away",
+      "league": "الدوري الأمريكي (MLS)",
+      "country": "أمريكا",
+      "day": "الأحد",
+      "time": "04:30",
+      "kickoffISO": "2026-10-25T01:30:00.000Z",
+      "prob": 51,
+      "probs": {
+        "home": 25,
+        "draw": 24,
+        "away": 51
+      },
+      "homeTeam": "Colorado Rapids",
+      "awayTeam": "Vancouver Whitecaps",
+      "xg": {
+        "home": 1.08,
+        "away": 1.67
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Colorado Rapids: المركز 9 من 15، 39 نقطة في 30 مباراة. Vancouver Whitecaps: المركز 1 من 15، 55 نقطة في 30 مباراة.",
+        "side": "Colorado Rapids على أرضه: سجّل 28 واستقبل 15 في 15 مباراة. Vancouver Whitecaps خارج أرضه: سجّل 28 واستقبل 17 في 15 مباراة.",
+        "goals": "الأهداف المتوقعة: Colorado Rapids 1.1 – 1.7 Vancouver Whitecaps. احتمال فوز Colorado Rapids 25% · تعادل 24% · فوز Vancouver Whitecaps 51%.",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-761898",
+      "teamA": "Real Salt Lake",
+      "teamB": "St. Louis CITY SC",
+      "venue": "home",
+      "league": "الدوري الأمريكي (MLS)",
+      "country": "أمريكا",
+      "day": "الأحد",
+      "time": "04:30",
+      "kickoffISO": "2026-10-25T01:30:00.000Z",
+      "prob": 44,
+      "probs": {
+        "home": 44,
+        "draw": 25,
+        "away": 31
+      },
+      "homeTeam": "Real Salt Lake",
+      "awayTeam": "St. Louis CITY SC",
+      "xg": {
+        "home": 1.6,
+        "away": 1.31
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Real Salt Lake: المركز 10 من 15، 36 نقطة في 30 مباراة. St. Louis CITY SC: المركز 2 من 15، 51 نقطة في 30 مباراة.",
+        "side": "Real Salt Lake على أرضه: سجّل 28 واستقبل 21 في 15 مباراة. St. Louis CITY SC خارج أرضه: سجّل 22 واستقبل 22 في 15 مباراة.",
+        "goals": "الأهداف المتوقعة: Real Salt Lake 1.6 – 1.3 St. Louis CITY SC. احتمال فوز Real Salt Lake 44% · تعادل 25% · فوز St. Louis CITY SC 31%.",
+        "news": "St. Louis CITY SC: ⚠️ St. Louis City wins U.S. Open Cup in PKs, with backup GK in place of injured Bürki | ⚠️ St. Louis City goalkeeper Roman Bürki stretchered off with head injury in Open Cup final | ⚠️ St. Louis City SC Claim Historic US Open Cup Title as Captain Roman Bürki Suffers Head Injury"
       }
     },
     {
@@ -3856,7 +3796,7 @@
         "form": "Hibernian: المركز 12 من 12، 7 نقاط في 9 مباريات. Celtic: المركز 1 من 12، 24 نقطة في 9 مباريات.",
         "side": "Hibernian على أرضه: سجّل 4 واستقبل 9 في 5 مباريات. Celtic خارج أرضه: سجّل 10 واستقبل 2 في 4 مباريات.",
         "goals": "الأهداف المتوقعة: Hibernian 1.0 – 1.7 Celtic. احتمال فوز Hibernian 22% · تعادل 25% · فوز Celtic 53%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Celtic: ⚠️ Celtic issue injury update on key duo as mood in camp revealed during Martin O'Neill's reflection period | ⚠️ Jota: Celtic winger insists he is stronger after wrestling 'demons' during 18-month injury absence | ⚠️ Celtic handed double injury boost ahead of Celta Vigo clash"
+        "news": "Celtic: ⚠️ Celtic injury latest as Alistair Johnston and Cameron Carter-Vickers near return | ⚠️ Celtic issue injury update on key duo as mood in camp revealed during Martin O'Neill's reflection period | ⚠️ Celtic star dealing with 'private matter' as injured pair poised for return"
       }
     },
     {
@@ -3899,24 +3839,24 @@
       "day": "الأحد",
       "time": "16:00",
       "kickoffISO": "2026-10-25T13:00:00Z",
-      "prob": 41,
+      "prob": 42,
       "probs": {
-        "home": 41,
+        "home": 42,
         "draw": 32,
-        "away": 27
+        "away": 26
       },
       "homeTeam": "Athletic Club",
       "awayTeam": "Getafe CF",
       "xg": {
-        "home": 1.03,
-        "away": 0.77
+        "home": 1.06,
+        "away": 0.76
       },
       "confidence": "high",
       "analysis": {
         "form": "Athletic Club: المركز 13 من 20، 9 نقاط في 8 مباريات، آخر 5 مباريات: خسارة · تعادل · تعادل · تعادل · فوز. Getafe CF: المركز 15 من 20، 9 نقاط في 9 مباريات، آخر 5 مباريات: تعادل · خسارة · فوز · خسارة · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Athletic Club 1.0 – 0.8 Getafe CF. احتمال فوز Athletic Club 41% · تعادل 32% · فوز Getafe CF 27%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Athletic Club: ⚠️ Season over: Athletic confirm Guruzeta's cruciate ligament injury | ⚠️ Football: Athletic Bilbao striker Guruzeta suffers serious knee injury"
+        "goals": "الأهداف المتوقعة: Athletic Club 1.1 – 0.8 Getafe CF. احتمال فوز Athletic Club 42% · تعادل 32% · فوز Getafe CF 26%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Athletic Club: ⚠️ Football: Athletic Bilbao striker Guruzeta suffers serious knee injury"
       }
     },
     {
@@ -3989,24 +3929,24 @@
       "day": "الأحد",
       "time": "16:30",
       "kickoffISO": "2026-10-25T13:30:00Z",
-      "prob": 52,
+      "prob": 54,
       "probs": {
-        "home": 52,
-        "draw": 19,
-        "away": 29
+        "home": 54,
+        "draw": 18,
+        "away": 28
       },
       "homeTeam": "PSV",
       "awayTeam": "Feyenoord Rotterdam",
       "xg": {
-        "home": 2.63,
-        "away": 1.99
+        "home": 2.7,
+        "away": 1.96
       },
       "confidence": "high",
       "analysis": {
         "form": "PSV: المركز 3 من 18، 19 نقطة في 9 مباريات، آخر 5 مباريات: خسارة · فوز · خسارة · فوز · فوز. Feyenoord Rotterdam: المركز 1 من 18، 23 نقطة في 9 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: PSV 2.6 – 2.0 Feyenoord Rotterdam. احتمال فوز PSV 52% · تعادل 19% · فوز Feyenoord Rotterdam 29%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "PSV: ⚠️ PSV Eindhoven vs. FC Porto - October 20, 2026 | Live Scores, Updates, Odds, Injury News and Recaps | ⚠️ Blow for PSV as winger set to miss Champions League clash with Porto"
+        "goals": "الأهداف المتوقعة: PSV 2.7 – 2.0 Feyenoord Rotterdam. احتمال فوز PSV 54% · تعادل 18% · فوز Feyenoord Rotterdam 28%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "PSV: ⚠️ PSV Eindhoven vs. FC Porto - October 20, 2026 | Live Scores, Updates, Odds, Injury News and Recaps"
       }
     },
     {
@@ -4036,7 +3976,7 @@
         "form": "Liverpool FC: المركز 5 من 20، 12 نقطة في 7 مباريات، آخر 5 مباريات: فوز · خسارة · فوز · تعادل · فوز. Brighton & Hove Albion FC: المركز 3 من 20، 16 نقطة في 7 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Liverpool FC 1.3 – 1.7 Brighton & Hove Albion FC. احتمال فوز Liverpool FC 28% · تعادل 23% · فوز Brighton & Hove Albion FC 49%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Liverpool FC: ⚠️ Liverpool’s Jeremie Frimpong could miss next six games with hamstring injury, says Andoni Iraola - The Athletic | ⚠️ Soccer-Liverpool urge patience with Szoboszlai injury, Frimpong suffers new setback | ⚠️ Liverpool Predicted Lineup vs. Villarreal: Iraola Manages More Injury Concerns"
+        "news": "Liverpool FC: ⚠️ Liverpool injury update: Szoboszlai, Frimpong, Munoz return dates | ⚠️ Liverpool issue Jayden Danns injury update as striker 'ready to go' | ⚠️ Liverpool injuries and return dates with Víctor Muñoz and 5 others sidelined"
       }
     },
     {
@@ -4049,24 +3989,24 @@
       "day": "الأحد",
       "time": "17:00",
       "kickoffISO": "2026-10-25T14:00:00Z",
-      "prob": 43,
+      "prob": 41,
       "probs": {
-        "home": 43,
+        "home": 41,
         "draw": 24,
-        "away": 33
+        "away": 35
       },
       "homeTeam": "Crystal Palace FC",
       "awayTeam": "Newcastle United FC",
       "xg": {
-        "home": 1.61,
-        "away": 1.4
+        "home": 1.57,
+        "away": 1.42
       },
       "confidence": "high",
       "analysis": {
         "form": "Crystal Palace FC: المركز 14 من 20، 7 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · خسارة · فوز. Newcastle United FC: المركز 11 من 20، 8 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · خسارة · فوز · خسارة · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Crystal Palace FC 1.6 – 1.4 Newcastle United FC. احتمال فوز Crystal Palace FC 43% · تعادل 24% · فوز Newcastle United FC 33%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Crystal Palace FC: ⚠️ Beşiktaş vs. Crystal Palace: Vincenzo Italiano Reveals Orkun Kökçü Injury Status | ⚠️ Besiktas vs Crystal Palace Preview, prediction, injury news & lineups | Europa League 2026-27\nNewcastle United FC: ⚠️ Newcastle United: News, Scores, Stats, Headlines, Injury Updates & More | ⚠️ Newcastle manager search ruled out 'all the usual suspects' and left Arteta with biggest modern PL decision | ⚠️ Newcastle Q&A with CRAIG HOPE: Jaissle, injuries and transfers"
+        "goals": "الأهداف المتوقعة: Crystal Palace FC 1.6 – 1.4 Newcastle United FC. احتمال فوز Crystal Palace FC 41% · تعادل 24% · فوز Newcastle United FC 35%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Crystal Palace FC: ⚠️ Beşiktaş vs. Crystal Palace: Vincenzo Italiano Reveals Orkun Kökçü Injury Status | ⚠️ Crystal Palace tease major injury boost as £98m Newcastle United duo close to return | ⚠️ Besiktas vs Crystal Palace Preview, prediction, injury news & lineups | Europa League 2026-27\nNewcastle United FC: ⚠️ Newcastle United: News, Scores, Stats, Headlines, Injury Updates & More | ⚠️ Newcastle manager search ruled out 'all the usual suspects' and left Arteta with biggest modern PL decision | ⚠️ Newcastle Q&A with CRAIG HOPE: Jaissle, injuries and transfers"
       }
     },
     {
@@ -4096,7 +4036,7 @@
         "form": "Manchester United FC: المركز 13 من 20، 7 نقاط في 7 مباريات، آخر 5 مباريات: تعادل · تعادل · تعادل · خسارة · تعادل. AFC Bournemouth: المركز 15 من 20، 6 نقاط في 7 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Manchester United FC 2.1 – 1.2 AFC Bournemouth. احتمال فوز Manchester United FC 57% · تعادل 21% · فوز AFC Bournemouth 22%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Manchester United FC: ⚠️ Man United learn Benjamin Sesko injury timeline as transfer plan begins to take shape | ⚠️ Michael Carrick handed major Man United injury concern as attacker faces lengthy absence | ⚠️ Como v Man United LIVE: Carrick battles injury crisis and winless run in Champions League\nAFC Bournemouth: ⚠️ Junior Kroupi back in Bournemouth training but ruled out of AC Milan clash | ⚠️ Bournemouth receive major Kroupi injury boost ahead of Man Utd clash | ✅ Rose confirms Bournemouth star returns to training"
+        "news": "Manchester United FC: ⚠️ Man United learn Benjamin Sesko injury timeline as transfer plan begins to take shape | ⚠️ Michael Carrick handed major Man United injury concern as attacker faces lengthy absence | ⚠️ Como v Man United LIVE: Carrick battles injury crisis and winless run in Champions League\nAFC Bournemouth: ⚠️ Junior Kroupi back in Bournemouth training but ruled out of AC Milan clash | ✅ Rose confirms Bournemouth star returns to training | ⚠️ Bournemouth receive major Kroupi injury boost ahead of Man Utd clash"
       }
     },
     {
@@ -4109,24 +4049,24 @@
       "day": "الأحد",
       "time": "17:00",
       "kickoffISO": "2026-10-25T14:00:00Z",
-      "prob": 41,
+      "prob": 42,
       "probs": {
-        "home": 33,
+        "home": 32,
         "draw": 26,
-        "away": 41
+        "away": 42
       },
       "homeTeam": "Hull City AFC",
       "awayTeam": "Brentford FC",
       "xg": {
-        "home": 1.26,
-        "away": 1.42
+        "home": 1.24,
+        "away": 1.45
       },
       "confidence": "high",
       "analysis": {
         "form": "Hull City AFC: المركز 9 من 20، 9 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · تعادل · خسارة · تعادل · تعادل. Brentford FC: المركز 6 من 20، 10 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Hull City AFC 1.3 – 1.4 Brentford FC. احتمال فوز Hull City AFC 33% · تعادل 26% · فوز Brentford FC 41%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Hull City AFC: ⚠️ Major update on Hull City striker emerges after significant injury concern\nBrentford FC: ⚠️ Iraola praises Wirtz after LASK and Brentford displays, gives Szoboszlai injury update"
+        "goals": "الأهداف المتوقعة: Hull City AFC 1.2 – 1.5 Brentford FC. احتمال فوز Hull City AFC 32% · تعادل 26% · فوز Brentford FC 42%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Hull City AFC: ⚠️ Major update on Hull City striker emerges after significant injury concern"
       }
     },
     {
@@ -4349,24 +4289,24 @@
       "day": "الأحد",
       "time": "18:15",
       "kickoffISO": "2026-10-25T15:15:00Z",
-      "prob": 46,
+      "prob": 45,
       "probs": {
-        "home": 46,
+        "home": 45,
         "draw": 25,
-        "away": 29
+        "away": 30
       },
       "homeTeam": "RC Celta de Vigo",
       "awayTeam": "Real Betis Balompié",
       "xg": {
-        "home": 1.52,
-        "away": 1.15
+        "home": 1.49,
+        "away": 1.16
       },
       "confidence": "high",
       "analysis": {
         "form": "RC Celta de Vigo: المركز 8 من 20، 11 نقطة في 9 مباريات، آخر 5 مباريات: فوز · تعادل · فوز · تعادل · تعادل. Real Betis Balompié: المركز 4 من 20، 19 نقطة في 9 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: RC Celta de Vigo 1.5 – 1.2 Real Betis Balompié. احتمال فوز RC Celta de Vigo 46% · تعادل 25% · فوز Real Betis Balompié 29%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "RC Celta de Vigo: ⚠️ Celtic vs Celta Vigo injury news: 11 out and 1 doubt as O'Neill left with two key decisions for Europa League | ⚠️ Celtic vs Celta Vigo early injury news as 9 players ruled out | ⚠️ Celtic vs Celta Vigo Preview, prediction, injury news & lineups | Europa League 2026-27\nReal Betis Balompié: ⚠️ Troy Parrott set for run of Real Betis starts after injury to Cucho Hernandez | ⚠️ Real Betis announce injury blow before Feyenoord clash | ⚠️ Republic of Ireland star Troy Parrott handed unexpected Real Betis opportunity after striker rival ruled out"
+        "goals": "الأهداف المتوقعة: RC Celta de Vigo 1.5 – 1.2 Real Betis Balompié. احتمال فوز RC Celta de Vigo 45% · تعادل 25% · فوز Real Betis Balompié 30%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "RC Celta de Vigo: ⚠️ Shaun Maloney Shuts Down Celtic Rumours | Team News & Predicted XI vs Celta Vigo | Injury Boost - Celtic news now | ⚠️ Celtic vs Celta Vigo injury news: 11 out and 1 doubt as O'Neill left with two key decisions for Europa League | ⚠️ Celtic vs Celta Vigo early injury news as 9 players ruled out\nReal Betis Balompié: ⚠️ Troy Parrott set for run of Real Betis starts after injury to Cucho Hernandez | ⚠️ Real Betis announce injury blow before Feyenoord clash | ⚠️ Republic of Ireland star Troy Parrott handed unexpected Real Betis opportunity after striker rival ruled out"
       }
     },
     {
@@ -4469,24 +4409,24 @@
       "day": "الأحد",
       "time": "19:00",
       "kickoffISO": "2026-10-25T16:00:00.000Z",
-      "prob": 56,
+      "prob": 59,
       "probs": {
-        "home": 20,
-        "draw": 24,
-        "away": 56
+        "home": 18,
+        "draw": 23,
+        "away": 59
       },
       "homeTeam": "Volos NFC",
       "awayTeam": "Panathinaikos",
       "xg": {
-        "home": 0.9,
-        "away": 1.7
+        "home": 0.87,
+        "away": 1.8
       },
       "confidence": "high",
       "analysis": {
         "form": "Volos NFC: المركز 14 من 14، 0 نقاط في 7 مباريات. Panathinaikos: المركز 1 من 14، 18 نقطة في 7 مباريات.",
         "side": "Volos NFC على أرضه: سجّل 3 واستقبل 4 في 3 مباريات. Panathinaikos خارج أرضه: سجّل 3 واستقبل 1 في 3 مباريات.",
-        "goals": "الأهداف المتوقعة: Volos NFC 0.9 – 1.7 Panathinaikos. احتمال فوز Volos NFC 20% · تعادل 24% · فوز Panathinaikos 56%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Panathinaikos: ⚠️ Panathinaikos: Azzedine Ounahi Suffers Serious Injury | ⚠️ Panathinaikos: serious injury for Ounahi, out until 2027 | ⚠️ Ounahi injury raises concern at Panathinaikos and thr…"
+        "goals": "الأهداف المتوقعة: Volos NFC 0.9 – 1.8 Panathinaikos. احتمال فوز Volos NFC 18% · تعادل 23% · فوز Panathinaikos 59%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Panathinaikos: ⚠️ Panathinaikos: Azzedine Ounahi Suffers Serious Injury"
       }
     },
     {
@@ -4666,7 +4606,7 @@
         "form": "Sunderland AFC: المركز 20 من 20، 4 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · خسارة · خسارة · خسارة · تعادل. Leeds United FC: المركز 7 من 20، 10 نقاط في 7 مباريات، آخر 5 مباريات: تعادل · خسارة · تعادل · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Sunderland AFC 1.1 – 1.2 Leeds United FC. احتمال فوز Sunderland AFC 32% · تعادل 28% · فوز Leeds United FC 40%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Sunderland AFC: ⚠️ Sunderland injury latest as Brobbey trains before Lech Poznan and Leeds United | ⚠️ Big Sunderland injury boost ahead of Leeds United clash but surprise training absence raises question | ⚠️ Sunderland Predicted Starting XI For Lech Poznan Clash Amid Early Injury News\nLeeds United FC: ⚠️ Early Leeds United & Sunderland injury news as fresh ban leaves 5 out & 4 doubts | ⚠️ Leeds United face potential triple injury blow as Daniel Farke awaits key decision"
+        "news": "Sunderland AFC: ⚠️ Sunderland injury latest as Brobbey trains before Lech Poznan and Leeds United | ⚠️ Big Sunderland injury boost ahead of Leeds United clash but surprise training absence raises question | ⚠️ Early Leeds United & Sunderland injury news as fresh ban leaves 5 out & 4 doubts\nLeeds United FC: ⚠️ Early Leeds United & Sunderland injury news as fresh ban leaves 5 out & 4 doubts | ⚠️ Leeds United face potential triple injury blow as Daniel Farke awaits key decision"
       }
     },
     {
@@ -4696,7 +4636,7 @@
         "form": "SC Freiburg: المركز 3 من 18، 13 نقطة في 6 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · فوز. FC Bayern München: المركز 1 من 18، 14 نقطة في 6 مباريات، آخر 5 مباريات: فوز · تعادل · فوز · فوز · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: SC Freiburg 1.5 – 2.6 FC Bayern München. احتمال فوز SC Freiburg 21% · تعادل 18% · فوز FC Bayern München 61%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "FC Bayern München: ⚠️ Bayern coach Kompany doubtful for Arsenal game due to virus | ⚠️ Breaking: Bukayo Saka forced to leave Arsenal vs. Bayern Munich with injury | ⚠️ Bukayo Saka forced off vs Bayern as Arsenal suffer huge injury blow - 'Bad one'"
+        "news": "FC Bayern München: ⚠️ 🚨 Bayern star injured! Lengthy lay-off ahead? | ⚠️ Bayern Munich announce Luis Díaz sidelined with muscle injury after Arsenal game | ⚠️ Bayern's Diaz sidelined with hamstring injury after Arsenal draw"
       }
     },
     {
@@ -4709,24 +4649,24 @@
       "day": "الأحد",
       "time": "20:00",
       "kickoffISO": "2026-10-25T17:00:00Z",
-      "prob": 50,
+      "prob": 51,
       "probs": {
-        "home": 24,
+        "home": 23,
         "draw": 26,
-        "away": 50
+        "away": 51
       },
       "homeTeam": "US Lecce",
       "awayTeam": "Juventus FC",
       "xg": {
-        "home": 0.98,
-        "away": 1.53
+        "home": 0.96,
+        "away": 1.57
       },
       "confidence": "high",
       "analysis": {
         "form": "US Lecce: المركز 12 من 20، 9 نقاط في 7 مباريات، آخر 5 مباريات: فوز · خسارة · خسارة · فوز · خسارة. Juventus FC: المركز 8 من 20، 11 نقطة في 7 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · خسارة · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: US Lecce 1.0 – 1.5 Juventus FC. احتمال فوز US Lecce 24% · تعادل 26% · فوز Juventus FC 50%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "US Lecce: ⚠️ Financial Balance Commission: Lecce could have suspended Banda's salary.\nJuventus FC: ⚠️ Report – Juventus loses another player to injury | ⚠️ Juventus vs Rennes Preview, prediction, injury news & lineups | Europa League 2026-27 | ⚠️ Juventus suffer Francisco Conceicao injury blow"
+        "goals": "الأهداف المتوقعة: US Lecce 1.0 – 1.6 Juventus FC. احتمال فوز US Lecce 23% · تعادل 26% · فوز Juventus FC 51%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "US Lecce: ⚠️ Financial Balance Commission: Lecce could have suspended Banda's salary.\nJuventus FC: ⚠️ Report – Juventus loses another player to injury | ⚠️ Juventus vs Rennes Preview, prediction, injury news & lineups | Europa League 2026-27"
       }
     },
     {
@@ -4739,24 +4679,24 @@
       "day": "الأحد",
       "time": "20:30",
       "kickoffISO": "2026-10-25T17:30:00Z",
-      "prob": 57,
+      "prob": 59,
       "probs": {
-        "home": 57,
-        "draw": 19,
-        "away": 24
+        "home": 59,
+        "draw": 18,
+        "away": 23
       },
       "homeTeam": "Real Sociedad de Fútbol",
       "awayTeam": "Levante UD",
       "xg": {
-        "home": 2.44,
-        "away": 1.56
+        "home": 2.48,
+        "away": 1.53
       },
       "confidence": "high",
       "analysis": {
         "form": "Real Sociedad de Fútbol: المركز 5 من 20، 16 نقطة في 9 مباريات، آخر 5 مباريات: فوز · فوز · فوز · خسارة · فوز. Levante UD: المركز 11 من 20، 10 نقاط في 9 مباريات، آخر 5 مباريات: فوز · تعادل · تعادل · خسارة · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Real Sociedad de Fútbol 2.4 – 1.6 Levante UD. احتمال فوز Real Sociedad de Fútbol 57% · تعادل 19% · فوز Levante UD 24%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
+        "goals": "الأهداف المتوقعة: Real Sociedad de Fútbol 2.5 – 1.5 Levante UD. احتمال فوز Real Sociedad de Fútbol 59% · تعادل 18% · فوز Levante UD 23%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Levante UD: ⚠️ Etta Eyong makes a winning return for Levante in La Liga following his injury"
       }
     },
     {
@@ -4979,24 +4919,24 @@
       "day": "الأحد",
       "time": "22:00",
       "kickoffISO": "2026-10-25T19:00:00Z",
-      "prob": 44,
+      "prob": 43,
       "probs": {
-        "home": 44,
+        "home": 43,
         "draw": 24,
-        "away": 32
+        "away": 33
       },
       "homeTeam": "AZ",
       "awayTeam": "FC Twente '65",
       "xg": {
-        "home": 1.71,
-        "away": 1.43
+        "home": 1.67,
+        "away": 1.45
       },
       "confidence": "high",
       "analysis": {
         "form": "AZ: المركز 2 من 18، 20 نقطة في 9 مباريات، آخر 5 مباريات: تعادل · خسارة · فوز · تعادل · فوز. FC Twente '65: المركز 5 من 18، 17 نقطة في 9 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: AZ 1.7 – 1.4 FC Twente '65. احتمال فوز AZ 44% · تعادل 24% · فوز FC Twente '65 32%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
+        "goals": "الأهداف المتوقعة: AZ 1.7 – 1.4 FC Twente '65. احتمال فوز AZ 43% · تعادل 24% · فوز FC Twente '65 33%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "AZ: ⚠️ Luis Díaz suffers muscle tear and is sidelined for now"
       }
     },
     {
@@ -5026,7 +4966,7 @@
         "form": "Udinese Calcio: المركز 16 من 20، 4 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · خسارة · خسارة · خسارة · خسارة. AC Milan: المركز 4 من 20، 15 نقطة في 7 مباريات، آخر 5 مباريات: فوز · تعادل · فوز · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Udinese Calcio 1.2 – 1.7 AC Milan. احتمال فوز Udinese Calcio 28% · تعادل 24% · فوز AC Milan 48%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Udinese Calcio: ⚠️ Udinese suffer David Alaba injury blow | ⚠️ Udinese announce David Alaba injury and absence again…\nAC Milan: ⚠️ Chukwueze injury blow for Milan as Amorim faces selection crisis | ⚠️ Why Is Lautaro Martinez Not Playing Today for Inter Milan vs. Shakhtar? Latest Injury Report | ⚠️ Milan striker Gonçalo Ramos ruled out of Bournemouth clash with calf injury"
+        "news": "Udinese Calcio: ⚠️ Udinese suffer David Alaba injury blow | ⚠️ Udinese announce David Alaba injury and absence again…\nAC Milan: ⚠️ Why Is Lautaro Martinez Not Playing Today for Inter Milan vs. Shakhtar? Latest Injury Report | ⚠️ Chukwueze injury blow for Milan as Amorim faces selection crisis | ⚠️ Milan striker Gonçalo Ramos ruled out of Bournemouth clash with calf injury"
       }
     },
     {
@@ -5056,7 +4996,7 @@
         "form": "Paris Saint-Germain FC: المركز 2 من 18، 14 نقطة في 7 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · خسارة. Olympique Lyonnais: المركز 1 من 18، 14 نقطة في 7 مباريات، آخر 5 مباريات: فوز · خسارة · فوز · تعادل · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Paris Saint-Germain FC 1.6 – 1.1 Olympique Lyonnais. احتمال فوز Paris Saint-Germain FC 49% · تعادل 25% · فوز Olympique Lyonnais 26%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Paris Saint-Germain FC: ⚠️ 'Why me?': PSG's Kvaratskhelia set for knee surgery, Dembele out for weeks | ⚠️ Kvaratskhelia asks ‘why me?’ after ACL rupture in most serious of three PSG injuries | ⚠️ PSG suffer major injury blow as Khvicha Kvaratskhelia tears ACL in Barcelona victory"
+        "news": "Paris Saint-Germain FC: ⚠️ PSG look to extend Khvicha Kvaratskhelia’s contract, despite ACL injury | ⚠️ Kvaratskhelia asks ‘why me?’ after ACL rupture in most serious of three PSG injuries | ⚠️ PSG Suffer Massive Injury Blow As Dembele And Marquinhos Sidelined For Weeks"
       }
     },
     {
@@ -5086,7 +5026,7 @@
         "form": "FC Barcelona: المركز 1 من 20، 27 نقطة في 9 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز. Real Madrid CF: المركز 3 من 20، 21 نقطة في 9 مباريات، آخر 5 مباريات: فوز · فوز · خسارة · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: FC Barcelona 2.7 – 1.3 Real Madrid CF. احتمال فوز FC Barcelona 67% · تعادل 17% · فوز Real Madrid CF 16%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "FC Barcelona: ⚠️ Barça: Dani Olmo ruled out of the Clásico - Foot-Africa.com\nReal Madrid CF: ⚠️ Real Madrid Injury News vs Leipzig: Rodrygo and Asencio Out, Militao Back | ⚠️ Real Madrid injury, suspension list and return dates vs. Barcelona: Rodrygo, Ferland Mendy updates | ⚠️ Bacary Sagna reveals details of Real Madrid letter in 2011 after serious injury"
+        "news": "FC Barcelona: ⚠️ Barça: Dani Olmo ruled out of the Clásico - Foot-Africa.com\nReal Madrid CF: ⚠️ Real Madrid Injury News vs Leipzig: Rodrygo and Asencio Out, Militao Back | ⚠️ Real Madrid injury, suspension list and return dates vs. Barcelona: Vinicius Junior, Rodrygo, Ferland Mendy updates | ⚠️ Bacary Sagna reveals details of Real Madrid letter in 2011 after serious injury"
       }
     },
     {
@@ -5369,24 +5309,24 @@
       "day": "الاثنين",
       "time": "06:10",
       "kickoffISO": "2026-10-26T03:10:00.000Z",
-      "prob": 52,
+      "prob": 51,
       "probs": {
-        "home": 52,
+        "home": 51,
         "draw": 24,
-        "away": 24
+        "away": 25
       },
       "homeTeam": "Tijuana",
       "awayTeam": "Santos",
       "xg": {
-        "home": 1.65,
-        "away": 1.02
+        "home": 1.63,
+        "away": 1.05
       },
       "confidence": "high",
       "analysis": {
         "form": "Tijuana: المركز 10 من 18، 17 نقطة في 12 مباراة. Santos: المركز 9 من 18، 19 نقطة في 13 مباراة.",
         "side": "Tijuana على أرضه: سجّل 10 واستقبل 6 في 7 مباريات. Santos خارج أرضه: سجّل 9 واستقبل 13 في 6 مباريات.",
-        "goals": "الأهداف المتوقعة: Tijuana 1.6 – 1.0 Santos. احتمال فوز Tijuana 52% · تعادل 24% · فوز Santos 24%.",
-        "news": "Santos: ⚠️ Napoli confirm Alisson Santos blow on first appearance after recovering from injury | ⚠️ Gui Santos admits Warriors were ‘scared' after brief Steph Curry injury scare | ⚠️ Steve Kerr, Gui Santos break down Warriors' open practice, Steph Curry injury"
+        "goals": "الأهداف المتوقعة: Tijuana 1.6 – 1.1 Santos. احتمال فوز Tijuana 51% · تعادل 24% · فوز Santos 25%.",
+        "news": "Santos: ⚠️ Gui Santos admits Warriors were ‘scared' after brief Steph Curry injury scare | ⚠️ Steve Kerr, Gui Santos break down Warriors' open practice, Steph Curry injury | ⚠️ Napoli suffer Alisson Santos injury blow ahead of Bodo/Glimt Champions League clash"
       }
     },
     {
@@ -5459,24 +5399,24 @@
       "day": "الاثنين",
       "time": "21:30",
       "kickoffISO": "2026-10-26T18:30:00.000Z",
-      "prob": 47,
+      "prob": 49,
       "probs": {
-        "home": 47,
+        "home": 49,
         "draw": 22,
-        "away": 31
+        "away": 29
       },
       "homeTeam": "Galatasaray",
       "awayTeam": "Fenerbahce",
       "xg": {
-        "home": 1.94,
-        "away": 1.53
+        "home": 1.99,
+        "away": 1.51
       },
       "confidence": "high",
       "analysis": {
         "form": "Galatasaray: المركز 1 من 18، 19 نقطة في 8 مباريات. Fenerbahce: المركز 3 من 18، 16 نقطة في 8 مباريات.",
         "side": "Galatasaray على أرضه: سجّل 9 واستقبل 5 في 4 مباريات. Fenerbahce خارج أرضه: سجّل 6 واستقبل 2 في 4 مباريات.",
-        "goals": "الأهداف المتوقعة: Galatasaray 1.9 – 1.5 Fenerbahce. احتمال فوز Galatasaray 47% · تعادل 22% · فوز Fenerbahce 31%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Galatasaray: ⚠️ Galatasaray begin treatment for injured Rafael Leao | ⚠️ UEFA Competitions: Osimhen Shines For Galatasaray, Chukwueze Ruled Out, Boniface Dropped\nFenerbahce: ⚠️ Fenerbahce duo Asensio and Ake suffer injuries | ⚠️ Soccer-Fenerbahce duo Asensio and Ake suffer injuries | ⚠️ Fenerbahce suffer Nathan Ake and Marco Asensio injury setback"
+        "goals": "الأهداف المتوقعة: Galatasaray 2.0 – 1.5 Fenerbahce. احتمال فوز Galatasaray 49% · تعادل 22% · فوز Fenerbahce 29%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Galatasaray: ⚠️ UEFA Competitions: Osimhen Shines For Galatasaray, Chukwueze Ruled Out, Boniface Dropped\nFenerbahce: ⚠️ Fenerbahce duo Asensio and Ake suffer injuries | ⚠️ Soccer-Fenerbahce duo Asensio and Ake suffer injuries | ⚠️ Fenerbahce suffer Nathan Ake and Marco Asensio injury setback"
       }
     },
     {
@@ -5729,24 +5669,24 @@
       "day": "الثلاثاء",
       "time": "22:45",
       "kickoffISO": "2026-10-27T19:45:00Z",
-      "prob": 71,
+      "prob": 70,
       "probs": {
-        "home": 71,
+        "home": 70,
         "draw": 19,
-        "away": 10
+        "away": 11
       },
       "homeTeam": "AS Roma",
       "awayTeam": "Cagliari Calcio",
       "xg": {
-        "home": 2.07,
-        "away": 0.63
+        "home": 2.02,
+        "away": 0.64
       },
       "confidence": "high",
       "analysis": {
         "form": "AS Roma: المركز 3 من 20، 17 نقطة في 7 مباريات، آخر 5 مباريات: فوز · تعادل · تعادل · فوز · فوز. Cagliari Calcio: المركز 7 من 20، 13 نقطة في 7 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: AS Roma 2.1 – 0.6 Cagliari Calcio. احتمال فوز AS Roma 71% · تعادل 19% · فوز Cagliari Calcio 10%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "AS Roma: ⚠️ What games will Dybala miss as Roma’s injury crisis worsens? | ⚠️ Roma: injuries are a cause for concern for Gasperini. Pellegrini is sidelined, and options up front are limited | ⚠️ Gasperini: ‘Roma in good shape, but worry for Pellegrini injury’"
+        "goals": "الأهداف المتوقعة: AS Roma 2.0 – 0.6 Cagliari Calcio. احتمال فوز AS Roma 70% · تعادل 19% · فوز Cagliari Calcio 11%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "AS Roma: ⚠️ Roma lose Pellegrini for at least 6-8 weeks with serious injury | ⚠️ Roma: injuries are a cause for concern for Gasperini. Pellegrini is sidelined, and options up front are limited | ⚠️ What games will Dybala miss as Roma’s injury crisis worsens?"
       }
     },
     {
@@ -5836,7 +5776,7 @@
         "form": "AC Milan: المركز 4 من 20، 15 نقطة في 7 مباريات، آخر 5 مباريات: فوز · تعادل · فوز · تعادل · تعادل. Bologna FC 1909: المركز 15 من 20، 5 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · خسارة · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: AC Milan 1.8 – 0.9 Bologna FC 1909. احتمال فوز AC Milan 59% · تعادل 23% · فوز Bologna FC 1909 18%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "AC Milan: ⚠️ Chukwueze injury blow for Milan as Amorim faces selection crisis | ⚠️ Why Is Lautaro Martinez Not Playing Today for Inter Milan vs. Shakhtar? Latest Injury Report | ⚠️ Milan striker Gonçalo Ramos ruled out of Bournemouth clash with calf injury\nBologna FC 1909: ⚠️ Bologna confirm Piccoli out for at least three weeks with fresh injury"
+        "news": "AC Milan: ⚠️ Why Is Lautaro Martinez Not Playing Today for Inter Milan vs. Shakhtar? Latest Injury Report | ⚠️ Chukwueze injury blow for Milan as Amorim faces selection crisis | ⚠️ Milan striker Gonçalo Ramos ruled out of Bournemouth clash with calf injury\nBologna FC 1909: ⚠️ Bologna confirm Piccoli out for at least three weeks with fresh injury"
       }
     },
     {
@@ -5909,24 +5849,24 @@
       "day": "الأربعاء",
       "time": "22:45",
       "kickoffISO": "2026-10-28T19:45:00Z",
-      "prob": 49,
+      "prob": 50,
       "probs": {
-        "home": 26,
+        "home": 25,
         "draw": 25,
-        "away": 49
+        "away": 50
       },
       "homeTeam": "Genoa CFC",
       "awayTeam": "Juventus FC",
       "xg": {
-        "home": 1.07,
-        "away": 1.56
+        "home": 1.06,
+        "away": 1.61
       },
       "confidence": "high",
       "analysis": {
         "form": "Genoa CFC: المركز 17 من 20، 4 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · خسارة · تعادل · خسارة. Juventus FC: المركز 8 من 20، 11 نقطة في 7 مباريات، آخر 5 مباريات: خسارة · تعادل · فوز · خسارة · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Genoa CFC 1.1 – 1.6 Juventus FC. احتمال فوز Genoa CFC 26% · تعادل 25% · فوز Juventus FC 49%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Juventus FC: ⚠️ Report – Juventus loses another player to injury | ⚠️ Juventus vs Rennes Preview, prediction, injury news & lineups | Europa League 2026-27 | ⚠️ Juventus suffer Francisco Conceicao injury blow"
+        "goals": "الأهداف المتوقعة: Genoa CFC 1.1 – 1.6 Juventus FC. احتمال فوز Genoa CFC 25% · تعادل 25% · فوز Juventus FC 50%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Juventus FC: ⚠️ Report – Juventus loses another player to injury | ⚠️ Juventus vs Rennes Preview, prediction, injury news & lineups | Europa League 2026-27"
       }
     },
     {
@@ -5956,7 +5896,7 @@
         "form": "AC Monza: المركز 14 من 20، 7 نقاط في 7 مباريات، آخر 5 مباريات: فوز · خسارة · فوز · خسارة · تعادل. SSC Napoli: المركز 9 من 20، 10 نقاط في 7 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: AC Monza 1.4 – 1.6 SSC Napoli. احتمال فوز AC Monza 32% · تعادل 24% · فوز SSC Napoli 44%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "SSC Napoli: ⚠️ Napoli message to Kvaratskhelia after injury sparks social media confusion | ⚠️ Napoli confirm Alisson Santos blow on first appearance after recovering from injury | ⚠️ Napoli receive injury boost as Antonio Vergara targets return for Roma clash"
+        "news": "SSC Napoli: ⚠️ Napoli message to Kvaratskhelia after injury sparks social media confusion | ⚠️ Napoli receive injury boost as Antonio Vergara targets return for Roma clash | ⚠️ Soccer: Napoli; Alisson suffers a relapse from his previous injury."
       }
     },
     {
@@ -5969,24 +5909,24 @@
       "day": "الأربعاء",
       "time": "22:45",
       "kickoffISO": "2026-10-28T19:45:00.000Z",
-      "prob": 41,
+      "prob": 40,
       "probs": {
-        "home": 41,
+        "home": 40,
         "draw": 28,
-        "away": 31
+        "away": 32
       },
       "homeTeam": "Aberdeen",
       "awayTeam": "Falkirk",
       "xg": {
-        "home": 1.28,
-        "away": 1.07
+        "home": 1.25,
+        "away": 1.08
       },
       "confidence": "high",
       "analysis": {
         "form": "Aberdeen: المركز 7 من 12، 11 نقطة في 9 مباريات. Falkirk: المركز 9 من 12، 9 نقاط في 9 مباريات.",
         "side": "Aberdeen على أرضه: سجّل 5 واستقبل 4 في 5 مباريات. Falkirk خارج أرضه: سجّل 5 واستقبل 5 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Aberdeen 1.3 – 1.1 Falkirk. احتمال فوز Aberdeen 41% · تعادل 28% · فوز Falkirk 31%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
+        "goals": "الأهداف المتوقعة: Aberdeen 1.2 – 1.1 Falkirk. احتمال فوز Aberdeen 40% · تعادل 28% · فوز Falkirk 32%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Aberdeen: ⚠️ Aberdeen handed major Brad Lyons injury boost as semi-final clash looms"
       }
     },
     {
@@ -6016,7 +5956,7 @@
         "form": "Celtic: المركز 1 من 12، 24 نقطة في 9 مباريات. Dundee United: المركز 6 من 12، 12 نقطة في 9 مباريات.",
         "side": "Celtic على أرضه: سجّل 13 واستقبل 3 في 5 مباريات. Dundee United خارج أرضه: سجّل 8 واستقبل 8 في 5 مباريات.",
         "goals": "الأهداف المتوقعة: Celtic 2.2 – 0.8 Dundee United. احتمال فوز Celtic 69% · تعادل 18% · فوز Dundee United 13%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Celtic: ⚠️ Celtic issue injury update on key duo as mood in camp revealed during Martin O'Neill's reflection period | ⚠️ Jota: Celtic winger insists he is stronger after wrestling 'demons' during 18-month injury absence | ⚠️ Celtic handed double injury boost ahead of Celta Vigo clash\nDundee United: ⚠️ Dundee United duo an injury doubt for Aberdeen as Jim Goodwin admits worry over lack of goals"
+        "news": "Celtic: ⚠️ Celtic injury latest as Alistair Johnston and Cameron Carter-Vickers near return | ⚠️ Celtic issue injury update on key duo as mood in camp revealed during Martin O'Neill's reflection period | ⚠️ Celtic star dealing with 'private matter' as injured pair poised for return\nDundee United: ⚠️ Dundee United duo an injury doubt for Aberdeen as Jim Goodwin admits worry over lack of goals"
       }
     },
     {
@@ -6209,24 +6149,24 @@
       "day": "الخميس",
       "time": "01:30",
       "kickoffISO": "2026-10-28T22:30:00Z",
-      "prob": 56,
+      "prob": 55,
       "probs": {
-        "home": 20,
+        "home": 21,
         "draw": 24,
-        "away": 56
+        "away": 55
       },
       "homeTeam": "Santos FC",
       "awayTeam": "SE Palmeiras",
       "xg": {
-        "home": 0.92,
-        "away": 1.71
+        "home": 0.94,
+        "away": 1.68
       },
       "confidence": "high",
       "analysis": {
         "form": "Santos FC: المركز 8 من 20، 45 نقطة في 31 مباراة، آخر 5 مباريات: فوز · خسارة · تعادل · فوز · فوز. SE Palmeiras: المركز 2 من 20، 66 نقطة في 31 مباراة، آخر 5 مباريات: فوز · فوز · فوز · تعادل · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: Santos FC 0.9 – 1.7 SE Palmeiras. احتمال فوز Santos FC 20% · تعادل 24% · فوز SE Palmeiras 56%.",
-        "news": "Santos FC: ⚠️ Napoli confirm Alisson Santos blow on first appearance after recovering from injury | ⚠️ Gui Santos admits Warriors were ‘scared' after brief Steph Curry injury scare | ⚠️ Steve Kerr, Gui Santos break down Warriors' open practice, Steph Curry injury\nSE Palmeiras: ⚠️ Palmeiras councillor who clashed with Leila handed nine-month suspension"
+        "goals": "الأهداف المتوقعة: Santos FC 0.9 – 1.7 SE Palmeiras. احتمال فوز Santos FC 21% · تعادل 24% · فوز SE Palmeiras 55%.",
+        "news": "Santos FC: ⚠️ Gui Santos admits Warriors were ‘scared' after brief Steph Curry injury scare | ⚠️ Steve Kerr, Gui Santos break down Warriors' open practice, Steph Curry injury | ⚠️ Napoli suffer Alisson Santos injury blow ahead of Bodo/Glimt Champions League clash\nSE Palmeiras: ⚠️ Palmeiras councillor who clashed with Leila handed nine-month suspension"
       }
     },
     {
@@ -6269,24 +6209,24 @@
       "day": "الخميس",
       "time": "02:30",
       "kickoffISO": "2026-10-28T23:30:00.000Z",
-      "prob": 69,
+      "prob": 71,
       "probs": {
-        "home": 69,
+        "home": 71,
         "draw": 14,
-        "away": 17
+        "away": 15
       },
       "homeTeam": "Inter Miami CF",
       "awayTeam": "FC Cincinnati",
       "xg": {
-        "home": 3.4,
-        "away": 1.76
+        "home": 3.48,
+        "away": 1.69
       },
       "confidence": "high",
       "analysis": {
         "form": "Inter Miami CF: المركز 2 من 15، 55 نقطة في 30 مباراة. FC Cincinnati: المركز 8 من 15، 39 نقطة في 30 مباراة.",
         "side": "Inter Miami CF على أرضه: سجّل 41 واستقبل 26 في 15 مباراة. FC Cincinnati خارج أرضه: سجّل 24 واستقبل 41 في 15 مباراة.",
-        "goals": "الأهداف المتوقعة: Inter Miami CF 3.4 – 1.8 FC Cincinnati. احتمال فوز Inter Miami CF 69% · تعادل 14% · فوز FC Cincinnati 17%.",
-        "news": null
+        "goals": "الأهداف المتوقعة: Inter Miami CF 3.5 – 1.7 FC Cincinnati. احتمال فوز Inter Miami CF 71% · تعادل 14% · فوز FC Cincinnati 15%.",
+        "news": "FC Cincinnati: ⚠️ Texas Tech football could catch a big break with a key Cincinnati injury"
       }
     },
     {
@@ -6359,24 +6299,24 @@
       "day": "الخميس",
       "time": "02:30",
       "kickoffISO": "2026-10-28T23:30:00.000Z",
-      "prob": 53,
+      "prob": 51,
       "probs": {
-        "home": 53,
-        "draw": 23,
-        "away": 24
+        "home": 51,
+        "draw": 24,
+        "away": 25
       },
       "homeTeam": "Toronto FC",
       "awayTeam": "D.C. United",
       "xg": {
-        "home": 1.76,
-        "away": 1.11
+        "home": 1.72,
+        "away": 1.13
       },
       "confidence": "high",
       "analysis": {
         "form": "Toronto FC: المركز 10 من 15، 36 نقطة في 30 مباراة. D.C. United: المركز 13 من 15، 33 نقطة في 30 مباراة.",
         "side": "Toronto FC على أرضه: سجّل 34 واستقبل 32 في 16 مباراة. D.C. United خارج أرضه: سجّل 18 واستقبل 27 في 15 مباراة.",
-        "goals": "الأهداف المتوقعة: Toronto FC 1.8 – 1.1 D.C. United. احتمال فوز Toronto FC 53% · تعادل 23% · فوز D.C. United 24%.",
-        "news": "Toronto FC: ⚠️ Was Cristiano Ronaldo's last Portugal goal scored in Toronto? Legend suspended after storming out | ⚠️ Toronto Raptors Injury Report and Analysis vs. Chicago Bulls"
+        "goals": "الأهداف المتوقعة: Toronto FC 1.7 – 1.1 D.C. United. احتمال فوز Toronto FC 51% · تعادل 24% · فوز D.C. United 25%.",
+        "news": "Toronto FC: ⚠️ Was Cristiano Ronaldo's last Portugal goal scored in Toronto? Legend suspended after storming out | ⚠️ Toronto Raptors Injury Report and Analysis vs. Chicago Bulls | ⚠️ Toronto Crime Stoppers temporality suspended over cybersecurity breach"
       }
     },
     {
@@ -6509,24 +6449,24 @@
       "day": "الخميس",
       "time": "03:30",
       "kickoffISO": "2026-10-29T00:30:00.000Z",
-      "prob": 49,
+      "prob": 51,
       "probs": {
-        "home": 49,
+        "home": 51,
         "draw": 22,
-        "away": 29
+        "away": 27
       },
       "homeTeam": "FC Dallas",
       "awayTeam": "Columbus Crew",
       "xg": {
-        "home": 1.91,
-        "away": 1.41
+        "home": 1.96,
+        "away": 1.39
       },
       "confidence": "high",
       "analysis": {
         "form": "FC Dallas: المركز 3 من 15، 51 نقطة في 30 مباراة. Columbus Crew: المركز 11 من 15، 35 نقطة في 30 مباراة.",
         "side": "FC Dallas على أرضه: سجّل 26 واستقبل 20 في 14 مباراة. Columbus Crew خارج أرضه: سجّل 24 واستقبل 30 في 15 مباراة.",
-        "goals": "الأهداف المتوقعة: FC Dallas 1.9 – 1.4 Columbus Crew. احتمال فوز FC Dallas 49% · تعادل 22% · فوز Columbus Crew 29%.",
-        "news": "FC Dallas: ⚠️ Dallas Cowboys Injury Updates After Week 6 Loss Include Another Starting Defender"
+        "goals": "الأهداف المتوقعة: FC Dallas 2.0 – 1.4 Columbus Crew. احتمال فوز FC Dallas 51% · تعادل 22% · فوز Columbus Crew 27%.",
+        "news": null
       }
     },
     {
@@ -6749,23 +6689,23 @@
       "day": "الخميس",
       "time": "17:35",
       "kickoffISO": "2026-10-29T14:35:00.000Z",
-      "prob": 43,
+      "prob": 42,
       "probs": {
-        "home": 43,
+        "home": 42,
         "draw": 27,
-        "away": 30
+        "away": 31
       },
       "homeTeam": "Al Khaleej",
       "awayTeam": "Al Hazem",
       "xg": {
-        "home": 1.38,
-        "away": 1.11
+        "home": 1.4,
+        "away": 1.15
       },
       "confidence": "high",
       "analysis": {
-        "form": "Al Khaleej: المركز 10 من 18، 12 نقطة في 10 مباريات. Al Hazem: المركز 11 من 18، 9 نقاط في 10 مباريات.",
+        "form": "Al Khaleej: المركز 10 من 18، 12 نقطة في 10 مباريات. Al Hazem: المركز 11 من 18، 10 نقاط في 11 مباراة.",
         "side": "Al Khaleej على أرضه: سجّل 4 واستقبل 6 في 5 مباريات. Al Hazem خارج أرضه: سجّل 5 واستقبل 8 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Al Khaleej 1.4 – 1.1 Al Hazem. احتمال فوز Al Khaleej 43% · تعادل 27% · فوز Al Hazem 30%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "goals": "الأهداف المتوقعة: Al Khaleej 1.4 – 1.2 Al Hazem. احتمال فوز Al Khaleej 42% · تعادل 27% · فوز Al Hazem 31%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
       }
     },
@@ -6818,7 +6758,7 @@
       "homeTeam": "Al Nassr",
       "awayTeam": "Al Kholood",
       "xg": {
-        "home": 2.84,
+        "home": 2.85,
         "away": 0.76
       },
       "confidence": "high",
