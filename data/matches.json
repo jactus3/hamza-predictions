@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T03:42:07.398Z",
+  "generatedAt": "2026-11-08T12:32:32.955Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -15,7 +15,7 @@
     },
     "الدوري الإيطالي": {
       "ok": true,
-      "fixtures": 5,
+      "fixtures": 4,
       "teams": 20,
       "partial": false
     },
@@ -33,7 +33,7 @@
     },
     "الدوري الهولندي": {
       "ok": true,
-      "fixtures": 5,
+      "fixtures": 4,
       "teams": 18,
       "partial": false
     },
@@ -85,13 +85,13 @@
     },
     "الدوري التركي": {
       "ok": true,
-      "fixtures": 4,
+      "fixtures": 3,
       "teams": 18,
       "partial": false
     },
     "الدوري البلجيكي": {
       "ok": true,
-      "fixtures": 4,
+      "fixtures": 3,
       "teams": 18,
       "partial": false
     },
@@ -127,498 +127,18 @@
     },
     "الدوري الياباني": {
       "ok": true,
-      "fixtures": 4,
-      "teams": 20,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     },
     "الدوري الصيني": {
       "ok": true,
-      "fixtures": 8,
-      "teams": 16,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     }
   },
   "matches": [
-    {
-      "id": "espn-401877559",
-      "teamA": "Machida Zelvia",
-      "teamB": "Sanfrecce Hiroshima",
-      "venue": "home",
-      "league": "الدوري الياباني",
-      "country": "اليابان",
-      "day": "الأحد",
-      "time": "08:00",
-      "kickoffISO": "2026-11-08T05:00:00.000Z",
-      "prob": 38,
-      "probs": {
-        "home": 38,
-        "draw": 27,
-        "away": 35
-      },
-      "homeTeam": "Machida Zelvia",
-      "awayTeam": "Sanfrecce Hiroshima",
-      "xg": {
-        "home": 1.3,
-        "away": 1.22
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Machida Zelvia: المركز 4 من 20، 28 نقطة في 13 مباراة. Sanfrecce Hiroshima: المركز 3 من 20، 29 نقطة في 13 مباراة.",
-        "side": "Machida Zelvia على أرضه: سجّل 11 واستقبل 7 في 6 مباريات. Sanfrecce Hiroshima خارج أرضه: سجّل 12 واستقبل 8 في 7 مباريات.",
-        "goals": "الأهداف المتوقعة: Machida Zelvia 1.3 – 1.2 Sanfrecce Hiroshima. احتمال فوز Machida Zelvia 38% · تعادل 27% · فوز Sanfrecce Hiroshima 35%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401877554",
-      "teamA": "Vissel Kobe",
-      "teamB": "Urawa Red Diamonds",
-      "venue": "home",
-      "league": "الدوري الياباني",
-      "country": "اليابان",
-      "day": "الأحد",
-      "time": "08:00",
-      "kickoffISO": "2026-11-08T05:00:00.000Z",
-      "prob": 59,
-      "probs": {
-        "home": 59,
-        "draw": 22,
-        "away": 19
-      },
-      "homeTeam": "Vissel Kobe",
-      "awayTeam": "Urawa Red Diamonds",
-      "xg": {
-        "home": 1.91,
-        "away": 0.97
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Vissel Kobe: المركز 5 من 20، 26 نقطة في 13 مباراة. Urawa Red Diamonds: المركز 9 من 20، 21 نقطة في 13 مباراة.",
-        "side": "Vissel Kobe على أرضه: سجّل 11 واستقبل 5 في 6 مباريات. Urawa Red Diamonds خارج أرضه: سجّل 9 واستقبل 16 في 7 مباريات.",
-        "goals": "الأهداف المتوقعة: Vissel Kobe 1.9 – 1.0 Urawa Red Diamonds. احتمال فوز Vissel Kobe 59% · تعادل 22% · فوز Urawa Red Diamonds 19%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401877555",
-      "teamA": "Gamba Osaka",
-      "teamB": "Cerezo Osaka",
-      "venue": "home",
-      "league": "الدوري الياباني",
-      "country": "اليابان",
-      "day": "الأحد",
-      "time": "09:00",
-      "kickoffISO": "2026-11-08T06:00:00.000Z",
-      "prob": 46,
-      "probs": {
-        "home": 46,
-        "draw": 23,
-        "away": 31
-      },
-      "homeTeam": "Gamba Osaka",
-      "awayTeam": "Cerezo Osaka",
-      "xg": {
-        "home": 1.88,
-        "away": 1.52
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Gamba Osaka: المركز 17 من 20، 12 نقطة في 13 مباراة. Cerezo Osaka: المركز 13 من 20، 14 نقطة في 13 مباراة.",
-        "side": "Gamba Osaka على أرضه: سجّل 6 واستقبل 8 في 5 مباريات. Cerezo Osaka خارج أرضه: سجّل 4 واستقبل 16 في 6 مباريات.",
-        "goals": "الأهداف المتوقعة: Gamba Osaka 1.9 – 1.5 Cerezo Osaka. احتمال فوز Gamba Osaka 46% · تعادل 23% · فوز Cerezo Osaka 31%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861514",
-      "teamA": "Beijing Guoan",
-      "teamB": "Chongqing Tonglianglong",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 65,
-      "probs": {
-        "home": 65,
-        "draw": 20,
-        "away": 15
-      },
-      "homeTeam": "Beijing Guoan",
-      "awayTeam": "Chongqing Tonglianglong",
-      "xg": {
-        "home": 2.04,
-        "away": 0.86
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Beijing Guoan: المركز 3 من 16، 47 نقطة في 29 مباراة. Chongqing Tonglianglong: المركز 9 من 16، 36 نقطة في 29 مباراة.",
-        "side": "Beijing Guoan على أرضه: سجّل 28 واستقبل 18 في 14 مباراة. Chongqing Tonglianglong خارج أرضه: سجّل 11 واستقبل 16 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Beijing Guoan 2.0 – 0.9 Chongqing Tonglianglong. احتمال فوز Beijing Guoan 65% · تعادل 20% · فوز Chongqing Tonglianglong 15%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861489",
-      "teamA": "Dalian Yingbo",
-      "teamB": "Tianjin Jinmen Tiger",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 40,
-      "probs": {
-        "home": 40,
-        "draw": 28,
-        "away": 32
-      },
-      "homeTeam": "Dalian Yingbo",
-      "awayTeam": "Tianjin Jinmen Tiger",
-      "xg": {
-        "home": 1.27,
-        "away": 1.11
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Dalian Yingbo: المركز 2 من 16، 49 نقطة في 29 مباراة. Tianjin Jinmen Tiger: المركز 12 من 16، 31 نقطة في 29 مباراة.",
-        "side": "Dalian Yingbo على أرضه: سجّل 26 واستقبل 17 في 14 مباراة. Tianjin Jinmen Tiger خارج أرضه: سجّل 17 واستقبل 12 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Dalian Yingbo 1.3 – 1.1 Tianjin Jinmen Tiger. احتمال فوز Dalian Yingbo 40% · تعادل 28% · فوز Tianjin Jinmen Tiger 32%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861490",
-      "teamA": "Qingdao Hainiu",
-      "teamB": "Shenzhen Xinpengcheng",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 41,
-      "probs": {
-        "home": 41,
-        "draw": 24,
-        "away": 35
-      },
-      "homeTeam": "Qingdao Hainiu",
-      "awayTeam": "Shenzhen Xinpengcheng",
-      "xg": {
-        "home": 1.53,
-        "away": 1.39
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Qingdao Hainiu: المركز 16 من 16، 14 نقطة في 29 مباراة. Shenzhen Xinpengcheng: المركز 11 من 16، 32 نقطة في 29 مباراة.",
-        "side": "Qingdao Hainiu على أرضه: سجّل 18 واستقبل 26 في 14 مباراة. Shenzhen Xinpengcheng خارج أرضه: سجّل 12 واستقبل 31 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Qingdao Hainiu 1.5 – 1.4 Shenzhen Xinpengcheng. احتمال فوز Qingdao Hainiu 41% · تعادل 24% · فوز Shenzhen Xinpengcheng 35%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861494",
-      "teamA": "Shandong Taishan",
-      "teamB": "Chengdu Rongcheng",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 40,
-      "probs": {
-        "home": 40,
-        "draw": 23,
-        "away": 37
-      },
-      "homeTeam": "Shandong Taishan",
-      "awayTeam": "Chengdu Rongcheng",
-      "xg": {
-        "home": 1.66,
-        "away": 1.59
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Shandong Taishan: المركز 4 من 16، 44 نقطة في 29 مباراة. Chengdu Rongcheng: المركز 1 من 16، 52 نقطة في 29 مباراة.",
-        "side": "Shandong Taishan على أرضه: سجّل 34 واستقبل 18 في 14 مباراة. Chengdu Rongcheng خارج أرضه: سجّل 20 واستقبل 19 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Shandong Taishan 1.7 – 1.6 Chengdu Rongcheng. احتمال فوز Shandong Taishan 40% · تعادل 23% · فوز Chengdu Rongcheng 37%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861515",
-      "teamA": "Shanghai Port FC",
-      "teamB": "Liaoning Tieren",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 69,
-      "probs": {
-        "home": 69,
-        "draw": 17,
-        "away": 14
-      },
-      "homeTeam": "Shanghai Port FC",
-      "awayTeam": "Liaoning Tieren",
-      "xg": {
-        "home": 2.46,
-        "away": 1.01
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Shanghai Port FC: المركز 5 من 16، 42 نقطة في 29 مباراة. Liaoning Tieren: المركز 13 من 16، 29 نقطة في 29 مباراة.",
-        "side": "Shanghai Port FC على أرضه: سجّل 24 واستقبل 13 في 14 مباراة. Liaoning Tieren خارج أرضه: سجّل 15 واستقبل 25 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Shanghai Port FC 2.5 – 1.0 Liaoning Tieren. احتمال فوز Shanghai Port FC 69% · تعادل 17% · فوز Liaoning Tieren 14%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861492",
-      "teamA": "Shanghai Shenhua FC",
-      "teamB": "Qingdao West Coast",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 62,
-      "probs": {
-        "home": 62,
-        "draw": 21,
-        "away": 17
-      },
-      "homeTeam": "Shanghai Shenhua FC",
-      "awayTeam": "Qingdao West Coast",
-      "xg": {
-        "home": 2.08,
-        "away": 1.01
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Shanghai Shenhua FC: المركز 8 من 16، 37 نقطة في 29 مباراة. Qingdao West Coast: المركز 7 من 16، 39 نقطة في 29 مباراة.",
-        "side": "Shanghai Shenhua FC على أرضه: سجّل 34 واستقبل 25 في 14 مباراة. Qingdao West Coast خارج أرضه: سجّل 14 واستقبل 24 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Shanghai Shenhua FC 2.1 – 1.0 Qingdao West Coast. احتمال فوز Shanghai Shenhua FC 62% · تعادل 21% · فوز Qingdao West Coast 17%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861493",
-      "teamA": "Yunnan Yukun",
-      "teamB": "Wuhan Three Towns",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 59,
-      "probs": {
-        "home": 59,
-        "draw": 19,
-        "away": 22
-      },
-      "homeTeam": "Yunnan Yukun",
-      "awayTeam": "Wuhan Three Towns",
-      "xg": {
-        "home": 2.5,
-        "away": 1.5
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Yunnan Yukun: المركز 6 من 16، 40 نقطة في 29 مباراة. Wuhan Three Towns: المركز 15 من 16، 22 نقطة في 29 مباراة.",
-        "side": "Yunnan Yukun على أرضه: سجّل 32 واستقبل 20 في 14 مباراة. Wuhan Three Towns خارج أرضه: سجّل 22 واستقبل 31 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Yunnan Yukun 2.5 – 1.5 Wuhan Three Towns. احتمال فوز Yunnan Yukun 59% · تعادل 19% · فوز Wuhan Three Towns 22%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401861491",
-      "teamA": "Zhejiang Professional FC",
-      "teamB": "Henan",
-      "venue": "home",
-      "league": "الدوري الصيني",
-      "country": "الصين",
-      "day": "الأحد",
-      "time": "10:30",
-      "kickoffISO": "2026-11-08T07:30:00.000Z",
-      "prob": 49,
-      "probs": {
-        "home": 49,
-        "draw": 22,
-        "away": 29
-      },
-      "homeTeam": "Zhejiang Professional FC",
-      "awayTeam": "Henan",
-      "xg": {
-        "home": 1.94,
-        "away": 1.43
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Zhejiang Professional FC: المركز 10 من 16، 34 نقطة في 29 مباراة. Henan: المركز 14 من 16، 28 نقطة في 29 مباراة.",
-        "side": "Zhejiang Professional FC على أرضه: سجّل 30 واستقبل 22 في 14 مباراة. Henan خارج أرضه: سجّل 19 واستقبل 24 في 14 مباراة.",
-        "goals": "الأهداف المتوقعة: Zhejiang Professional FC 1.9 – 1.4 Henan. احتمال فوز Zhejiang Professional FC 49% · تعادل 22% · فوز Henan 29%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401877577",
-      "teamA": "JEF United Ichihara-Chiba",
-      "teamB": "Mito Hollyhock",
-      "venue": "home",
-      "league": "الدوري الياباني",
-      "country": "اليابان",
-      "day": "الأحد",
-      "time": "11:00",
-      "kickoffISO": "2026-11-08T08:00:00.000Z",
-      "prob": 48,
-      "probs": {
-        "home": 48,
-        "draw": 24,
-        "away": 28
-      },
-      "homeTeam": "JEF United Ichihara-Chiba",
-      "awayTeam": "Mito Hollyhock",
-      "xg": {
-        "home": 1.63,
-        "away": 1.19
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "JEF United Ichihara-Chiba: المركز 18 من 20، 10 نقاط في 13 مباراة. Mito Hollyhock: المركز 19 من 20، 9 نقاط في 13 مباراة.",
-        "side": "JEF United Ichihara-Chiba على أرضه: سجّل 7 واستقبل 7 في 6 مباريات. Mito Hollyhock خارج أرضه: سجّل 5 واستقبل 14 في 6 مباريات.",
-        "goals": "الأهداف المتوقعة: JEF United Ichihara-Chiba 1.6 – 1.2 Mito Hollyhock. احتمال فوز JEF United Ichihara-Chiba 48% · تعادل 24% · فوز Mito Hollyhock 28%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401888253",
-      "teamA": "Caykur Rizespor",
-      "teamB": "Erzurum BB",
-      "venue": "home",
-      "league": "الدوري التركي",
-      "country": "تركيا",
-      "day": "الأحد",
-      "time": "13:30",
-      "kickoffISO": "2026-11-08T10:30:00.000Z",
-      "prob": 52,
-      "probs": {
-        "home": 52,
-        "draw": 24,
-        "away": 24
-      },
-      "homeTeam": "Caykur Rizespor",
-      "awayTeam": "Erzurum BB",
-      "xg": {
-        "home": 1.7,
-        "away": 1.06
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Caykur Rizespor: المركز 13 من 18، 11 نقطة في 10 مباريات. Erzurum BB: المركز 11 من 18، 14 نقطة في 10 مباريات.",
-        "side": "Caykur Rizespor على أرضه: سجّل 3 واستقبل 10 في 4 مباريات. Erzurum BB خارج أرضه: سجّل 4 واستقبل 8 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Caykur Rizespor 1.7 – 1.1 Erzurum BB. احتمال فوز Caykur Rizespor 52% · تعادل 24% · فوز Erzurum BB 24%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": 558840,
-      "teamA": "Feyenoord Rotterdam",
-      "teamB": "SC Heerenveen",
-      "venue": "away",
-      "league": "الدوري الهولندي",
-      "country": "هولندا",
-      "day": "الأحد",
-      "time": "14:15",
-      "kickoffISO": "2026-11-08T11:15:00Z",
-      "prob": 46,
-      "probs": {
-        "home": 32,
-        "draw": 22,
-        "away": 46
-      },
-      "homeTeam": "SC Heerenveen",
-      "awayTeam": "Feyenoord Rotterdam",
-      "xg": {
-        "home": 1.58,
-        "away": 1.91
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "SC Heerenveen: المركز 7 من 18، 18 نقطة في 11 مباراة، آخر 5 مباريات: فوز · فوز · فوز · خسارة · فوز. Feyenoord Rotterdam: المركز 1 من 18، 25 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · تعادل · فوز · فوز · فوز.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: SC Heerenveen 1.6 – 1.9 Feyenoord Rotterdam. احتمال فوز SC Heerenveen 32% · تعادل 22% · فوز Feyenoord Rotterdam 46%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
-    {
-      "id": 558533,
-      "teamA": "SSC Napoli",
-      "teamB": "SS Lazio",
-      "venue": "home",
-      "league": "الدوري الإيطالي",
-      "country": "إيطاليا",
-      "day": "الأحد",
-      "time": "14:30",
-      "kickoffISO": "2026-11-08T11:30:00Z",
-      "prob": 42,
-      "probs": {
-        "home": 42,
-        "draw": 26,
-        "away": 32
-      },
-      "homeTeam": "SSC Napoli",
-      "awayTeam": "SS Lazio",
-      "xg": {
-        "home": 1.47,
-        "away": 1.26
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "SSC Napoli: المركز 10 من 20، 14 نقطة في 10 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · خسارة · فوز. SS Lazio: المركز 1 من 20، 28 نقطة في 10 مباريات، آخر 5 مباريات: فوز · فوز · فوز · فوز · فوز.",
-        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: SSC Napoli 1.5 – 1.3 SS Lazio. احتمال فوز SSC Napoli 42% · تعادل 26% · فوز SS Lazio 32%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "SSC Napoli: ⚠️ Napoli captain Di Lorenzo 'to miss' Lazio clash through injury | ⚠️ Allegri Calls Lazio a Final as Napoli’s Injuries Mount | ⚠️ Lazio, Pinamonti starts alongside Noslin against Napoli. Tavares doubtful\nSS Lazio: ⚠️ Lazio, Pinamonti starts alongside Noslin against Napoli. Tavares doubtful | ⚠️ Lazio ‘to switch’ Tijjani Noslin wide after Zaccagni injury, Pinamonti in contention | ⚠️ Allegri Calls Lazio a Final as Napoli’s Injuries Mount"
-      }
-    },
-    {
-      "id": "espn-401878946",
-      "teamA": "Club Brugge",
-      "teamB": "Anderlecht",
-      "venue": "home",
-      "league": "الدوري البلجيكي",
-      "country": "بلجيكا",
-      "day": "الأحد",
-      "time": "15:30",
-      "kickoffISO": "2026-11-08T12:30:00.000Z",
-      "prob": 68,
-      "probs": {
-        "home": 68,
-        "draw": 18,
-        "away": 14
-      },
-      "homeTeam": "Club Brugge",
-      "awayTeam": "Anderlecht",
-      "xg": {
-        "home": 2.44,
-        "away": 1.02
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Club Brugge: المركز 1 من 18، 27 نقطة في 10 مباريات. Anderlecht: المركز 5 من 18، 19 نقطة في 10 مباريات.",
-        "side": "Club Brugge على أرضه: سجّل 13 واستقبل 3 في 5 مباريات. Anderlecht خارج أرضه: سجّل 3 واستقبل 9 في 5 مباريات.",
-        "goals": "الأهداف المتوقعة: Club Brugge 2.4 – 1.0 Anderlecht. احتمال فوز Club Brugge 68% · تعادل 18% · فوز Anderlecht 14%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": null
-      }
-    },
     {
       "id": 564738,
       "teamA": "Real Betis Balompié",
@@ -689,24 +209,24 @@
       "day": "الأحد",
       "time": "16:30",
       "kickoffISO": "2026-11-08T13:30:00Z",
-      "prob": 51,
+      "prob": 50,
       "probs": {
-        "home": 51,
+        "home": 50,
         "draw": 22,
-        "away": 27
+        "away": 28
       },
       "homeTeam": "FC Twente '65",
       "awayTeam": "AFC Ajax",
       "xg": {
-        "home": 1.9,
-        "away": 1.32
+        "home": 1.87,
+        "away": 1.36
       },
       "confidence": "high",
       "analysis": {
         "form": "FC Twente '65: المركز 4 من 18، 23 نقطة في 11 مباراة، آخر 5 مباريات: فوز · فوز · خسارة · تعادل · فوز. AFC Ajax: المركز 2 من 18، 24 نقطة في 11 مباراة، آخر 5 مباريات: فوز · فوز · فوز · تعادل · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: FC Twente '65 1.9 – 1.3 AFC Ajax. احتمال فوز FC Twente '65 51% · تعادل 22% · فوز AFC Ajax 27%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "AFC Ajax: ⚠️ Brandt, Amrabat, Henrique, Edvardsen And Gaaei: Ajax Injury News Ahead Of Midtjylland Clash"
+        "goals": "الأهداف المتوقعة: FC Twente '65 1.9 – 1.4 AFC Ajax. احتمال فوز FC Twente '65 50% · تعادل 22% · فوز AFC Ajax 28%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
       }
     },
     {
@@ -736,7 +256,7 @@
         "form": "Crystal Palace FC: المركز 19 من 20، 7 نقاط في 9 مباريات، آخر 5 مباريات: خسارة · خسارة · خسارة · فوز · تعادل. Liverpool FC: المركز 6 من 20، 15 نقطة في 9 مباريات، آخر 5 مباريات: خسارة · فوز · فوز · خسارة · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Crystal Palace FC 1.1 – 1.5 Liverpool FC. احتمال فوز Crystal Palace FC 27% · تعادل 26% · فوز Liverpool FC 47%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Crystal Palace FC: ⚠️ Sage confirms Crystal Palace injury boost and gives update on Sarr | ⚠️ Nine players could miss Crystal Palace vs Liverpool as Andoni Iraola sweats over injured star | ⚠️ Crystal Palace vs Liverpool injury news as 8 ruled out and 1 doubt\nLiverpool FC: ⚠️ Liverpool injury update: Ekitike and Gravenberch latest return dates | ⚠️ Nine players could miss Crystal Palace vs Liverpool as Andoni Iraola sweats over injured star | ⚠️ Crystal Palace vs Liverpool injury news as 8 ruled out and 1 doubt"
+        "news": "Crystal Palace FC: ⚠️ Sage confirms Crystal Palace injury boost and gives update on Sarr | ⚠️ Crystal Palace vs Liverpool injury news as 8 ruled out and 1 doubt | ⚠️ Nine players could miss Crystal Palace vs Liverpool as Andoni Iraola sweats over injured star\nLiverpool FC: ⚠️ Andoni Iraola confirms Liverpool injury doubt and makes Bradley Barcola position clear | ⚠️ Crystal Palace vs Liverpool injury news as 8 ruled out and 1 doubt | ⚠️ Gravenberch, Leoni, Ekitike - Liverpool injury news and return dates ahead of Crystal Palace"
       }
     },
     {
@@ -766,7 +286,7 @@
         "form": "Sunderland AFC: المركز 20 من 20، 5 نقاط في 9 مباريات، آخر 5 مباريات: خسارة · تعادل · خسارة · خسارة · خسارة. Chelsea FC: المركز 4 من 20، 16 نقطة في 9 مباريات، آخر 5 مباريات: فوز · خسارة · فوز · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Sunderland AFC 1.2 – 1.6 Chelsea FC. احتمال فوز Sunderland AFC 29% · تعادل 25% · فوز Chelsea FC 46%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Sunderland AFC: ⚠️ Sunderland vs Chelsea injury news as 8 ruled out and 5 doubts | ⚠️ Chelsea predicted XI vs Sunderland: Injuries and returns leave Xabi Alonso facing tough selection decisions | ⚠️ Quenda races to be fit for Sunderland after muscle problem adds to Chelsea injury list\nChelsea FC: ⚠️ Xabi Alonso suffers fresh Chelsea injury concern as another star misses training | ⚠️ Sunderland vs Chelsea injury news as 8 ruled out and 5 doubts | ⚠️ Xabi Alonso reveals Joao Pedro timeline in new three-man Chelsea injury update"
+        "news": "Sunderland AFC: ⚠️ Sunderland vs Chelsea injury news as 8 ruled out and 5 doubts | ⚠️ Chelsea predicted XI vs Sunderland: Injuries and returns leave Xabi Alonso facing tough selection decisions | ⚠️ Team News: Sunderland vs. Chelsea injury, suspension list, predicted XIs\nChelsea FC: ⚠️ Sunderland vs Chelsea injury news as 8 ruled out and 5 doubts | ⚠️ Lacroix, Martinez, Joao Pedro: Chelsea injury latest for FPL Gameweek 10 | ⚠️ Chelsea face fresh injury worry as Moises Caicedo doubtful and duo ruled out for Sunderland"
       }
     },
     {
@@ -848,7 +368,7 @@
       "homeTeam": "Genoa CFC",
       "awayTeam": "AC Milan",
       "xg": {
-        "home": 1.14,
+        "home": 1.13,
         "away": 1.67
       },
       "confidence": "high",
@@ -916,7 +436,7 @@
         "form": "Stade Rennais FC 1901: المركز 5 من 18، 16 نقطة في 9 مباريات، آخر 5 مباريات: خسارة · فوز · خسارة · فوز · خسارة. Lille OSC: المركز 3 من 18، 18 نقطة في 9 مباريات، آخر 5 مباريات: فوز · تعادل · تعادل · فوز · خسارة.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Stade Rennais FC 1901 1.6 – 1.5 Lille OSC. احتمال فوز Stade Rennais FC 1901 40% · تعادل 24% · فوز Lille OSC 36%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Lille OSC: ⚠️ Lille president suspended four months over ref rant after PSG draw | ⚠️ Lille president Olivier Létang fined and suspended, club intends to appeal"
+        "news": "Lille OSC: ⚠️ Lille president suspended four months over ref rant after PSG draw | ⚠️ Lille Make Shock Move to Secure Injured Igamane Until 2031"
       }
     },
     {
@@ -989,24 +509,24 @@
       "day": "الأحد",
       "time": "18:00",
       "kickoffISO": "2026-11-08T15:00:00.000Z",
-      "prob": 60,
+      "prob": 62,
       "probs": {
-        "home": 60,
-        "draw": 22,
+        "home": 62,
+        "draw": 20,
         "away": 18
       },
       "homeTeam": "Heart of Midlothian",
       "awayTeam": "Falkirk",
       "xg": {
-        "home": 2.01,
-        "away": 1.01
+        "home": 2.04,
+        "away": 0.99
       },
       "confidence": "high",
       "analysis": {
         "form": "Heart of Midlothian: المركز 3 من 12، 20 نقطة في 11 مباراة. Falkirk: المركز 4 من 12، 18 نقطة في 12 مباراة.",
         "side": "Heart of Midlothian على أرضه: سجّل 15 واستقبل 4 في 5 مباريات. Falkirk خارج أرضه: سجّل 6 واستقبل 5 في 6 مباريات.",
-        "goals": "الأهداف المتوقعة: Heart of Midlothian 2.0 – 1.0 Falkirk. احتمال فوز Heart of Midlothian 60% · تعادل 22% · فوز Falkirk 18%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Falkirk: ⚠️ John McGlynn provides Falkirk injury update ahead of Hearts trip in top flight"
+        "goals": "الأهداف المتوقعة: Heart of Midlothian 2.0 – 1.0 Falkirk. احتمال فوز Heart of Midlothian 62% · تعادل 20% · فوز Falkirk 18%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "Falkirk: ⚠️ John McGlynn provides Falkirk injury update ahead of Hearts trip in top flight | ⚠️ Aidan Nesbitt speaks out on Falkirk injury heartbreak as he targets big return"
       }
     },
     {
@@ -1179,11 +699,11 @@
       "awayTeam": "Trabzonspor",
       "xg": {
         "home": 1.02,
-        "away": 1.8
+        "away": 1.79
       },
       "confidence": "high",
       "analysis": {
-        "form": "Alanyaspor: المركز 12 من 18، 12 نقطة في 10 مباريات. Trabzonspor: المركز 3 من 18، 22 نقطة في 10 مباريات.",
+        "form": "Alanyaspor: المركز 13 من 18، 12 نقطة في 10 مباريات. Trabzonspor: المركز 3 من 18، 22 نقطة في 10 مباريات.",
         "side": "Alanyaspor على أرضه: سجّل 4 واستقبل 4 في 4 مباريات. Trabzonspor خارج أرضه: سجّل 9 واستقبل 7 في 5 مباريات.",
         "goals": "الأهداف المتوقعة: Alanyaspor 1.0 – 1.8 Trabzonspor. احتمال فوز Alanyaspor 21% · تعادل 24% · فوز Trabzonspor 55%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
         "news": null
@@ -1229,24 +749,24 @@
       "day": "الأحد",
       "time": "18:45",
       "kickoffISO": "2026-11-08T15:45:00Z",
-      "prob": 53,
+      "prob": 55,
       "probs": {
-        "home": 53,
-        "draw": 21,
-        "away": 26
+        "home": 55,
+        "draw": 20,
+        "away": 25
       },
       "homeTeam": "AZ",
       "awayTeam": "FC Groningen",
       "xg": {
-        "home": 2.12,
-        "away": 1.44
+        "home": 2.17,
+        "away": 1.42
       },
       "confidence": "high",
       "analysis": {
         "form": "AZ: المركز 5 من 18، 20 نقطة في 11 مباراة، آخر 5 مباريات: خسارة · خسارة · تعادل · خسارة · فوز. FC Groningen: المركز 9 من 18، 15 نقطة في 11 مباراة، آخر 5 مباريات: خسارة · تعادل · خسارة · فوز · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: AZ 2.1 – 1.4 FC Groningen. احتمال فوز AZ 53% · تعادل 21% · فوز FC Groningen 26%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "AZ: ⚠️ Three Araz-Nakhchivan players doubtful - NAMES"
+        "goals": "الأهداف المتوقعة: AZ 2.2 – 1.4 FC Groningen. احتمال فوز AZ 55% · تعادل 20% · فوز FC Groningen 25%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
       }
     },
     {
@@ -1289,24 +809,24 @@
       "day": "الأحد",
       "time": "19:00",
       "kickoffISO": "2026-11-08T16:00:00.000Z",
-      "prob": 81,
+      "prob": 79,
       "probs": {
-        "home": 81,
-        "draw": 12,
-        "away": 7
+        "home": 79,
+        "draw": 13,
+        "away": 8
       },
       "homeTeam": "Celtic",
       "awayTeam": "Kilmarnock",
       "xg": {
-        "home": 2.96,
-        "away": 0.81
+        "home": 2.88,
+        "away": 0.83
       },
       "confidence": "high",
       "analysis": {
         "form": "Celtic: المركز 1 من 12، 28 نقطة في 12 مباراة. Kilmarnock: المركز 12 من 12، 9 نقاط في 12 مباراة.",
         "side": "Celtic على أرضه: سجّل 15 واستقبل 5 في 6 مباريات. Kilmarnock خارج أرضه: سجّل 6 واستقبل 13 في 6 مباريات.",
-        "goals": "الأهداف المتوقعة: Celtic 3.0 – 0.8 Kilmarnock. احتمال فوز Celtic 81% · تعادل 12% · فوز Kilmarnock 7%.",
-        "news": "Celtic: ⚠️ Video - Celtic Confirm Injury Problem For Kilmarnock Game | ⚠️ Celtic vs Kilmarnock injury news as 3 ruled out and 2 doubts | ⚠️ Celtic predicted XI vs Kilmarnock includes Jota’s first start since injury return\nKilmarnock: ⚠️ Celtic vs Kilmarnock injury news as 3 ruled out and 2 doubts | ⚠️ Celtic predicted XI vs Kilmarnock includes Jota’s first start since injury return"
+        "goals": "الأهداف المتوقعة: Celtic 2.9 – 0.8 Kilmarnock. احتمال فوز Celtic 79% · تعادل 13% · فوز Kilmarnock 8%.",
+        "news": "Celtic: ⚠️ Celtic injury alarm sounded after late Besiktas heroics as Martin O'Neill left with attacking puzzle to solve | ⚠️ Celtic Confirm Injury Problem For Kilmarnock Game | ⚠️ Celtic vs Kilmarnock injury news as 3 ruled out and 2 doubts\nKilmarnock: ⚠️ Celtic vs Kilmarnock injury news as 3 ruled out and 2 doubts | ⚠️ Celtic predicted XI vs Kilmarnock includes Jota’s first start since injury return"
       }
     },
     {
@@ -1456,7 +976,7 @@
         "form": "Manchester United FC: المركز 18 من 20، 7 نقاط في 9 مباريات، آخر 5 مباريات: خسارة · خسارة · تعادل · تعادل · تعادل. Aston Villa FC: المركز 12 من 20، 12 نقطة في 9 مباريات، آخر 5 مباريات: تعادل · فوز · فوز · تعادل · فوز.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Manchester United FC 1.6 – 1.2 Aston Villa FC. احتمال فوز Manchester United FC 47% · تعادل 25% · فوز Aston Villa FC 28%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "Manchester United FC: ⚠️ Man United's Carlos Baleba set for long injury absence with hamstring issue | ⚠️ Team News: Man United vs. Aston Villa injury, suspension list, predicted XIs | ⚠️ Man United injury, suspension list and return dates vs. Aston Villa: Carlos Baleba, Patrick Dorgu, Benjamin Sesko, Marcus Rashford latest\nAston Villa FC: ⚠️ Man Utd vs Aston Villa injury news as 8 ruled out and 3 doubts | ⚠️ Team News: Man United vs. Aston Villa injury, suspension list, predicted XIs | ⚠️ Aston Villa injury news: Unai Emery delivers boost ahead of Manchester United showdown at Old Trafford"
+        "news": "Manchester United FC: ⚠️ Man United's Carlos Baleba set for long injury absence with hamstring issue | ⚠️ Team News: Man United vs. Aston Villa injury, suspension list, predicted XIs | ⚠️ Man United injury news: Michael Carrick blow, Liverpool boost as key star set to miss Anfield game after international break\nAston Villa FC: ⚠️ Man Utd vs Aston Villa injury news as 8 ruled out and 3 doubts | ⚠️ Team News: Man United vs. Aston Villa injury, suspension list, predicted XIs | ⚠️ Aston Villa injury news: Unai Emery delivers boost ahead of Manchester United showdown at Old Trafford"
       }
     },
     {
@@ -1688,8 +1208,8 @@
       "homeTeam": "Besiktas",
       "awayTeam": "Genclerbirligi",
       "xg": {
-        "home": 2.42,
-        "away": 0.92
+        "home": 2.43,
+        "away": 0.91
       },
       "confidence": "high",
       "analysis": {
@@ -1739,24 +1259,24 @@
       "day": "الأحد",
       "time": "21:30",
       "kickoffISO": "2026-11-08T18:30:00Z",
-      "prob": 62,
+      "prob": 64,
       "probs": {
-        "home": 62,
-        "draw": 20,
-        "away": 18
+        "home": 64,
+        "draw": 19,
+        "away": 17
       },
       "homeTeam": "TSG 1899 Hoffenheim",
       "awayTeam": "FC Schalke 04",
       "xg": {
-        "home": 2.13,
-        "away": 1.04
+        "home": 2.18,
+        "away": 1.03
       },
       "confidence": "high",
       "analysis": {
         "form": "TSG 1899 Hoffenheim: المركز 14 من 18، 9 نقاط في 8 مباريات، آخر 5 مباريات: خسارة · فوز · فوز · خسارة · خسارة. FC Schalke 04: المركز 17 من 18، 6 نقاط في 8 مباريات، آخر 5 مباريات: خسارة · تعادل · خسارة · خسارة · تعادل.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
-        "goals": "الأهداف المتوقعة: TSG 1899 Hoffenheim 2.1 – 1.0 FC Schalke 04. احتمال فوز TSG 1899 Hoffenheim 62% · تعادل 20% · فوز FC Schalke 04 18%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
-        "news": "TSG 1899 Hoffenheim: ⚠️ Hoffenheim’s Oliver Baumann addresses squad injury crisis ahead of Crystal Palace clash"
+        "goals": "الأهداف المتوقعة: TSG 1899 Hoffenheim 2.2 – 1.0 FC Schalke 04. احتمال فوز TSG 1899 Hoffenheim 64% · تعادل 19% · فوز FC Schalke 04 17%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
       }
     },
     {
@@ -1838,8 +1358,8 @@
       "homeTeam": "ACF Fiorentina",
       "awayTeam": "Juventus FC",
       "xg": {
-        "home": 1.23,
-        "away": 1.8
+        "home": 1.22,
+        "away": 1.79
       },
       "confidence": "high",
       "analysis": {
@@ -2109,7 +1629,7 @@
       "awayTeam": "Monterrey",
       "xg": {
         "home": 1.41,
-        "away": 1.74
+        "away": 1.75
       },
       "confidence": "high",
       "analysis": {
