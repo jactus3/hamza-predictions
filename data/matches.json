@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T21:30:57.678Z",
+  "generatedAt": "2026-11-09T03:54:41.931Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -115,13 +115,13 @@
     },
     "الدوري الأرجنتيني": {
       "ok": true,
-      "fixtures": 1,
-      "teams": 30,
+      "fixtures": 0,
+      "teams": 0,
       "partial": false
     },
     "الدوري المكسيكي": {
       "ok": true,
-      "fixtures": 3,
+      "fixtures": 1,
       "teams": 18,
       "partial": false
     },
@@ -139,96 +139,6 @@
     }
   },
   "matches": [
-    {
-      "id": "espn-401841668",
-      "teamA": "Lanús",
-      "teamB": "Central Córdoba (Santiago del Estero)",
-      "venue": "away",
-      "league": "الدوري الأرجنتيني",
-      "country": "الأرجنتين",
-      "day": "الاثنين",
-      "time": "01:30",
-      "kickoffISO": "2026-11-08T22:30:00.000Z",
-      "prob": 49,
-      "probs": {
-        "home": 23,
-        "draw": 28,
-        "away": 49
-      },
-      "homeTeam": "Central Córdoba (Santiago del Estero)",
-      "awayTeam": "Lanús",
-      "xg": {
-        "home": 0.83,
-        "away": 1.36
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Central Córdoba (Santiago del Estero): المركز 15 من 15، 10 نقاط في 15 مباراة. Lanús: المركز 5 من 15، 25 نقطة في 15 مباراة.",
-        "side": "Central Córdoba (Santiago del Estero) على أرضه: سجّل 5 واستقبل 13 في 7 مباريات. Lanús خارج أرضه: سجّل 9 واستقبل 4 في 7 مباريات.",
-        "goals": "الأهداف المتوقعة: Central Córdoba (Santiago del Estero) 0.8 – 1.4 Lanús. احتمال فوز Central Córdoba (Santiago del Estero) 23% · تعادل 28% · فوز Lanús 49%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876903",
-      "teamA": "Querétaro",
-      "teamB": "Puebla",
-      "venue": "home",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الاثنين",
-      "time": "03:00",
-      "kickoffISO": "2026-11-09T00:00:00.000Z",
-      "prob": 48,
-      "probs": {
-        "home": 48,
-        "draw": 25,
-        "away": 27
-      },
-      "homeTeam": "Querétaro",
-      "awayTeam": "Puebla",
-      "xg": {
-        "home": 1.64,
-        "away": 1.17
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "Querétaro: المركز 12 من 18، 20 نقطة في 14 مباراة. Puebla: المركز 14 من 18، 16 نقطة في 15 مباراة.",
-        "side": "Querétaro على أرضه: سجّل 8 واستقبل 9 في 6 مباريات. Puebla خارج أرضه: سجّل 9 واستقبل 11 في 8 مباريات.",
-        "goals": "الأهداف المتوقعة: Querétaro 1.6 – 1.2 Puebla. احتمال فوز Querétaro 48% · تعادل 25% · فوز Puebla 27%.",
-        "news": null
-      }
-    },
-    {
-      "id": "espn-401876902",
-      "teamA": "Guadalajara",
-      "teamB": "León",
-      "venue": "away",
-      "league": "الدوري المكسيكي",
-      "country": "المكسيك",
-      "day": "الاثنين",
-      "time": "05:10",
-      "kickoffISO": "2026-11-09T02:10:00.000Z",
-      "prob": 53,
-      "probs": {
-        "home": 22,
-        "draw": 25,
-        "away": 53
-      },
-      "homeTeam": "León",
-      "awayTeam": "Guadalajara",
-      "xg": {
-        "home": 0.93,
-        "away": 1.58
-      },
-      "confidence": "high",
-      "analysis": {
-        "form": "León: المركز 9 من 18، 22 نقطة في 15 مباراة. Guadalajara: المركز 3 من 18، 29 نقطة في 15 مباراة.",
-        "side": "León على أرضه: سجّل 13 واستقبل 10 في 7 مباريات. Guadalajara خارج أرضه: سجّل 10 واستقبل 5 في 7 مباريات.",
-        "goals": "الأهداف المتوقعة: León 0.9 – 1.6 Guadalajara. احتمال فوز León 22% · تعادل 25% · فوز Guadalajara 53%.",
-        "news": null
-      }
-    },
     {
       "id": 555085,
       "teamA": "Mirassol FC",
@@ -269,23 +179,23 @@
       "day": "الأحد",
       "time": "02:00",
       "kickoffISO": "2026-11-14T23:00:00.000Z",
-      "prob": 45,
+      "prob": 47,
       "probs": {
-        "home": 31,
-        "draw": 24,
-        "away": 45
+        "home": 30,
+        "draw": 23,
+        "away": 47
       },
       "homeTeam": "Querétaro",
       "awayTeam": "Monterrey",
       "xg": {
-        "home": 1.41,
-        "away": 1.75
+        "home": 1.36,
+        "away": 1.77
       },
       "confidence": "high",
       "analysis": {
-        "form": "Querétaro: المركز 12 من 18، 20 نقطة في 14 مباراة. Monterrey: المركز 10 من 18، 21 نقطة في 15 مباراة.",
-        "side": "Querétaro على أرضه: سجّل 8 واستقبل 9 في 6 مباريات. Monterrey خارج أرضه: سجّل 10 واستقبل 14 في 7 مباريات.",
-        "goals": "الأهداف المتوقعة: Querétaro 1.4 – 1.7 Monterrey. احتمال فوز Querétaro 31% · تعادل 24% · فوز Monterrey 45%.",
+        "form": "Querétaro: المركز 12 من 18، 20 نقطة في 15 مباراة. Monterrey: المركز 10 من 18، 21 نقطة في 15 مباراة.",
+        "side": "Querétaro على أرضه: سجّل 8 واستقبل 11 في 7 مباريات. Monterrey خارج أرضه: سجّل 10 واستقبل 14 في 7 مباريات.",
+        "goals": "الأهداف المتوقعة: Querétaro 1.4 – 1.8 Monterrey. احتمال فوز Querétaro 30% · تعادل 23% · فوز Monterrey 47%.",
         "news": null
       }
     },
