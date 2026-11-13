@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T23:02:13.246Z",
+  "generatedAt": "2026-11-13T04:25:56.631Z",
   "sources": {
     "الدوري الإنجليزي": {
       "ok": true,
@@ -9,8 +9,8 @@
     },
     "الدوري الإسباني": {
       "ok": true,
-      "fixtures": 0,
-      "teams": 0,
+      "fixtures": 1,
+      "teams": 20,
       "partial": false
     },
     "الدوري الإيطالي": {
@@ -21,14 +21,14 @@
     },
     "الدوري الألماني": {
       "ok": true,
-      "fixtures": 0,
-      "teams": 0,
+      "fixtures": 1,
+      "teams": 18,
       "partial": false
     },
     "الدوري الفرنسي": {
       "ok": true,
-      "fixtures": 0,
-      "teams": 0,
+      "fixtures": 1,
+      "teams": 18,
       "partial": false
     },
     "الدوري الهولندي": {
@@ -51,7 +51,7 @@
     },
     "الدوري البرازيلي": {
       "ok": true,
-      "fixtures": 10,
+      "fixtures": 11,
       "teams": 20,
       "partial": false
     },
@@ -75,8 +75,8 @@
     },
     "دوري روشن السعودي": {
       "ok": true,
-      "fixtures": 0,
-      "teams": 0,
+      "fixtures": 1,
+      "teams": 18,
       "partial": false
     },
     "الدوري المصري الممتاز": {
@@ -91,8 +91,8 @@
     },
     "الدوري البلجيكي": {
       "ok": true,
-      "fixtures": 0,
-      "teams": 0,
+      "fixtures": 1,
+      "teams": 18,
       "partial": false
     },
     "الدوري الاسكتلندي": {
@@ -115,20 +115,20 @@
     },
     "الدوري الأرجنتيني": {
       "ok": true,
-      "fixtures": 0,
+      "fixtures": 1,
       "teams": 0,
       "partial": false
     },
     "الدوري المكسيكي": {
       "ok": true,
-      "fixtures": 1,
+      "fixtures": 4,
       "teams": 18,
       "partial": false
     },
     "الدوري الياباني": {
       "ok": true,
-      "fixtures": 0,
-      "teams": 0,
+      "fixtures": 3,
+      "teams": 20,
       "partial": false
     },
     "الدوري الصيني": {
@@ -470,6 +470,36 @@
       }
     },
     {
+      "id": 555087,
+      "teamA": "São Paulo FC",
+      "teamB": "Fluminense FC",
+      "venue": "home",
+      "league": "الدوري البرازيلي",
+      "country": "البرازيل",
+      "day": "الجمعة",
+      "time": "03:30",
+      "kickoffISO": "2026-11-20T00:30:00Z",
+      "prob": 36,
+      "probs": {
+        "home": 36,
+        "draw": 28,
+        "away": 36
+      },
+      "homeTeam": "São Paulo FC",
+      "awayTeam": "Fluminense FC",
+      "xg": {
+        "home": 1.21,
+        "away": 1.21
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "São Paulo FC: المركز 10 من 20، 44 نقطة في 34 مباراة، آخر 5 مباريات: تعادل · خسارة · تعادل · فوز · فوز. Fluminense FC: المركز 4 من 20، 57 نقطة في 34 مباراة، آخر 5 مباريات: فوز · فوز · خسارة · خسارة · خسارة.",
+        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
+        "goals": "الأهداف المتوقعة: São Paulo FC 1.2 – 1.2 Fluminense FC. احتمال فوز São Paulo FC 36% · تعادل 28% · فوز Fluminense FC 36%.",
+        "news": null
+      }
+    },
+    {
       "id": "espn-401933535",
       "teamA": "Orlando City SC",
       "teamB": "FC Cincinnati",
@@ -526,6 +556,366 @@
         "form": "Seattle Sounders FC: 0 نقاط في 0 مباريات. Real Salt Lake: 0 نقاط في 0 مباريات.",
         "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
         "goals": "الأهداف المتوقعة: Seattle Sounders FC 1.7 – 0.9 Real Salt Lake. احتمال فوز Seattle Sounders FC 56% · تعادل 25% · فوز Real Salt Lake 19%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401877534",
+      "teamA": "Kashima Antlers",
+      "teamB": "Shimizu S-Pulse",
+      "venue": "home",
+      "league": "الدوري الياباني",
+      "country": "اليابان",
+      "day": "الجمعة",
+      "time": "13:00",
+      "kickoffISO": "2026-11-20T10:00:00.000Z",
+      "prob": 69,
+      "probs": {
+        "home": 69,
+        "draw": 18,
+        "away": 13
+      },
+      "homeTeam": "Kashima Antlers",
+      "awayTeam": "Shimizu S-Pulse",
+      "xg": {
+        "home": 2.31,
+        "away": 0.89
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Kashima Antlers: المركز 6 من 20، 23 نقطة في 14 مباراة. Shimizu S-Pulse: المركز 15 من 20، 14 نقطة في 14 مباراة.",
+        "side": "Kashima Antlers على أرضه: سجّل 15 واستقبل 8 في 7 مباريات. Shimizu S-Pulse خارج أرضه: سجّل 4 واستقبل 11 في 6 مباريات.",
+        "goals": "الأهداف المتوقعة: Kashima Antlers 2.3 – 0.9 Shimizu S-Pulse. احتمال فوز Kashima Antlers 69% · تعادل 18% · فوز Shimizu S-Pulse 13%.",
+        "news": "Kashima Antlers: ⚠️ Kashima Antlers Announce Injury to MF Higuchi"
+      }
+    },
+    {
+      "id": "espn-401877553",
+      "teamA": "Kashiwa Reysol",
+      "teamB": "JEF United Ichihara-Chiba",
+      "venue": "home",
+      "league": "الدوري الياباني",
+      "country": "اليابان",
+      "day": "الجمعة",
+      "time": "13:00",
+      "kickoffISO": "2026-11-20T10:00:00.000Z",
+      "prob": 73,
+      "probs": {
+        "home": 73,
+        "draw": 16,
+        "away": 11
+      },
+      "homeTeam": "Kashiwa Reysol",
+      "awayTeam": "JEF United Ichihara-Chiba",
+      "xg": {
+        "home": 2.59,
+        "away": 0.94
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Kashiwa Reysol: المركز 2 من 20، 31 نقطة في 14 مباراة. JEF United Ichihara-Chiba: المركز 17 من 20، 13 نقطة في 14 مباراة.",
+        "side": "Kashiwa Reysol على أرضه: سجّل 17 واستقبل 11 في 7 مباريات. JEF United Ichihara-Chiba خارج أرضه: سجّل 8 واستقبل 17 في 7 مباريات.",
+        "goals": "الأهداف المتوقعة: Kashiwa Reysol 2.6 – 0.9 JEF United Ichihara-Chiba. احتمال فوز Kashiwa Reysol 73% · تعادل 16% · فوز JEF United Ichihara-Chiba 11%.",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401877548",
+      "teamA": "Vissel Kobe",
+      "teamB": "Mito Hollyhock",
+      "venue": "home",
+      "league": "الدوري الياباني",
+      "country": "اليابان",
+      "day": "الجمعة",
+      "time": "13:00",
+      "kickoffISO": "2026-11-20T10:00:00.000Z",
+      "prob": 69,
+      "probs": {
+        "home": 69,
+        "draw": 20,
+        "away": 11
+      },
+      "homeTeam": "Vissel Kobe",
+      "awayTeam": "Mito Hollyhock",
+      "xg": {
+        "home": 2.07,
+        "away": 0.7
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Vissel Kobe: المركز 5 من 20، 27 نقطة في 14 مباراة. Mito Hollyhock: المركز 19 من 20، 9 نقاط في 14 مباراة.",
+        "side": "Vissel Kobe على أرضه: سجّل 13 واستقبل 7 في 7 مباريات. Mito Hollyhock خارج أرضه: سجّل 5 واستقبل 15 في 7 مباريات.",
+        "goals": "الأهداف المتوقعة: Vissel Kobe 2.1 – 0.7 Mito Hollyhock. احتمال فوز Vissel Kobe 69% · تعادل 20% · فوز Mito Hollyhock 11%.",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401900905",
+      "teamA": "Al Nassr",
+      "teamB": "Al Ahli",
+      "venue": "away",
+      "league": "دوري روشن السعودي",
+      "country": "السعودية",
+      "day": "الجمعة",
+      "time": "20:30",
+      "kickoffISO": "2026-11-20T17:30:00.000Z",
+      "prob": 48,
+      "probs": {
+        "home": 30,
+        "draw": 22,
+        "away": 48
+      },
+      "homeTeam": "Al Ahli",
+      "awayTeam": "Al Nassr",
+      "xg": {
+        "home": 1.48,
+        "away": 1.94
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Al Ahli: المركز 6 من 18، 21 نقطة في 11 مباراة. Al Nassr: المركز 3 من 18، 28 نقطة في 11 مباراة.",
+        "side": "Al Ahli على أرضه: سجّل 16 واستقبل 2 في 4 مباريات. Al Nassr خارج أرضه: سجّل 12 واستقبل 6 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Al Ahli 1.5 – 1.9 Al Nassr. احتمال فوز Al Ahli 30% · تعادل 22% · فوز Al Nassr 48%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": 565859,
+      "teamA": "FC Bayern München",
+      "teamB": "1. FC Köln",
+      "venue": "home",
+      "league": "الدوري الألماني",
+      "country": "ألمانيا",
+      "day": "الجمعة",
+      "time": "22:30",
+      "kickoffISO": "2026-11-20T19:30:00Z",
+      "prob": 90,
+      "probs": {
+        "home": 90,
+        "draw": 7,
+        "away": 3
+      },
+      "homeTeam": "FC Bayern München",
+      "awayTeam": "1. FC Köln",
+      "xg": {
+        "home": 4,
+        "away": 0.82
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "FC Bayern München: المركز 1 من 18، 21 نقطة في 9 مباريات، آخر 5 مباريات: فوز · تعادل · فوز · فوز · تعادل. 1. FC Köln: المركز 15 من 18، 9 نقاط في 9 مباريات، آخر 5 مباريات: خسارة · تعادل · تعادل · خسارة · فوز.",
+        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
+        "goals": "الأهداف المتوقعة: FC Bayern München 4.0 – 0.8 1. FC Köln. احتمال فوز FC Bayern München 90% · تعادل 7% · فوز 1. FC Köln 3%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": "FC Bayern München: ⚠️ News | Manuel Neuer suffers partial tendon tear in fresh Bayern Munich injury blow | ⚠️ Kompany Returns to Bayern's Training Facility—With a Shoulder Injury | ✅ Bayern Munich coach Vincent Kompany returns to training after hospitalisation"
+      }
+    },
+    {
+      "id": 559622,
+      "teamA": "ES Troyes AC",
+      "teamB": "Le Havre AC",
+      "venue": "home",
+      "league": "الدوري الفرنسي",
+      "country": "فرنسا",
+      "day": "الجمعة",
+      "time": "22:45",
+      "kickoffISO": "2026-11-20T19:45:00Z",
+      "prob": 45,
+      "probs": {
+        "home": 45,
+        "draw": 28,
+        "away": 27
+      },
+      "homeTeam": "ES Troyes AC",
+      "awayTeam": "Le Havre AC",
+      "xg": {
+        "home": 1.37,
+        "away": 1
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "ES Troyes AC: المركز 17 من 18، 8 نقاط في 10 مباريات، آخر 5 مباريات: خسارة · فوز · تعادل · خسارة · خسارة. Le Havre AC: المركز 18 من 18، نقطتان في 10 مباريات، آخر 5 مباريات: خسارة · خسارة · خسارة · خسارة · خسارة.",
+        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
+        "goals": "الأهداف المتوقعة: ES Troyes AC 1.4 – 1.0 Le Havre AC. احتمال فوز ES Troyes AC 45% · تعادل 28% · فوز Le Havre AC 27%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401878937",
+      "teamA": "Cercle Brugge KSV",
+      "teamB": "KVC Westerlo",
+      "venue": "home",
+      "league": "الدوري البلجيكي",
+      "country": "بلجيكا",
+      "day": "الجمعة",
+      "time": "22:45",
+      "kickoffISO": "2026-11-20T19:45:00.000Z",
+      "prob": 46,
+      "probs": {
+        "home": 46,
+        "draw": 20,
+        "away": 34
+      },
+      "homeTeam": "Cercle Brugge KSV",
+      "awayTeam": "KVC Westerlo",
+      "xg": {
+        "home": 2.2,
+        "away": 1.87
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Cercle Brugge KSV: المركز 16 من 18، 9 نقاط في 11 مباراة. KVC Westerlo: المركز 9 من 18، 14 نقطة في 11 مباراة.",
+        "side": "Cercle Brugge KSV على أرضه: سجّل 6 واستقبل 10 في 5 مباريات. KVC Westerlo خارج أرضه: سجّل 9 واستقبل 11 في 5 مباريات.",
+        "goals": "الأهداف المتوقعة: Cercle Brugge KSV 2.2 – 1.9 KVC Westerlo. احتمال فوز Cercle Brugge KSV 46% · تعادل 20% · فوز KVC Westerlo 34%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": 564748,
+      "teamA": "Athletic Club",
+      "teamB": "RCD Espanyol de Barcelona",
+      "venue": "home",
+      "league": "الدوري الإسباني",
+      "country": "إسبانيا",
+      "day": "الجمعة",
+      "time": "23:00",
+      "kickoffISO": "2026-11-20T20:00:00Z",
+      "prob": 48,
+      "probs": {
+        "home": 48,
+        "draw": 26,
+        "away": 26
+      },
+      "homeTeam": "Athletic Club",
+      "awayTeam": "RCD Espanyol de Barcelona",
+      "xg": {
+        "home": 1.42,
+        "away": 0.96
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Athletic Club: المركز 7 من 20، 16 نقطة في 11 مباراة، آخر 5 مباريات: تعادل · فوز · فوز · خسارة · تعادل. RCD Espanyol de Barcelona: المركز 13 من 20، 12 نقطة في 12 مباراة، آخر 5 مباريات: تعادل · فوز · خسارة · خسارة · تعادل.",
+        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
+        "goals": "الأهداف المتوقعة: Athletic Club 1.4 – 1.0 RCD Espanyol de Barcelona. احتمال فوز Athletic Club 48% · تعادل 26% · فوز RCD Espanyol de Barcelona 26%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401933760",
+      "teamA": "Belgrano (Córdoba)",
+      "teamB": "Vélez Sarsfield",
+      "venue": "away",
+      "league": "الدوري الأرجنتيني",
+      "country": "الأرجنتين",
+      "day": "السبت",
+      "time": "02:00",
+      "kickoffISO": "2026-11-20T23:00:00.000Z",
+      "prob": 41,
+      "probs": {
+        "home": 32,
+        "draw": 27,
+        "away": 41
+      },
+      "homeTeam": "Vélez Sarsfield",
+      "awayTeam": "Belgrano (Córdoba)",
+      "xg": {
+        "home": 1.12,
+        "away": 1.31
+      },
+      "confidence": "medium",
+      "analysis": {
+        "form": "Vélez Sarsfield: 0 نقاط في 0 مباريات. Belgrano (Córdoba): 0 نقاط في 0 مباريات.",
+        "side": "لا تتوفر بيانات الأداء كمضيف/كضيف بعد.",
+        "goals": "الأهداف المتوقعة: Vélez Sarsfield 1.1 – 1.3 Belgrano (Córdoba). احتمال فوز Vélez Sarsfield 32% · تعادل 27% · فوز Belgrano (Córdoba) 41%. (يُدمج مستوى الفريقين الموسم الماضي مع نتائج هذا الموسم لأن العيّنة ما زالت صغيرة.)",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401877054",
+      "teamA": "Atlético de San Luis",
+      "teamB": "Puebla",
+      "venue": "away",
+      "league": "الدوري المكسيكي",
+      "country": "المكسيك",
+      "day": "السبت",
+      "time": "04:00",
+      "kickoffISO": "2026-11-21T01:00:00.000Z",
+      "prob": 42,
+      "probs": {
+        "home": 34,
+        "draw": 24,
+        "away": 42
+      },
+      "homeTeam": "Puebla",
+      "awayTeam": "Atlético de San Luis",
+      "xg": {
+        "home": 1.34,
+        "away": 1.52
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Puebla: المركز 13 من 18، 19 نقطة في 16 مباراة. Atlético de San Luis: المركز 14 من 18، 19 نقطة في 16 مباراة.",
+        "side": "Puebla على أرضه: سجّل 8 واستقبل 12 في 7 مباريات. Atlético de San Luis خارج أرضه: سجّل 10 واستقبل 11 في 7 مباريات.",
+        "goals": "الأهداف المتوقعة: Puebla 1.3 – 1.5 Atlético de San Luis. احتمال فوز Puebla 34% · تعادل 24% · فوز Atlético de San Luis 42%.",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401877053",
+      "teamA": "Atlas",
+      "teamB": "FC Juárez",
+      "venue": "away",
+      "league": "الدوري المكسيكي",
+      "country": "المكسيك",
+      "day": "السبت",
+      "time": "06:00",
+      "kickoffISO": "2026-11-21T03:00:00.000Z",
+      "prob": 43,
+      "probs": {
+        "home": 34,
+        "draw": 23,
+        "away": 43
+      },
+      "homeTeam": "FC Juárez",
+      "awayTeam": "Atlas",
+      "xg": {
+        "home": 1.57,
+        "away": 1.79
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "FC Juárez: المركز 18 من 18، 11 نقطة في 16 مباراة. Atlas: المركز 5 من 18، 27 نقطة في 16 مباراة.",
+        "side": "FC Juárez على أرضه: سجّل 8 واستقبل 13 في 8 مباريات. Atlas خارج أرضه: سجّل 14 واستقبل 9 في 7 مباريات.",
+        "goals": "الأهداف المتوقعة: FC Juárez 1.6 – 1.8 Atlas. احتمال فوز FC Juárez 34% · تعادل 23% · فوز Atlas 43%.",
+        "news": null
+      }
+    },
+    {
+      "id": "espn-401877052",
+      "teamA": "Tijuana",
+      "teamB": "Atlante",
+      "venue": "home",
+      "league": "الدوري المكسيكي",
+      "country": "المكسيك",
+      "day": "السبت",
+      "time": "06:00",
+      "kickoffISO": "2026-11-21T03:00:00.000Z",
+      "prob": 59,
+      "probs": {
+        "home": 59,
+        "draw": 22,
+        "away": 19
+      },
+      "homeTeam": "Tijuana",
+      "awayTeam": "Atlante",
+      "xg": {
+        "home": 1.89,
+        "away": 0.97
+      },
+      "confidence": "high",
+      "analysis": {
+        "form": "Tijuana: المركز 9 من 18، 22 نقطة في 16 مباراة. Atlante: المركز 16 من 18، 14 نقطة في 16 مباراة.",
+        "side": "Tijuana على أرضه: سجّل 14 واستقبل 7 في 8 مباريات. Atlante خارج أرضه: سجّل 9 واستقبل 14 في 8 مباريات.",
+        "goals": "الأهداف المتوقعة: Tijuana 1.9 – 1.0 Atlante. احتمال فوز Tijuana 59% · تعادل 22% · فوز Atlante 19%.",
         "news": null
       }
     }
